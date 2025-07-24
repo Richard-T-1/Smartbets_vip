@@ -251,7 +251,7 @@ def send_ticket_to_channel():
     keyboard = {
         "inline_keyboard": [
             [{"text": "🎯 STAV TERAZ!", "url": match_data['betting_url']}],
-            [{"text": "📊 ANALÝZA", "url": "https://t.me/smartbets_tikety_bot?start=analysis"}]
+            [{"text": "📊 ANALÝZA", "url": "https://t.me/viptikety_bot?start=analysis"}]
         ]
     }
     
