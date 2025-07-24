@@ -14,7 +14,7 @@ BOT_TOKEN = os.environ.get('BOT_TOKEN', '8244776373:AAEBQhyFvtBI2BAbnNZSNLKDO5es
 CHANNEL_ID = os.environ.get('CHANNEL_ID', '-1002328280528')
 ADMIN_ID = int(os.environ.get('ADMIN_ID', '7626888184'))
 PORT = int(os.environ.get('PORT', 10000))
-WEBHOOK_URL = os.environ.get('WEBHOOK_URL', 'https://smartbets.onrender.com')
+WEBHOOK_URL = os.environ.get('WEBHOOK_URL', 'https://vip-tikety.onrender.com')
 
 # Flask aplikácia
 app = Flask(__name__)
