@@ -25,51 +25,57 @@ start_time = time.time()
 
 # Príklad dát zápasu
 example_match = {
-    'sport': 'Evans - Moutet',
-    'team1': 'D. Evans',
-    'team2': 'C. Moutet',
+    'sport': 'Shelton - Diallo',
+    'team1': 'B. Shelton',
+    'team2': 'G. Diallo',
     'tournament': 'ATP Washington',
-    'time': '18:10',
-    'pick': 'D. Evans + 4.5 gemu',
-    'odds': '1.47',
-    'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-evans-daniel-moutet-corentin/7260991/co-sa-tipuje'
+    'time': '21.30',
+    'pick': ' Shleton vyhrá - 1 ',
+    'odds': ' 1.50 ',
+    'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-shelton-ben-diallo-gabriel/7260961/co-sa-tipuje'
 }
 
-analysis_text = """📊 *ANALÝZA ZÁPASU: D. Evans - C. Moutet*
+analysis_text = """📊 *ANALÝZA ZÁPASU: B. Shelton - G. Diallo *
 
-Priatelia, dneska tu máme osemfinále turnaja vo Washnigtone. V ňom sa proti sebe stretnú aj Daniel Evans (ATP 144) s Corentinom Moutetom (ATP 59) 🎾
+Vo Washingtone ostaneme a pozrieme sa na zápas Ben Shelton (ATP 8) - Gabriel Diallo (ATP 35) 🎾
 
-_ Evans, ktorého by som nazval aj "tenisovým šachistom", má výborné defenzíve schopnosti. Hra baseline štýlom (na základnej čiare kurtu) a svoju hru vie pestro variovať - drop shoty, loby, zmeny tempa a uhlov. Mimo baseline štýlu mu nevadí ani vyjsť na sieť a využiť volej. Jeho slabšou stránkou je sila v úderoch a fyzické limity kvôli veku (35 rokov). Napriek tomu však postupuje v ATP rebríčku 🇬🇧
+_ Ben Shleton je výborný hráč v svetovej top 10. Je to agresívny baseliner s výnimočným podaním (asi aj vďaka jeho výške - 193 cm). Má výborný forehand a pohyb po kurte. Taktiež rad aj vystupuje k sieti, čo obohacuje jeho baseline štýl. Na druhu stranu má trochu slabší backend a občas robí "mladicke" chyby 🇺🇸
 
-Corentin Moutet je agresívny baseliner, ktorý sa aj vyznačuje hernou kreativitou. Jeho výhodu spočíva v atletizme a dobrom pohybe po kurte. Ako baseline hráč takisto využíva drop shoty a loby. Jeho hra je niekedy zbrkla a môže mať problémy s mentalitou 🇫🇷
+Gabriel Diallo je defenzívny špecialista s mimoriadnym dosahom (výška - 203cm). Takisto má aj slušný servis a herné IQ. Jeho nevýhodou sú slabšie údery a horší pohyb po kurte 🇨🇦
 
-V ich histórii hrali spolu 2 krát - v 2020 a 2021. Oba zápasy vyhrali Moutet, ale vôbec neboli jednostranné. V 2021 vyhral (6:4, 5:7, 6:3) a rok predtým (4:6, 6:3, 7:6, 7:6). Teda oba tieto zápasy boli rozdielom 3 gemov 🙌_
+Vo Washnigtone sa hrá na tvrdom povrchu, čo takisto viac vyhovuje Sheltonovi, vďaka jeho agresívnejšej hre. _
 
-* Verím, že aj tento zápas bude vyrovnaný (s miernou výhodou Mouteta) a prinesie dobrú show aj pre divákov * ✅
+* Ben Shleton je v tomto zápase favorit a toto postavenie pôjde potvrdiť a premeniť na bod * ✅
 
-Alternatíva: Dá sa aj trocha viac zariskovať s handicapom +3.5 """
+Alternatíva: Neočakávame debakel pre Dialla, preto sa dá hrať aj dvojtip: Shleton výhra s 18.5/19.5 + gemov 📈 """
 
-vip_text = """💎 *SMART BETS VIP* 
+# Nahradené VIP info štatistikami
+statistics_text = """📈 *SMART BETS ŠTATISTIKY* 
 
-🔥 *Prečo si vybrať VIP?*
+📊 *Naše výsledky za posledné obdobie:*
 
-💎 1-3 Exkluzívne tipy každý deň
-🎯 Denné tipy s kurzom 1.8+
-🔔 Prioritná podpora
-📊 Profesionálne analýzy
-🎁 Bonusové tipy cez víkendy
+🏆 *BILANCIA TIKETOV*
+• Výherné tikety: 19 ✅
+• Prehraté tikety: 5 ❌
+• Úspešnosť: 79.2% 
 
-🚀 *BILANCIA TIKETOV*
-• výherné tikety: 19 ✅
-• prehraté tikety: 5 ❌
-
-📈 *NAŠA ÚSPEŠNOSŤ*
+📈 *FINANČNÉ VÝSLEDKY*
 • Navrátnosť za dané obdobie: 19.19% 
 • Zisk za dané obdobie: +11.82u
+• Investovaná suma: 61.6u
+• Čistý zisk: +2.95u
 
-(1u=250€)
+(1u = 250€)
 
-📞 [BLIŽŠIE INFO TU](https://t.me/SmartTipy)"""
+🎯 *ROZDELENIE PODĽA ŠPORTOV*
+• Tenis: 12 tipov (83% úspešnosť)
+• Futbal: 8 tipov (75% úspešnosť) 
+• Basketbal: 4 tipy (75% úspešnosť)
+
+💰 *ROZDELENIE PODĽA KURZOV*
+• Kurz 1.5-1.8: 10 tipov (90% úspešnosť)
+• Kurz 1.8-2.2: 9 tipov (78% úspešnosť)
+• Kurz 2.2+: 5 tipov (60% úspešnosť) """
 
 def is_admin(user_id):
     """Kontrola admin práv"""
@@ -164,7 +170,7 @@ def handle_start_command(chat_id, user_id, user_name, text):
         keyboard = {
             "inline_keyboard": [
                 [{"text": "📊 ANALÝZA", "callback_data": "user_analysis"}],
-                [{"text": "💎 VIP", "callback_data": "user_vip"}]
+                [{"text": "📈 ŠTATISTIKY", "callback_data": "user_statistics"}]
             ]
         }
         
@@ -172,7 +178,7 @@ def handle_start_command(chat_id, user_id, user_name, text):
             chat_id,
             '🏆 **SMART BETS** - Váš expert na športové stávky\n\n'
             '📊 **ANALÝZA** - Získajte podrobné analýzy zápasov\n'
-            '💎 **VIP** - Prémium tipy s vyššími kurzmi\n\n'
+            '📈 **ŠTATISTIKY** - Sledujte naše výsledky a úspešnosť\n\n'
             '🎯 Vyberte si možnosť:',
             reply_markup=keyboard,
             parse_mode='Markdown'
@@ -192,7 +198,7 @@ def handle_start_command(chat_id, user_id, user_name, text):
         keyboard = {
             "inline_keyboard": [
                 [{"text": "📊 ANALÝZA", "callback_data": "user_analysis"}],
-                [{"text": "💎 VIP", "callback_data": "user_vip"}]
+                [{"text": "📈 ŠTATISTIKY", "callback_data": "user_statistics"}]
             ]
         }
         
@@ -201,7 +207,7 @@ def handle_start_command(chat_id, user_id, user_name, text):
             f'Vitajte {user_name}! 👋\n\n'
             '🏆 **SMART BETS** - Váš expert na športové stávky\n\n'
             '📊 **ANALÝZA** - Získajte podrobné analýzy zápasov\n'
-            '💎 **VIP** - Prémium tipy s vyššími kurzmi\n\n'
+            '📈 **ŠTATISTIKY** - Sledujte naše výsledky a úspešnosť\n\n'
             '🎯 Vyberte si možnosť:',
             reply_markup=keyboard,
             parse_mode='Markdown'
@@ -214,12 +220,12 @@ def send_analysis(chat_id):
         # Fallback bez markdown
         send_telegram_message(chat_id, analysis_text.replace('*', ''))
 
-def send_vip_info(chat_id):
-    """Pošle VIP informácie"""
-    success = send_telegram_message(chat_id, vip_text, parse_mode='Markdown')
+def send_statistics(chat_id):
+    """Pošle štatistiky"""
+    success = send_telegram_message(chat_id, statistics_text, parse_mode='Markdown')
     if not success:
         # Fallback bez markdown
-        send_telegram_message(chat_id, vip_text.replace('*', ''))
+        send_telegram_message(chat_id, statistics_text.replace('*', ''))
 
 def handle_tiket_command(chat_id):
     """Spracuje /tiket príkaz"""
@@ -250,7 +256,7 @@ def send_ticket_to_channel():
     }
     
     # Skús poslať obrázok
-    image_path = f"images/{match_data.get('sport', 'Evans - Moutet')}.png"
+    image_path = f"images/{match_data.get('sport', 'Shelton - Diallo')}.png"
     
     if send_telegram_photo(CHANNEL_ID, image_path, caption, keyboard):
         print("✅ Ticket with image sent to channel")
@@ -420,9 +426,9 @@ def webhook():
             if data == "user_analysis":
                 print("📊 Sending analysis...")
                 send_analysis(chat_id)
-            elif data == "user_vip":
-                print("💎 Sending VIP info...")
-                send_vip_info(chat_id)
+            elif data == "user_statistics":
+                print("📈 Sending statistics...")
+                send_statistics(chat_id)
             else:
                 print(f"❓ Unknown callback data: {data}")
         
