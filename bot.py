@@ -130,7 +130,6 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 • Navrátnosť za dané obdobie: 17.11% 
 • Zisk za dané obdobie: +11.36u
 • Investovaná suma: 61.6u
-• Čistý zisk: +66.4u
 
 (1u = 250€)
 
