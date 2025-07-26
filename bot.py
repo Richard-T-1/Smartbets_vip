@@ -61,16 +61,15 @@ MATCHES = {
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
-    "⚽ Stonava - Vítkovice": {
-        "title": "Stonava - Vítkovice",
+        "title": "⚽ Stonava - Vítkovice",
         "sport": "Futbal",
         "tournament": "Český pohár",
         "time": "17:00",
         "text": """📊 *ANALÝZA ZÁPASU: Stonava - Vítkovice *
 
-Dnešnému VIP tipu prikladám určite vysokú dôveru. Zavitame k bratom Čechom - do vyraďovacej caati štátneho pohára ⚽️
+Dnešnému VIP tipu prikladám určite vysokú dôveru. Zavitame k bratom Čechom do vyraďovacej časti štátneho pohára ⚽️
 
-_ Vitkovice skončili v  tejto sezóne F divízie na 2. mieste a postúpili do Moravskoslezskej ligy (MSFL). Snažia sa držať kompaktnú obranu a využívať štandardné situácie vo svoj prospech. Zároveň vedia dobre prejsť do rýchlych protiútokov ↗️
+_Vitkovice skončili v  tejto sezóne F divízie na 2. mieste a postúpili do Moravskoslezskej ligy (MSFL). Snažia sa držať kompaktnú obranu a využívať štandardné situácie vo svoj prospech. Zároveň vedia dobre prejsť do rýchlych protiútokov ↗️
 
 Stonava je nováčikom v F divízii. Teda medzi klubmi je rozdiel 1 ligy. Hrajú jednoduchý priamočiary futbal a tím obohacujú mládežou. Preferujú kontrolu stredového pásma a snažia sa potom vyvíjať tlak cez krídla. Ich kondičná príprava je však slabšia a chýbajú im skúsenosti s vyššími súťažmi 🙌 _
 
@@ -88,7 +87,7 @@ Dodatok: Handicap -1.5 umožňuje len Nike a Doxxbet. Ostatným teda odporúčam
 
 Ďalší zápas z Českého pohára, na ktorý sa tiež pozrieme, bude Valašské Medizirící - Hranice ⚽️
 
-_ Hranice sú momentálne v MSFL po tom, čo minulý tok skončili 2. v E divízii. na čele s trénerom Romanom Matejkom volia disciplinovanú obranu a rýchle protiútoky. K ich výhode prispieva aj kondícia pripravenosť 🙌
+_Hranice sú momentálne v MSFL po tom, čo minulý tok skončili 2. v E divízii. Na čele s trénerom Romanom Matejkom volia disciplinovanú obranu a rýchle protiútoky. K ich výhode prispieva aj kondícia pripravenosť 🙌
 
 Valašské Medzirici sa momentálne nachádza v F divízii, čiže v nižšej lige českého futbalu. Minulý rok skončili 4 miesta pod Hranicami, čiže rozdiel v kvalite nie je až tak enormný. V ich vedení došlo k nahradeniu trénera Bedricha, čiže aj ich herný štýl prechádza zmenami. Môžeme ale očakávať jednoduchý a kolektívny futbal. Zároveň Medzirici zvykne mat problémy s ofenzívu a zakončením, čo proti kvalitnému súperovi môže byť veľkým problémom 🛡
 
@@ -134,16 +133,8 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 
 (1u = 250€)
 
-#🎯 *ROZDELENIE PODĽA ŠPORTOV*
-#• Tenis: 12 tipov (83% úspešnosť)
-#• Futbal: 8 tipov (75% úspešnosť) 
-#• Basketbal: 4 tipy (75% úspešnosť)
-
-#💰 *ROZDELENIE PODĽA KURZOV*
-#• Kurz 1.5-1.8: 10 tipov (90% úspešnosť)
-#• Kurz 1.8-2.2: 9 tipov (78% úspešnosť)
-#• Kurz 2.2+: 5 tipov (60% úspešnosť) 
-"""
+@Smarttipy
+ """
 
 def is_admin(user_id):
     """Kontrola admin práv"""
