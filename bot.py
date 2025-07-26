@@ -26,47 +26,47 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'sport': 'Shelton - Diallo',
-        'team1': 'B. Shelton',
-        'team2': 'G. Diallo',
-        'tournament': 'ATP Washington',
-        'time': '21.30',
-        'pick': ' Shleton vyhrá - 1 ',
-        'odds': ' 1.50 ',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-shelton-ben-diallo-gabriel/7260961/co-sa-tipuje'
+        'team1': 'Stonava',
+        'team2': 'Vítkovice',
+        'tournament': 'Český pohár',
+        'time': '17:00',
+        'pick': ' Vítkovice -1.5 gólu ',
+        'odds': ' 1.57 (Doxxbet)',
+        'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/futbal/cesko/pohar?event=63756756&name=stonava-vs-vitkovice',
+        'image': 'Stonava - Vitkovice.png'  # Názov obrázka pre tento zápas
     },
     
-    # "match2": {
-    #     'sport': 'Nadal - Djokovic',
-    #     'team1': 'R. Nadal',
-    #     'team2': 'N. Djokovic',
-    #     'tournament': 'Roland Garros',
-    #     'time': '15.00',
-    #     'pick': 'Nadal vyhrá - 1',
-    #     'odds': '1.75',
-    #     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-nadal-djokovic/example'
-    # },
+     "match2": {
+         'team1': 'Valašské Meziříčí',
+         'team2': 'Hranice',
+         'tournament': 'Český pohár',
+         'time': '15.00',
+         'pick': 'Nadal vyhrá - 1',
+         'odds': '1.70 (Doxxbet)',
+         'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/futbal/cesko/pohar?event=63756759&name=valasske-mezirici-vs-hranice',
+         'image': 'Medzirici - Hranice.png'  # Iný obrázok pre tento zápas
+     },
     
     # "match3": {
-    #     'sport': 'Real - Barcelona',
     #     'team1': 'Real Madrid',
     #     'team2': 'FC Barcelona', 
     #     'tournament': 'La Liga',
     #     'time': '20.00',
     #     'pick': 'Real Madrid vyhrá - 1',
     #     'odds': '2.10',
-    #     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-real-barcelona/example'
+    #     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-real-barcelona/example',
+    #     'image': 'Real - Barcelona.png'  # Ďalší obrázok pre futbal
     # }
 }
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
-    "shelton_diallo": {
-        "title": "🎾 B. Shelton - G. Diallo",
-        "sport": "Tenis",
-        "tournament": "ATP Washington",
-        "time": "21:30",
-        "text": """📊 *ANALÝZA ZÁPASU: B. Shelton - G. Diallo *
+    "Stonava - Vítkovice": {
+        "title": "Stonava - Vítkovice",
+        "sport": "Futbal",
+        "tournament": "Český pohár",
+        "time": "17:00",
+        "text": """📊 *ANALÝZA ZÁPASU: Stonava - Vítkovice *
 
 Vo Washingtone ostaneme a pozrieme sa na zápas Ben Shelton (ATP 8) - Gabriel Diallo (ATP 35) 🎾
 
@@ -99,23 +99,23 @@ Real Madrid má problémy s obranou, chýba im Militao a Alaba. Benzema síce st
 Alternatíva: Over 2.5 gólov - oba tímy milujú útočný futbal 📈"""
     },
     
-    "example_basketball": {
-        "title": "🏀 Lakers - Warriors",
-        "sport": "Basketbal", 
-        "tournament": "NBA",
-        "time": "04:30",
-        "text": """📊 *ANALÝZA ZÁPASU: Lakers - Warriors*
+#    "example_basketball": {
+#        "title": "🏀 Lakers - Warriors",
+#        "sport": "Basketbal", 
+#        "tournament": "NBA",
+#        "time": "04:30",
+#        "text": """📊 *ANALÝZA ZÁPASU: Lakers - Warriors*
 
-Súboj gigantov v Staples Center! 🏟️
+# Súboj gigantov v Staples Center! 🏟️
 
-Lakers sú doma veľmi silní, LeBron a Davis tvoria smrtiacu kombináciu. Russell má domácu formu a Reaves je v životnej forme 💜💛
+# Lakers sú doma veľmi silní, LeBron a Davis tvoria smrtiacu kombináciu. Russell má domácu formu a Reaves je v životnej forme 💜💛
 
-Warriors majú problémy vonku, Curry je unavený z dlhej sezóny a Green dostal technické fauly v posledných 3 zápasoch 💙💛
+# Warriors majú problémy vonku, Curry je unavený z dlhej sezóny a Green dostal technické fauly v posledných 3 zápasoch 💙💛
 
-*Tip: Lakers -4.5 handicap - kurz 1.75* ✅
+# *Tip: Lakers -4.5 handicap - kurz 1.75* ✅
 
-Alternatíva: Under 225.5 bodov - očakáva sa defenzívny zápas 📈"""
-    }
+# Alternatíva: Under 225.5 bodov - očakáva sa defenzívny zápas 📈"""
+#    }
 }
 
 # Nahradené VIP info štatistikami
@@ -405,7 +405,7 @@ def send_ticket_to_channel(match_data=None):
     
     # Caption pre tiket
     caption = (f"🏆 {match_data['team1']} vs {match_data['team2']}\n"
-              f"🎾 {match_data['tournament']}\n"
+              f"⚽️ {match_data['tournament']}\n"
               f"🕘 {match_data['time']}\n\n"
               f"🎯 {match_data['pick']}\n"
               f"💰 Kurz: {match_data['odds']}")
@@ -419,18 +419,21 @@ def send_ticket_to_channel(match_data=None):
     }
     
     # Skús poslať obrázok
-    image_path = f"images/{match_data.get('sport', 'default')}.png"
+    if 'image' in match_data and match_data['image']:
+        image_path = f"images/{match_data['image']}"
+        
+        if send_telegram_photo(CHANNEL_ID, image_path, caption, keyboard):
+            print(f"✅ Ticket with image sent to channel: {match_data['team1']} vs {match_data['team2']}")
+            return True
+        else:
+            print(f"⚠️ Image failed, sending as text: {match_data['team1']} vs {match_data['team2']}")
     
-    if send_telegram_photo(CHANNEL_ID, image_path, caption, keyboard):
-        print(f"✅ Ticket with image sent to channel: {match_data['team1']} vs {match_data['team2']}")
-        return True
-    else:
-        # Fallback - pošli len text
-        text_message = f"{caption}\n\n🎯 [STAV TERAZ!]({match_data['betting_url']})"
-        success = send_telegram_message(CHANNEL_ID, text_message, parse_mode='Markdown')
-        if success:
-            print(f"✅ Ticket as text sent to channel: {match_data['team1']} vs {match_data['team2']}")
-        return success
+    # Pošli len text (ak nie je obrázok alebo zlyhalo odoslanie obrázka)
+    text_message = f"{caption}\n\n🎯 [STAV TERAZ!]({match_data['betting_url']})"
+    success = send_telegram_message(CHANNEL_ID, text_message, parse_mode='Markdown')
+    if success:
+        print(f"✅ Ticket as text sent to channel: {match_data['team1']} vs {match_data['team2']}")
+    return success
 
 def handle_status_command(chat_id):
     """Spracuje /status príkaz"""
