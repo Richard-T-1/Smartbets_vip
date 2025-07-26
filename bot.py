@@ -35,7 +35,14 @@ example_match = {
     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-shelton-ben-diallo-gabriel/7260961/co-sa-tipuje'
 }
 
-analysis_text = """📊 *ANALÝZA ZÁPASU: B. Shelton - G. Diallo *
+# Databáza analýz - tu môžete pridávať nové analýzy
+ANALYSES = {
+    "shelton_diallo": {
+        "title": "🎾 B. Shelton - G. Diallo",
+        "sport": "Tenis",
+        "tournament": "ATP Washington",
+        "time": "21:30",
+        "text": """📊 *ANALÝZA ZÁPASU: B. Shelton - G. Diallo *
 
 Vo Washingtone ostaneme a pozrieme sa na zápas Ben Shelton (ATP 8) - Gabriel Diallo (ATP 35) 🎾
 
@@ -48,6 +55,44 @@ Vo Washnigtone sa hrá na tvrdom povrchu, čo takisto viac vyhovuje Sheltonovi, 
 * Ben Shleton je v tomto zápase favorit a toto postavenie pôjde potvrdiť a premeniť na bod * ✅
 
 Alternatíva: Neočakávame debakel pre Dialla, preto sa dá hrať aj dvojtip: Shleton výhra s 18.5/19.5 + gemov 📈 """
+    },
+    
+    "example_football": {
+        "title": "⚽ Barcelona - Real Madrid",
+        "sport": "Futbal",
+        "tournament": "El Clasico",
+        "time": "20:00",
+        "text": """📊 *ANALÝZA ZÁPASU: Barcelona - Real Madrid*
+
+El Clasico v Camp Nou! 🏟️
+
+Barcelona prichádza do zápasu s výbornou formou doma, kde vyhrala posledných 8 zápasov v rade. Lewandowski je v skvelej forme a Pedri sa vrátil zo zranenia 🔵🔴
+
+Real Madrid má problémy s obranou, chýba im Militao a Alaba. Benzema síce strelil v poslednom zápase, ale celkovo tím pôsobí nestabilne ⚪
+
+*Tip: Barcelona double chance (1X) - kurz 1.65* ✅
+
+Alternatíva: Over 2.5 gólov - oba tímy milujú útočný futbal 📈"""
+    },
+    
+    "example_basketball": {
+        "title": "🏀 Lakers - Warriors",
+        "sport": "Basketbal", 
+        "tournament": "NBA",
+        "time": "04:30",
+        "text": """📊 *ANALÝZA ZÁPASU: Lakers - Warriors*
+
+Súboj gigantov v Staples Center! 🏟️
+
+Lakers sú doma veľmi silní, LeBron a Davis tvoria smrtiacu kombináciu. Russell má domácu formu a Reaves je v životnej forme 💜💛
+
+Warriors majú problémy vonku, Curry je unavený z dlhej sezóny a Green dostal technické fauly v posledných 3 zápasoch 💙💛
+
+*Tip: Lakers -4.5 handicap - kurz 1.75* ✅
+
+Alternatíva: Under 225.5 bodov - očakáva sa defenzívny zápas 📈"""
+    }
+}
 
 # Nahradené VIP info štatistikami
 statistics_text = """📈 *SMART BETS ŠTATISTIKY* 
@@ -155,36 +200,37 @@ def answer_callback_query(callback_query_id, text=""):
         print(f"❌ Error answering callback: {e}")
         return False
 
+def create_analyses_menu():
+    """Vytvorí menu s dostupnými analýzami"""
+    keyboard = {"inline_keyboard": []}
+    
+    # Pridá každú analýzu ako button
+    for analysis_id, analysis_data in ANALYSES.items():
+        button_text = f"{analysis_data['title']}"
+        keyboard["inline_keyboard"].append([
+            {"text": button_text, "callback_data": f"analysis_{analysis_id}"}
+        ])
+    
+    # Pridá tlačidlo späť
+    keyboard["inline_keyboard"].append([
+        {"text": "◀️ Späť do menu", "callback_data": "back_to_main"}
+    ])
+    
+    return keyboard
+
+def create_main_menu():
+    """Vytvorí hlavné menu"""
+    return {
+        "inline_keyboard": [
+            [{"text": "📊 ANALÝZY", "callback_data": "show_analyses"}],
+            [{"text": "📈 ŠTATISTIKY", "callback_data": "user_statistics"}]
+        ]
+    }
+
 def handle_start_command(chat_id, user_id, user_name, text):
     """Spracuje /start príkaz"""
     
-    if "analysis" in text:
-        # Pošle analýzu
-        send_telegram_message(
-            chat_id, 
-            analysis_text,
-            parse_mode='Markdown'
-        )
-        
-        # Potom menu
-        keyboard = {
-            "inline_keyboard": [
-                [{"text": "📊 ANALÝZA", "callback_data": "user_analysis"}],
-                [{"text": "📈 ŠTATISTIKY", "callback_data": "user_statistics"}]
-            ]
-        }
-        
-        send_telegram_message(
-            chat_id,
-            '🏆 **SMART BETS** - Váš expert na športové stávky\n\n'
-            '📊 **ANALÝZA** - Získajte podrobné analýzy zápasov\n'
-            '📈 **ŠTATISTIKY** - Sledujte naše výsledky a úspešnosť\n\n'
-            '🎯 Vyberte si možnosť:',
-            reply_markup=keyboard,
-            parse_mode='Markdown'
-        )
-    
-    elif is_admin(user_id):
+    if is_admin(user_id):
         send_telegram_message(
             chat_id,
             f'Vitajte v Sports Tips Bot! 🏆\n'
@@ -195,30 +241,58 @@ def handle_start_command(chat_id, user_id, user_name, text):
             '/help - Zobrazí nápovedu'
         )
     else:
-        keyboard = {
-            "inline_keyboard": [
-                [{"text": "📊 ANALÝZA", "callback_data": "user_analysis"}],
-                [{"text": "📈 ŠTATISTIKY", "callback_data": "user_statistics"}]
-            ]
-        }
+        keyboard = create_main_menu()
         
         send_telegram_message(
             chat_id,
             f'Vitajte {user_name}! 👋\n\n'
             '🏆 **SMART BETS** - Váš expert na športové stávky\n\n'
-            '📊 **ANALÝZA** - Získajte podrobné analýzy zápasov\n'
+            '📊 **ANALÝZY** - Vyberte si z dostupných analýz zápasov\n'
             '📈 **ŠTATISTIKY** - Sledujte naše výsledky a úspešnosť\n\n'
             '🎯 Vyberte si možnosť:',
             reply_markup=keyboard,
             parse_mode='Markdown'
         )
 
-def send_analysis(chat_id):
-    """Pošle analýzu"""
-    success = send_telegram_message(chat_id, analysis_text, parse_mode='Markdown')
+def send_analysis(chat_id, analysis_id):
+    """Pošle konkrétnu analýzu"""
+    if analysis_id not in ANALYSES:
+        send_telegram_message(chat_id, "❌ Analýza nebola nájdená!")
+        return
+    
+    analysis = ANALYSES[analysis_id]
+    
+    # Pošle analýzu
+    success = send_telegram_message(chat_id, analysis['text'], parse_mode='Markdown')
     if not success:
         # Fallback bez markdown
-        send_telegram_message(chat_id, analysis_text.replace('*', ''))
+        send_telegram_message(chat_id, analysis['text'].replace('*', ''))
+    
+    # Pridá tlačidlo späť na výber analýz
+    back_keyboard = {
+        "inline_keyboard": [
+            [{"text": "📊 Ďalšie analýzy", "callback_data": "show_analyses"}],
+            [{"text": "◀️ Hlavné menu", "callback_data": "back_to_main"}]
+        ]
+    }
+    
+    send_telegram_message(
+        chat_id,
+        "📊 Chcete si pozrieť ďalšie analýzy?",
+        reply_markup=back_keyboard
+    )
+
+def send_analyses_menu(chat_id):
+    """Pošle menu s dostupnými analýzami"""
+    keyboard = create_analyses_menu()
+    
+    send_telegram_message(
+        chat_id,
+        "📊 **DOSTUPNÉ ANALÝZY**\n\n"
+        "Vyberte si zápas, ktorého analýzu chcete vidieť:",
+        reply_markup=keyboard,
+        parse_mode='Markdown'
+    )
 
 def send_statistics(chat_id):
     """Pošle štatistiky"""
@@ -226,6 +300,19 @@ def send_statistics(chat_id):
     if not success:
         # Fallback bez markdown
         send_telegram_message(chat_id, statistics_text.replace('*', ''))
+    
+    # Pridá tlačidlo späť
+    back_keyboard = {
+        "inline_keyboard": [
+            [{"text": "◀️ Späť do menu", "callback_data": "back_to_main"}]
+        ]
+    }
+    
+    send_telegram_message(
+        chat_id,
+        "📈 Chcete sa vrátiť do hlavného menu?",
+        reply_markup=back_keyboard
+    )
 
 def handle_tiket_command(chat_id):
     """Spracuje /tiket príkaz"""
@@ -350,7 +437,8 @@ def health_check():
         'port': PORT,
         'webhook_url': f"{WEBHOOK_URL}/webhook",
         'bot_initialized': bot_initialized,
-        'timestamp': time.strftime('%Y-%m-%d %H:%M:%S')
+        'timestamp': time.strftime('%Y-%m-%d %H:%M:%S'),
+        'available_analyses': len(ANALYSES)
     })
 
 @app.route('/health')
@@ -369,7 +457,8 @@ def debug_info():
         'bot_token': BOT_TOKEN[:10] + "..." if BOT_TOKEN else "NOT SET",
         'webhook_url': WEBHOOK_URL,
         'bot_initialized': bot_initialized,
-        'webhook_endpoint': f"{WEBHOOK_URL}/webhook"
+        'webhook_endpoint': f"{WEBHOOK_URL}/webhook",
+        'analyses_count': len(ANALYSES)
     })
 
 @app.route('/webhook', methods=['POST'])
@@ -423,12 +512,28 @@ def webhook():
             answer_callback_query(callback_query_id, "📊 Načítavam...")
             
             # Spracovanie akcií
-            if data == "user_analysis":
-                print("📊 Sending analysis...")
-                send_analysis(chat_id)
+            if data == "show_analyses":
+                print("📊 Showing analyses menu...")
+                send_analyses_menu(chat_id)
+            elif data.startswith("analysis_"):
+                analysis_id = data.replace("analysis_", "")
+                print(f"📊 Sending analysis: {analysis_id}")
+                send_analysis(chat_id, analysis_id)
             elif data == "user_statistics":
                 print("📈 Sending statistics...")
                 send_statistics(chat_id)
+            elif data == "back_to_main":
+                print("🔙 Going back to main menu...")
+                keyboard = create_main_menu()
+                send_telegram_message(
+                    chat_id,
+                    '🏆 **SMART BETS** - Váš expert na športové stávky\n\n'
+                    '📊 **ANALÝZY** - Vyberte si z dostupných analýz zápasov\n'
+                    '📈 **ŠTATISTIKY** - Sledujte naše výsledky a úspešnosť\n\n'
+                    '🎯 Vyberte si možnosť:',
+                    reply_markup=keyboard,
+                    parse_mode='Markdown'
+                )
             else:
                 print(f"❓ Unknown callback data: {data}")
         
@@ -443,6 +548,7 @@ def webhook():
 def main():
     """Spustenie aplikácie"""
     print("🚀 Starting Telegram Bot with Webhook...")
+    print(f"📊 Loaded {len(ANALYSES)} analyses")
     
     # Setup webhook
     if setup_webhook():
