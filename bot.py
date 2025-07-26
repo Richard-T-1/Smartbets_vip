@@ -61,42 +61,40 @@ MATCHES = {
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
-    "Stonava - Vítkovice": {
+    "⚽ Stonava - Vítkovice": {
         "title": "Stonava - Vítkovice",
         "sport": "Futbal",
         "tournament": "Český pohár",
         "time": "17:00",
         "text": """📊 *ANALÝZA ZÁPASU: Stonava - Vítkovice *
 
-Vo Washingtone ostaneme a pozrieme sa na zápas Ben Shelton (ATP 8) - Gabriel Diallo (ATP 35) 🎾
+Dnešnému VIP tipu prikladám určite vysokú dôveru. Zavitame k bratom Čechom - do vyraďovacej caati štátneho pohára ⚽️
 
-_ Ben Shleton je výborný hráč v svetovej top 10. Je to agresívny baseliner s výnimočným podaním (asi aj vďaka jeho výške - 193 cm). Má výborný forehand a pohyb po kurte. Taktiež rad aj vystupuje k sieti, čo obohacuje jeho baseline štýl. Na druhu stranu má trochu slabší backend a občas robí "mladicke" chyby 🇺🇸
+_ Vitkovice skončili v  tejto sezóne F divízie na 2. mieste a postúpili do Moravskoslezskej ligy (MSFL). Snažia sa držať kompaktnú obranu a využívať štandardné situácie vo svoj prospech. Zároveň vedia dobre prejsť do rýchlych protiútokov ↗️
 
-Gabriel Diallo je defenzívny špecialista s mimoriadnym dosahom (výška - 203cm). Takisto má aj slušný servis a herné IQ. Jeho nevýhodou sú slabšie údery a horší pohyb po kurte 🇨🇦
+Stonava je nováčikom v F divízii. Teda medzi klubmi je rozdiel 1 ligy. Hrajú jednoduchý priamočiary futbal a tím obohacujú mládežou. Preferujú kontrolu stredového pásma a snažia sa potom vyvíjať tlak cez krídla. Ich kondičná príprava je však slabšia a chýbajú im skúsenosti s vyššími súťažmi 🙌 _
 
-Vo Washnigtone sa hrá na tvrdom povrchu, čo takisto viac vyhovuje Sheltonovi, vďaka jeho agresívnejšej hre. _
+* V tomto zápase sú jasným favoritom Vitkovice a verím, že vyhrávajú o 2 a viac gólov. Ešte celkom rozvážne volím handicap len -1.5 * ✅
 
-* Ben Shleton je v tomto zápase favorit a toto postavenie pôjde potvrdiť a premeniť na bod * ✅
-
-Alternatíva: Neočakávame debakel pre Dialla, preto sa dá hrať aj dvojtip: Shleton výhra s 18.5/19.5 + gemov 📈 """
+Dodatok: Handicap -1.5 umožňuje len Nike a Doxxbet. Ostatným teda odporúčam dat čisto na výhru Vitkovic. """
     },
     
     "example_football": {
-        "title": "⚽ Barcelona - Real Madrid",
+        "title": "⚽ Valašské Meziříčí - Hranice",
         "sport": "Futbal",
-        "tournament": "El Clasico",
-        "time": "20:00",
-        "text": """📊 *ANALÝZA ZÁPASU: Barcelona - Real Madrid*
+        "tournament": "Český pohár",
+        "time": "18:00",
+        "text": """📊 *ANALÝZA ZÁPASU: Valašské Meziříčí - Hranic*
 
-El Clasico v Camp Nou! 🏟️
+Ďalší zápas z Českého pohára, na ktorý sa tiež pozrieme, bude Valašské Medizirící - Hranice ⚽️
 
-Barcelona prichádza do zápasu s výbornou formou doma, kde vyhrala posledných 8 zápasov v rade. Lewandowski je v skvelej forme a Pedri sa vrátil zo zranenia 🔵🔴
+_ Hranice sú momentálne v MSFL po tom, čo minulý tok skončili 2. v E divízii. na čele s trénerom Romanom Matejkom volia disciplinovanú obranu a rýchle protiútoky. K ich výhode prispieva aj kondícia pripravenosť 🙌
 
-Real Madrid má problémy s obranou, chýba im Militao a Alaba. Benzema síce strelil v poslednom zápase, ale celkovo tím pôsobí nestabilne ⚪
+Valašské Medzirici sa momentálne nachádza v F divízii, čiže v nižšej lige českého futbalu. Minulý rok skončili 4 miesta pod Hranicami, čiže rozdiel v kvalite nie je až tak enormný. V ich vedení došlo k nahradeniu trénera Bedricha, čiže aj ich herný štýl prechádza zmenami. Môžeme ale očakávať jednoduchý a kolektívny futbal. Zároveň Medzirici zvykne mat problémy s ofenzívu a zakončením, čo proti kvalitnému súperovi môže byť veľkým problémom 🛡
 
-*Tip: Barcelona double chance (1X) - kurz 1.65* ✅
+Z poslednych 5 zápasov, Hranice vyhrala 4 krát a raz sa podarilo Valašskému Medzirici uhrať remízu. _
 
-Alternatíva: Over 2.5 gólov - oba tímy milujú útočný futbal 📈"""
+* Hranice sú v tomto zápase favoritom a verím, že to ukážu aj na ihrisku * ✅ """
     },
     
 #    "example_basketball": {
@@ -124,27 +122,28 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV*
-• Výherné tikety: 19 ✅
+• Výherné tikety: 20 ✅
 • Prehraté tikety: 5 ❌
-• Úspešnosť: 79.2% 
+• Úspešnosť: 80% 
 
 📈 *FINANČNÉ VÝSLEDKY*
-• Navrátnosť za dané obdobie: 19.19% 
-• Zisk za dané obdobie: +11.82u
+• Navrátnosť za dané obdobie: 17.11% 
+• Zisk za dané obdobie: +11.36u
 • Investovaná suma: 61.6u
-• Čistý zisk: +2.95u
+• Čistý zisk: +66.4u
 
 (1u = 250€)
 
-🎯 *ROZDELENIE PODĽA ŠPORTOV*
-• Tenis: 12 tipov (83% úspešnosť)
-• Futbal: 8 tipov (75% úspešnosť) 
-• Basketbal: 4 tipy (75% úspešnosť)
+#🎯 *ROZDELENIE PODĽA ŠPORTOV*
+#• Tenis: 12 tipov (83% úspešnosť)
+#• Futbal: 8 tipov (75% úspešnosť) 
+#• Basketbal: 4 tipy (75% úspešnosť)
 
-💰 *ROZDELENIE PODĽA KURZOV*
-• Kurz 1.5-1.8: 10 tipov (90% úspešnosť)
-• Kurz 1.8-2.2: 9 tipov (78% úspešnosť)
-• Kurz 2.2+: 5 tipov (60% úspešnosť) """
+#💰 *ROZDELENIE PODĽA KURZOV*
+#• Kurz 1.5-1.8: 10 tipov (90% úspešnosť)
+#• Kurz 1.8-2.2: 9 tipov (78% úspešnosť)
+#• Kurz 2.2+: 5 tipov (60% úspešnosť) 
+"""
 
 def is_admin(user_id):
     """Kontrola admin práv"""
