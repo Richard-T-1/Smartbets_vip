@@ -40,8 +40,8 @@ MATCHES = {
          'team1': 'Valašské Meziříčí',
          'team2': 'Hranice',
          'tournament': 'Český pohár',
-         'time': '15.00',
-         'pick': 'Nadal vyhrá - 1',
+         'time': '18.00',
+         'pick': 'Hranice vyhrajú - 2',
          'odds': '1.70 (Doxxbet)',
          'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/futbal/cesko/pohar?event=63756759&name=valasske-mezirici-vs-hranice',
          'image': 'Medzirici - Hranice.png'  # Iný obrázok pre tento zápas
