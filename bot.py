@@ -61,6 +61,7 @@ MATCHES = {
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
+    "stonava_vitkovice": {
         "title": "⚽ Stonava - Vítkovice",
         "sport": "Futbal",
         "tournament": "Český pohár",
