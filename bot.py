@@ -23,16 +23,40 @@ app = Flask(__name__)
 bot_initialized = False
 start_time = time.time()
 
-# Príklad dát zápasu
-example_match = {
-    'sport': 'Shelton - Diallo',
-    'team1': 'B. Shelton',
-    'team2': 'G. Diallo',
-    'tournament': 'ATP Washington',
-    'time': '21.30',
-    'pick': ' Shleton vyhrá - 1 ',
-    'odds': ' 1.50 ',
-    'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-shelton-ben-diallo-gabriel/7260961/co-sa-tipuje'
+# Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
+MATCHES = {
+    "match1": {
+        'sport': 'Shelton - Diallo',
+        'team1': 'B. Shelton',
+        'team2': 'G. Diallo',
+        'tournament': 'ATP Washington',
+        'time': '21.30',
+        'pick': ' Shleton vyhrá - 1 ',
+        'odds': ' 1.50 ',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-shelton-ben-diallo-gabriel/7260961/co-sa-tipuje'
+    },
+    
+    # "match2": {
+    #     'sport': 'Nadal - Djokovic',
+    #     'team1': 'R. Nadal',
+    #     'team2': 'N. Djokovic',
+    #     'tournament': 'Roland Garros',
+    #     'time': '15.00',
+    #     'pick': 'Nadal vyhrá - 1',
+    #     'odds': '1.75',
+    #     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-nadal-djokovic/example'
+    # },
+    
+    # "match3": {
+    #     'sport': 'Real - Barcelona',
+    #     'team1': 'Real Madrid',
+    #     'team2': 'FC Barcelona', 
+    #     'tournament': 'La Liga',
+    #     'time': '20.00',
+    #     'pick': 'Real Madrid vyhrá - 1',
+    #     'odds': '2.10',
+    #     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-real-barcelona/example'
+    # }
 }
 
 # Databáza analýz - tu môžete pridávať nové analýzy
@@ -230,19 +254,33 @@ def create_main_menu():
 def handle_start_command(chat_id, user_id, user_name, text):
     """Spracuje /start príkaz"""
     
+    keyboard = create_main_menu()
+    
     if is_admin(user_id):
+        # Admin má aj príkazy aj menu s analýzami
         send_telegram_message(
             chat_id,
             f'Vitajte v Sports Tips Bot! 🏆\n'
-            f'Vaše ID: {user_id}\n\n'
-            'Príkazy:\n'
+            f'Vaše ID: {user_id} (ADMIN)\n\n'
+            '🔧 **ADMIN PRÍKAZY:**\n'
             '/tiket - Odoslať tiket do kanála\n'
             '/status - Stav bota\n'
-            '/help - Zobrazí nápovedu'
+            '/help - Zobrazí nápovedu\n\n'
+            '👥 **POUŽÍVATEĽSKÉ FUNKCIE:**'
+        )
+        
+        # Pošle aj menu pre admina
+        send_telegram_message(
+            chat_id,
+            '🏆 **SMART BETS** - Váš expert na športové stávky\n\n'
+            '📊 **ANALÝZY** - Vyberte si z dostupných analýz zápasov\n'
+            '📈 **ŠTATISTIKY** - Sledujte naše výsledky a úspešnosť\n\n'
+            '🎯 Vyberte si možnosť:',
+            reply_markup=keyboard,
+            parse_mode='Markdown'
         )
     else:
-        keyboard = create_main_menu()
-        
+        # Bežný používateľ
         send_telegram_message(
             chat_id,
             f'Vitajte {user_name}! 👋\n\n'
@@ -315,17 +353,55 @@ def send_statistics(chat_id):
     )
 
 def handle_tiket_command(chat_id):
-    """Spracuje /tiket príkaz"""
+    """Spracuje /tiket príkaz - pošle všetky aktívne zápasy"""
     try:
-        send_ticket_to_channel()
-        send_telegram_message(chat_id, "✅ Tiket bol odoslaný do kanála!")
+        active_matches = {k: v for k, v in MATCHES.items() if k not in []}  # Môžete pridať zoznam excluded matches
+        
+        if not active_matches:
+            send_telegram_message(chat_id, "❌ Žiadne aktívne zápasy na odoslanie!")
+            return
+            
+        sent_count = 0
+        failed_count = 0
+        
+        for match_id, match_data in active_matches.items():
+            try:
+                success = send_ticket_to_channel(match_data)
+                if success:
+                    sent_count += 1
+                    print(f"✅ Ticket {match_id} sent successfully")
+                    # Pauza medzi odosielaním, aby sme nepretažili API
+                    time.sleep(1)
+                else:
+                    failed_count += 1
+                    print(f"❌ Failed to send ticket {match_id}")
+            except Exception as e:
+                failed_count += 1
+                print(f"❌ Error sending ticket {match_id}: {e}")
+        
+        # Správa o výsledku
+        result_message = f"📊 **VÝSLEDOK ODOSIELANIA:**\n\n"
+        result_message += f"✅ Odoslané: {sent_count} tiketov\n"
+        if failed_count > 0:
+            result_message += f"❌ Nepodarilo sa: {failed_count} tiketov"
+        else:
+            result_message += f"🎉 Všetky tikety úspešne odoslané!"
+            
+        send_telegram_message(chat_id, result_message, parse_mode='Markdown')
+        
     except Exception as e:
-        print(f"❌ Error sending ticket: {e}")
-        send_telegram_message(chat_id, f"❌ Chyba pri odosielaní tiketu: {str(e)}")
+        print(f"❌ Error in handle_tiket_command: {e}")
+        send_telegram_message(chat_id, f"❌ Chyba pri odosielaní tiketov: {str(e)}")
 
-def send_ticket_to_channel():
-    """Odošle tiket do kanála"""
-    match_data = example_match
+def send_ticket_to_channel(match_data=None):
+    """Odošle jeden tiket do kanála"""
+    if match_data is None:
+        # Fallback na prvý zápas ak nie je špecifikovaný
+        if MATCHES:
+            match_data = list(MATCHES.values())[0]
+        else:
+            print("❌ No matches available")
+            return False
     
     # Caption pre tiket
     caption = (f"🏆 {match_data['team1']} vs {match_data['team2']}\n"
@@ -343,15 +419,18 @@ def send_ticket_to_channel():
     }
     
     # Skús poslať obrázok
-    image_path = f"images/{match_data.get('sport', 'Shelton - Diallo')}.png"
+    image_path = f"images/{match_data.get('sport', 'default')}.png"
     
     if send_telegram_photo(CHANNEL_ID, image_path, caption, keyboard):
-        print("✅ Ticket with image sent to channel")
+        print(f"✅ Ticket with image sent to channel: {match_data['team1']} vs {match_data['team2']}")
+        return True
     else:
         # Fallback - pošli len text
         text_message = f"{caption}\n\n🎯 [STAV TERAZ!]({match_data['betting_url']})"
-        send_telegram_message(CHANNEL_ID, text_message, parse_mode='Markdown')
-        print("✅ Ticket as text sent to channel")
+        success = send_telegram_message(CHANNEL_ID, text_message, parse_mode='Markdown')
+        if success:
+            print(f"✅ Ticket as text sent to channel: {match_data['team1']} vs {match_data['team2']}")
+        return success
 
 def handle_status_command(chat_id):
     """Spracuje /status príkaz"""
@@ -368,13 +447,22 @@ def handle_status_command(chat_id):
 
 def handle_help_command(chat_id):
     """Spracuje /help príkaz"""
-    help_text = """Dostupné príkazy:
-/start - Spustenie bota
-/tiket - Odoslanie tiketu do kanála
-/status - Stav bota
-/help - Nápoveda"""
+    help_text = """📋 **DOSTUPNÉ PRÍKAZY:**
+
+🎯 **/tiket** - Odošle všetky aktívne zápasy do kanála
+🔍 **/status** - Zobrazí stav bota  
+❓ **/help** - Zobrazí túto nápovedu
+
+📊 **SPRÁVA ZÁPASOV:**
+• Upravte `MATCHES` v kóde pre pridanie nových zápasov
+• Zakomentujte zápasy ktoré nechcete poslať
+• Jeden príkaz `/tiket` pošle všetky aktívne zápasy
+
+🎮 **TLAČIDLÁ:**
+• 📊 ANALÝZY - Zobraziť dostupné analýzy
+• 📈 ŠTATISTIKY - Zobraziť výsledky a úspešnosť"""
     
-    send_telegram_message(chat_id, help_text)
+    send_telegram_message(chat_id, help_text, parse_mode='Markdown')
 
 def setup_webhook():
     """Nastavenie webhook"""
@@ -438,7 +526,8 @@ def health_check():
         'webhook_url': f"{WEBHOOK_URL}/webhook",
         'bot_initialized': bot_initialized,
         'timestamp': time.strftime('%Y-%m-%d %H:%M:%S'),
-        'available_analyses': len(ANALYSES)
+        'available_analyses': len(ANALYSES),
+        'available_matches': len(MATCHES)
     })
 
 @app.route('/health')
@@ -458,7 +547,8 @@ def debug_info():
         'webhook_url': WEBHOOK_URL,
         'bot_initialized': bot_initialized,
         'webhook_endpoint': f"{WEBHOOK_URL}/webhook",
-        'analyses_count': len(ANALYSES)
+        'analyses_count': len(ANALYSES),
+        'matches_count': len(MATCHES)
     })
 
 @app.route('/webhook', methods=['POST'])
@@ -549,6 +639,7 @@ def main():
     """Spustenie aplikácie"""
     print("🚀 Starting Telegram Bot with Webhook...")
     print(f"📊 Loaded {len(ANALYSES)} analyses")
+    print(f"🎯 Loaded {len(MATCHES)} matches")
     
     # Setup webhook
     if setup_webhook():
