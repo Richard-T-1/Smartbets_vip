@@ -29,7 +29,7 @@ MATCHES = {
         'team1': 'A. Vukic',
         'team2': 'P. Martinez',
         'tournament': 'ATP Toronto',
-        'time': '16:30',
+        'time': '18:10',
         'pick': ' Vukic vyhrá 2:0 ',
         'odds': ' 1.95 --> 1.87',
         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-vukic-aleksandar-martinez-pedro/7269550/co-sa-tipuje',
