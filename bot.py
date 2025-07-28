@@ -74,7 +74,7 @@ _Vukic bol v najlepšom ATP 48. a tenisu sa venoval už od skorého veku. V tomt
 
 Martinez obľubuje antuku kvôli svojmu pomalejšiemu štýlu, kde využíva dropshoty a lobiky. Hard je jeho najhorší povrch, na ktorom má blanciu 4-16. Bol zraneny a musel odísť z Gstaadu, nasledne predviedol veľmi zlý vykon proti Struffovi v Kitzbuhelu 🇪🇸 _
 
-* Vukic sa pomaly dostáva späť do formy a v tomto zápase bude dominovať. Martineza forma kombinovaná so zranením a povrchom dostatočné dôvody aj na 2:0 * ✅ """
+*Vukic sa pomaly dostáva späť do formy a v tomto zápase bude dominovať. Martineza forma kombinovaná so zranením a povrchom dostatočné dôvody aj na 2:0 * ✅ """
     },
     
     "example_football": {
@@ -84,7 +84,7 @@ Martinez obľubuje antuku kvôli svojmu pomalejšiemu štýlu, kde využíva dro
         "time": "23:00",
         "text": """📊 *ANALÝZA ZÁPASU: B. Čorič - M. Gigante*
 
-ˇV Toronte ostaneme aj pri ďalšom zápase: Borna Coric - Matteo Gigante 🎾
+V Toronte ostaneme aj pri ďalšom zápase: Borna Coric - Matteo Gigante 🎾
 
 _ Gigante (ATP 125) má solídny baseline štýl a trpezlivo si buduje svoju pozíciu a čas na zakončenie. Zároveň je o niečo mladší, takže aj jeho kondička je na tom lepšie. Na tvrdom povrchu má pozitívnu bilanciu 7:4 (narozdiel od Corica) 🇮🇹
 
