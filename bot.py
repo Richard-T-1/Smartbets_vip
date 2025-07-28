@@ -26,25 +26,25 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'Stonava',
-        'team2': 'Vítkovice',
-        'tournament': 'Český pohár',
-        'time': '17:00',
-        'pick': ' Vítkovice -1.5 gólu ',
-        'odds': ' 1.57 (Doxxbet)',
-        'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/futbal/cesko/pohar?event=63756756&name=stonava-vs-vitkovice',
-        'image': 'Stonava - Vitkovice.png'  # Názov obrázka pre tento zápas
+        'team1': 'A. Vukic',
+        'team2': 'P. Martinez',
+        'tournament': 'ATP Toronto',
+        'time': '16:30',
+        'pick': ' Vukic vyhrá 2:0 ',
+        'odds': ' 1.95 --> 1.87',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-vukic-aleksandar-martinez-pedro/7269550/co-sa-tipuje',
+        'image': 'Toronto 2.png'  # Názov obrázka pre tento zápas
     },
     
      "match2": {
-         'team1': 'Valašské Meziříčí',
-         'team2': 'Hranice',
-         'tournament': 'Český pohár',
-         'time': '18.00',
-         'pick': 'Hranice vyhrajú - 2',
-         'odds': '1.70 (Doxxbet)',
-         'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/futbal/cesko/pohar?event=63756759&name=valasske-mezirici-vs-hranice',
-         'image': 'Medzirici - Hranice.png'  # Iný obrázok pre tento zápas
+         'team1': 'B. Čorič',
+         'team2': 'M. Gigante',
+         'tournament': 'ATP Toronto',
+         'time': '23.00',
+         'pick': 'Gigante vyhrá - 2',
+         'odds': '2.24 --> 2.01',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-coric-borna-gigante-matteo/7269560/co-sa-tipuje',
+         'image': 'Toronto 1.png'  # Iný obrázok pre tento zápas
      },
     
     # "match3": {
@@ -61,40 +61,36 @@ MATCHES = {
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
-    "stonava_vitkovice": {
-        "title": "⚽ Stonava - Vítkovice",
-        "sport": "Futbal",
-        "tournament": "Český pohár",
-        "time": "17:00",
-        "text": """📊 *ANALÝZA ZÁPASU: Stonava - Vítkovice *
+    "A. Vukic_P. Martinez": {
+        "title": "🎾 A. Vukic_P. Martinez",
+        "sport": "Tenis",
+        "tournament": "ATP Toronto",
+        "time": "18:10",
+        "text": """📊 *ANALÝZA ZÁPASU: A. Vukic - P. Martinez *
 
-Dnešnému VIP tipu prikladám určite vysokú dôveru. Zavitame k bratom Čechom do vyraďovacej časti štátneho pohára ⚽️
+Dnes zavítame do 1. kola vyraďovacej časti turnaja v Toronte. Konkrétne hovorím o zápase Aleksandara Vukica (ATP 99) s Pedrom Martinezom (ATP 68).
 
-_Vitkovice skončili v  tejto sezóne F divízie na 2. mieste a postúpili do Moravskoslezskej ligy (MSFL). Snažia sa držať kompaktnú obranu a využívať štandardné situácie vo svoj prospech. Zároveň vedia dobre prejsť do rýchlych protiútokov ↗️
+_Vukic bol v najlepšom ATP 48. a tenisu sa venoval už od skorého veku. V tomto roku má momentálne horšiu formu (nie takú zlú ako Martinez). Práve v tomto zápase verím, že svoje nešťastie zlomí. Má silný servis a hrá agresívnym baseline štýlom s výbornými základnými údermi. Tvrdý povrch v Toronte mu teda zvyšuje šance na víťazstvo 🇦🇺
 
-Stonava je nováčikom v F divízii. Teda medzi klubmi je rozdiel 1 ligy. Hrajú jednoduchý priamočiary futbal a tím obohacujú mládežou. Preferujú kontrolu stredového pásma a snažia sa potom vyvíjať tlak cez krídla. Ich kondičná príprava je však slabšia a chýbajú im skúsenosti s vyššími súťažmi 🙌 _
+Martinez obľubuje antuku kvôli svojmu pomalejšiemu štýlu, kde využíva dropshoty a lobiky. Hard je jeho najhorší povrch, na ktorom má blanciu 4-16. Bol zraneny a musel odísť z Gstaadu, nasledne predviedol veľmi zlý vykon proti Struffovi v Kitzbuhelu 🇪🇸 _
 
-* V tomto zápase sú jasným favoritom Vitkovice a verím, že vyhrávajú o 2 a viac gólov. Ešte celkom rozvážne volím handicap len -1.5 * ✅
-
-Dodatok: Handicap -1.5 umožňuje len Nike a Doxxbet. Ostatným teda odporúčam dat čisto na výhru Vitkovic. """
+* Vukic sa pomaly dostáva späť do formy a v tomto zápase bude dominovať. Martineza forma kombinovaná so zranením a povrchom dostatočné dôvody aj na 2:0 * ✅ """
     },
     
     "example_football": {
-        "title": "⚽ Valašské Meziříčí - Hranice",
-        "sport": "Futbal",
-        "tournament": "Český pohár",
-        "time": "18:00",
-        "text": """📊 *ANALÝZA ZÁPASU: Valašské Meziříčí - Hranic*
+        "title": "🎾 B. Čorič - M. Gigante",
+        "sport": "Tenis",
+        "tournament": "ATP Toronto",
+        "time": "23:00",
+        "text": """📊 *ANALÝZA ZÁPASU: B. Čorič - M. Gigante*
 
-Ďalší zápas z Českého pohára, na ktorý sa tiež pozrieme, bude Valašské Medizirící - Hranice ⚽️
+ˇV Toronte ostaneme aj pri ďalšom zápase: Borna Coric - Matteo Gigante 🎾
 
-_Hranice sú momentálne v MSFL po tom, čo minulý tok skončili 2. v E divízii. Na čele s trénerom Romanom Matejkom volia disciplinovanú obranu a rýchle protiútoky. K ich výhode prispieva aj kondícia pripravenosť 🙌
+_ Gigante (ATP 125) má solídny baseline štýl a trpezlivo si buduje svoju pozíciu a čas na zakončenie. Zároveň je o niečo mladší, takže aj jeho kondička je na tom lepšie. Na tvrdom povrchu má pozitívnu bilanciu 7:4 (narozdiel od Corica) 🇮🇹
 
-Valašské Medzirici sa momentálne nachádza v F divízii, čiže v nižšej lige českého futbalu. Minulý rok skončili 4 miesta pod Hranicami, čiže rozdiel v kvalite nie je až tak enormný. V ich vedení došlo k nahradeniu trénera Bedricha, čiže aj ich herný štýl prechádza zmenami. Môžeme ale očakávať jednoduchý a kolektívny futbal. Zároveň Medzirici zvykne mat problémy s ofenzívu a zakončením, čo proti kvalitnému súperovi môže byť veľkým problémom 🛡
+Coric (ATP 92) hrá veľmi defenzívne a jeho zápasy smerujú do dlhých výmen, kde je kondícia kľúčová. Má dobrý pohyb a silný obojručný backend, zato však horší forehand. Tvrdý povrch mu teda pochopiteľne nevyhovuje. Zároveň má častejšie zranenia, čo obmedzuje jeho progres. 🇭🇷 _
 
-Z poslednych 5 zápasov, Hranice vyhrala 4 krát a raz sa podarilo Valašskému Medzirici uhrať remízu. _
-
-* Hranice sú v tomto zápase favoritom a verím, že to ukážu aj na ihrisku * ✅ """
+* Gigante ide dneska ukázať svoj mladícky elán spojený s inteligentnou hrou a vyhrať zápas s Coricom * ✅ """
     },
     
 #    "example_basketball": {
@@ -122,18 +118,26 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV*
-• Výherné tikety: 20 ✅
-• Prehraté tikety: 5 ❌
-• Úspešnosť: 80% 
+• Výherné tikety: 23 ✅
+• Prehraté tikety: 6 ❌
+• Úspešnosť: 79.31% 
 
 📈 *FINANČNÉ VÝSLEDKY*
-• Navrátnosť za dané obdobie: 17.11% 
-• Zisk za dané obdobie: +11.36u
-• Investovaná suma: 61.6u
+• Navrátnosť za dané obdobie: 19.94% 
+• Zisk za dané obdobie: +14.48u
+• Investovaná suma: 63.6u
 
-(1u = 250€)
+💰 *CELKOVÝ ZISK V €*
+⏩pri vklade 100€ ZISK 145€
+⏩pri vklade 200€ ZISK 290€
+⏩pri vklade 500€ ZISK 725€
 
-@Smarttipy
+💰 *CELKOVÝ ZISK V KC*
+⏩pri vklade 2500KC ZISK 3625KC
+⏩pri vklade 5000KC ZISK 7250KC
+⏩pri vklade 12500KC ZISK 18125KC
+
+*AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP* 👉 @Smarttipy
  """
 
 def is_admin(user_id):
@@ -395,7 +399,7 @@ def send_ticket_to_channel(match_data=None):
     
     # Caption pre tiket
     caption = (f"🏆 {match_data['team1']} vs {match_data['team2']}\n"
-              f"⚽️ {match_data['tournament']}\n"
+              f"🎾 {match_data['tournament']}\n"
               f"🕘 {match_data['time']}\n\n"
               f"🎯 {match_data['pick']}\n"
               f"💰 Kurz: {match_data['odds']}")
