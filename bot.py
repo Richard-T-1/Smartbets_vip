@@ -137,7 +137,7 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 ⏩pri vklade 5000KC ZISK 10600KC
 ⏩pri vklade 12500KC ZISK 25150KC
 
-*AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP* 👉 @Smarttipy
+💬* [AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP]*(https://t.me/SmartTipy)
  """
 
 def is_admin(user_id):
