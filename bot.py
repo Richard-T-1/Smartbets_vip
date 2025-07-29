@@ -128,14 +128,14 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 • Investovaná suma: 63.6u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 145€
-⏩pri vklade 200€ ZISK 290€
-⏩pri vklade 500€ ZISK 725€
+⏩pri vklade 100€ ZISK 201€
+⏩pri vklade 200€ ZISK 402€
+⏩pri vklade 500€ ZISK 1006€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 3625KC
-⏩pri vklade 5000KC ZISK 7250KC
-⏩pri vklade 12500KC ZISK 18125KC
+⏩pri vklade 2500KC ZISK 5030KC
+⏩pri vklade 5000KC ZISK 10600KC
+⏩pri vklade 12500KC ZISK 25150KC
 
 *AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP* 👉 @Smarttipy
  """
