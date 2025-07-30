@@ -36,16 +36,16 @@ MATCHES = {
         'image': 'Toronto 2.png'  # Názov obrázka pre tento zápas
     },
     
-     "match2": {
-         'team1': 'B. Čorič',
-         'team2': 'M. Gigante',
-         'tournament': 'ATP Toronto',
-         'time': '23.00',
-         'pick': 'Gigante vyhrá - 2',
-         'odds': '2.24 --> 2.01',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-coric-borna-gigante-matteo/7269560/co-sa-tipuje',
-         'image': 'Toronto 1.png'  # Iný obrázok pre tento zápas
-     },
+    # "match2": {
+    #     'team1': 'B. Čorič',
+    #     'team2': 'M. Gigante',
+    #     'tournament': 'ATP Toronto',
+    #     'time': '23.00',
+    #     'pick': 'Gigante vyhrá - 2',
+    #     'odds': '2.24 --> 2.01',
+    #     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-coric-borna-gigante-matteo/7269560/co-sa-tipuje',
+    #     'image': 'Toronto 1.png'  # Iný obrázok pre tento zápas
+    # },
     
     # "match3": {
     #     'team1': 'Real Madrid',
@@ -77,21 +77,23 @@ Martinez obľubuje antuku kvôli svojmu pomalejšiemu štýlu, kde využíva dro
 *Vukic sa pomaly dostáva späť do formy a v tomto zápase bude dominovať. Martineza forma kombinovaná so zranením a povrchom dostatočné dôvody aj na 2:0 * ✅ """
     },
     
-    "example_football": {
-        "title": "🎾 B. Čorič - M. Gigante",
-        "sport": "Tenis",
-        "tournament": "ATP Toronto",
-        "time": "23:00",
-        "text": """📊 *ANALÝZA ZÁPASU: B. Čorič - M. Gigante*
+#    "example_basketball": {
+#        "title": "🏀 Lakers - Warriors",
+#        "sport": "Basketbal", 
+#        "tournament": "NBA",
+#        "time": "04:30",
+#        "text": """📊 *ANALÝZA ZÁPASU: Lakers - Warriors*
 
-V Toronte ostaneme aj pri ďalšom zápase: Borna Coric - Matteo Gigante 🎾
+# Súboj gigantov v Staples Center! 🏟️
 
-_ Gigante (ATP 125) má solídny baseline štýl a trpezlivo si buduje svoju pozíciu a čas na zakončenie. Zároveň je o niečo mladší, takže aj jeho kondička je na tom lepšie. Na tvrdom povrchu má pozitívnu bilanciu 7:4 (narozdiel od Corica) 🇮🇹
+# Lakers sú doma veľmi silní, LeBron a Davis tvoria smrtiacu kombináciu. Russell má domácu formu a Reaves je v životnej forme 💜💛
 
-Coric (ATP 92) hrá veľmi defenzívne a jeho zápasy smerujú do dlhých výmen, kde je kondícia kľúčová. Má dobrý pohyb a silný obojručný backend, zato však horší forehand. Tvrdý povrch mu teda pochopiteľne nevyhovuje. Zároveň má častejšie zranenia, čo obmedzuje jeho progres. 🇭🇷 _
+# Warriors majú problémy vonku, Curry je unavený z dlhej sezóny a Green dostal technické fauly v posledných 3 zápasoch 💙💛
 
-* Gigante ide dneska ukázať svoj mladícky elán spojený s inteligentnou hrou a vyhrať zápas s Coricom * ✅ """
-    },
+# *Tip: Lakers -4.5 handicap - kurz 1.75* ✅
+
+# Alternatíva: Under 225.5 bodov - očakáva sa defenzívny zápas 📈"""
+#    }
     
 #    "example_basketball": {
 #        "title": "🏀 Lakers - Warriors",
@@ -118,24 +120,24 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV*
-• Výherné tikety: 23 ✅
+• Výherné tikety: 28 ✅
 • Prehraté tikety: 6 ❌
-• Úspešnosť: 79.31% 
+• Úspešnosť: 82.35% 
 
 📈 *FINANČNÉ VÝSLEDKY*
-• Navrátnosť za dané obdobie: 19.94% 
-• Zisk za dané obdobie: +14.48u
-• Investovaná suma: 63.6u
+• Navrátnosť za dané obdobie: 26.17% 
+• Zisk za dané obdobie: +21.62u
+• Investovaná suma: 82.6u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 201€
-⏩pri vklade 200€ ZISK 402€
-⏩pri vklade 500€ ZISK 1006€
+⏩pri vklade 100€ ZISK 432€
+⏩pri vklade 200€ ZISK 865€
+⏩pri vklade 500€ ZISK 2162€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 5030KC
-⏩pri vklade 5000KC ZISK 10600KC
-⏩pri vklade 12500KC ZISK 25150KC
+⏩pri vklade 2500KC ZISK 10810KC
+⏩pri vklade 5000KC ZISK 21620KC
+⏩pri vklade 12500KC ZISK 54050KC
 
 💬* [AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP]*(https://t.me/SmartTipy)
  """
