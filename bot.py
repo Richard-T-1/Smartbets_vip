@@ -26,26 +26,26 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'A. Vukic',
-        'team2': 'P. Martinez',
-        'tournament': 'ATP Toronto',
-        'time': '18:10',
-        'pick': ' Vukic vyhrá 2:0 ',
-        'odds': ' 1.95 --> 1.87',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-vukic-aleksandar-martinez-pedro/7269550/co-sa-tipuje',
-        'image': 'Toronto 2.png'  # Názov obrázka pre tento zápas
+        'team1': 'D. Evans',
+        'team2': 'M. Zheng',
+        'tournament': 'ATP Lexington',
+        'time': '16:00',
+        'pick': 'Zheng vyhrá - 2',
+        'odds': '1.90 (Doxxbet)',
+        'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/tenis/challenger/lexington?event=64191878&name=evans-daniel-vs-zheng-michael',
+        'image': 'Evans - Zheng' 
     },
     
-    # "match2": {
-    #     'team1': 'B. Čorič',
-    #     'team2': 'M. Gigante',
-    #     'tournament': 'ATP Toronto',
-    #     'time': '23.00',
-    #     'pick': 'Gigante vyhrá - 2',
-    #     'odds': '2.24 --> 2.01',
-    #     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-coric-borna-gigante-matteo/7269560/co-sa-tipuje',
-    #     'image': 'Toronto 1.png'  # Iný obrázok pre tento zápas
-    # },
+     "match2": {
+         'team1': 'Y. H. Hsu',
+         'team2': 'C. Eubanks',
+         'tournament': 'ATP Lexington',
+         'time': '17:10',
+         'pick': 'Hsu vyhrá - 1',
+         'odds': '1.92',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-hsu-yu-hsiou-eubanks-christopher/7281548/co-sa-tipuje',
+         'image': 'Hsu - Eubanks.png'
+     },
     
     # "match3": {
     #     'team1': 'Real Madrid',
@@ -61,39 +61,43 @@ MATCHES = {
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
-    "A. Vukic_P. Martinez": {
-        "title": "🎾 A. Vukic_P. Martinez",
+    "D. Evans - M. Zheng": {
+        "title": "🎾 D. Evans - M. Zheng",
         "sport": "Tenis",
-        "tournament": "ATP Toronto",
-        "time": "18:10",
-        "text": """📊 *ANALÝZA ZÁPASU: A. Vukic - P. Martinez *
+        "tournament": "ATP Lexington",
+        "time": "16:00",
+        "text": """📊 *ANALÝZA ZÁPASU:  D. Evans - M. Zheng *
 
-Dnes zavítame do 1. kola vyraďovacej časti turnaja v Toronte. Konkrétne hovorím o zápase Aleksandara Vukica (ATP 99) s Pedrom Martinezom (ATP 68).
+Máme tu osemfinále vyraďovacej časti ATP Lexington. Medzi inými si zmerajú sily aj Daniel Evans s mladým americkým talentom - Michaelom Zhengom 🎾
 
-_Vukic bol v najlepšom ATP 48. a tenisu sa venoval už od skorého veku. V tomto roku má momentálne horšiu formu (nie takú zlú ako Martinez). Práve v tomto zápase verím, že svoje nešťastie zlomí. Má silný servis a hrá agresívnym baseline štýlom s výbornými základnými údermi. Tvrdý povrch v Toronte mu teda zvyšuje šance na víťazstvo 🇦🇺
+_Michael Zheng (ATP 444) je 21 ročný agresívny baseline hráč. Do druhého kola postúpil po výhre 2:0 s ATP 275. Má veľmi kvalitné podanie a v prvom zápase na žiadnom druhom podaní neurobil dvojchybu. Jeho nevýhodou je menej skúseností na vyššej úrovni a horšie premieňanie breakpointov. Zato však jeho fyzická stránka mu bude slúžiť ako výhoda 🇺🇸
 
-Martinez obľubuje antuku kvôli svojmu pomalejšiemu štýlu, kde využíva dropshoty a lobiky. Hard je jeho najhorší povrch, na ktorom má blanciu 4-16. Bol zraneny a musel odísť z Gstaadu, nasledne predviedol veľmi zlý vykon proti Struffovi v Kitzbuhelu 🇪🇸 _
+Daniel Evans (ATP 129) je o 14 rokov starší Brit, ktorý je skôr všestranný. Jeho štýl sa dá popísať ako defenzívny baseline, kde používa slice na vynucovanie chýb súperov. Na returne je agresívny, ale zároveň kreatívny. Spolieha sa skôr na herné IQ a zmenu rytmu. Jeho fyzická kondícia je však už horšia a má slabšie aj prvé, aj druhé podanie v porovnaní so Zhengom. Takisto má v tomto roku horšiu bilanciu (dokonca negatívnu: 19-20) 🇬🇧 
 
-*Vukic sa pomaly dostáva späť do formy a v tomto zápase bude dominovať. Martineza forma kombinovaná so zranením a povrchom dostatočné dôvody aj na 2:0 * ✅ """
+Tvrdý povrch vyhovuje skôr Zhengovmu agresívnejšiemu štýlu, čo zväčšuje jeho šance na výhru. _
+
+*Myslím si, že mladý talentovaný Američan v tomto zápase výhodu a jeho rastová tendencia bude pokračovať ✅ *  
+
+Dodatok: Tento zápas je menej predvídateľný, preto odporúčam staviť menšiu sumu ako obvykle"""
+
     },
     
-#    "example_basketball": {
-#        "title": "🏀 Lakers - Warriors",
-#        "sport": "Basketbal", 
-#        "tournament": "NBA",
-#        "time": "04:30",
-#        "text": """📊 *ANALÝZA ZÁPASU: Lakers - Warriors*
+    "example_basketball": {
+        "title": "🎾 J. H. Hsu - C. Eubanks",
+        "sport": "Tenis", 
+        "tournament": "ATP Lexington",
+        "time": "17:10",
+        "text": """📊 *ANALÝZA ZÁPASU: J. H. Hsu - C. Eubanks*
 
-# Súboj gigantov v Staples Center! 🏟️
+V turnaji v Lexingtone zostane, teraz bude fandiť proti Američanovi. V zápase proti sebe nastúpia Yu Hsiou Hsu a Chistopher Eubanks 🎾
 
-# Lakers sú doma veľmi silní, LeBron a Davis tvoria smrtiacu kombináciu. Russell má domácu formu a Reaves je v životnej forme 💜💛
+_Hsu (ATP 217) hrá agresívnym štýlom a je silný na podaní. Hsu je zároveň bávalý juniorský šampión Grand Slamov v 4hre (AO, Wimbledon, US Open 2017). Ďalej mu pomáha, že robí málo 2chýb a neopomenieme ani jeho výbornú formu a skúsenosti, ktoré nadobudol na veľkých turnajoch.
 
-# Warriors majú problémy vonku, Curry je unavený z dlhej sezóny a Green dostal technické fauly v posledných 3 zápasoch 💙💛
+Eubanks (ktorý je mimochodom zároveň tenista aj komentátor) je vysoký Američan, takže už môžeme tušiť, že podanie je jednou z jeho silných stránok. Má takisto kvalitný return a svojim forehandom už potrápil nejedného súpera. Tvrdý povrch mu vyhovuje takisto, ako aj Hsuovi. Eubanks ale výrazne poklesol od svojeho kariérneho maxima (ATP 29) a momentálne nie je v bohvieakej forme. _
 
-# *Tip: Lakers -4.5 handicap - kurz 1.75* ✅
-
-# Alternatíva: Under 225.5 bodov - očakáva sa defenzívny zápas 📈"""
-#    }
+*Eubanksova šanca je, že svojho súpera upodáva. Vo výmenách je Hsu lepší hráč, ako po hernej, tak aj po mentálnej stránke ✅ *  """
+        
+  }
     
 #    "example_basketball": {
 #        "title": "🏀 Lakers - Warriors",
@@ -120,27 +124,26 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV*
-• Výherné tikety: 28 ✅
+• Výherné tikety: 29✅
 • Prehraté tikety: 6 ❌
-• Úspešnosť: 82.35% 
+• Úspešnosť: 82.86% 
 
 📈 *FINANČNÉ VÝSLEDKY*
-• Navrátnosť za dané obdobie: 26.17% 
-• Zisk za dané obdobie: +21.62u
-• Investovaná suma: 82.6u
+• Navrátnosť za dané obdobie: 26.85% 
+• Zisk za dané obdobie: +22.72u
+• Investovaná suma: 84.6u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 432€
-⏩pri vklade 200€ ZISK 865€
-⏩pri vklade 500€ ZISK 2162€
+⏩pri vklade 100€ ZISK 454€
+⏩pri vklade 200€ ZISK 909€
+⏩pri vklade 500€ ZISK 2272€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 10810KC
-⏩pri vklade 5000KC ZISK 21620KC
-⏩pri vklade 12500KC ZISK 54050KC
+⏩pri vklade 2500KC ZISK 11360KC
+⏩pri vklade 5000KC ZISK 22720KC
+⏩pri vklade 12500KC ZISK 56800KC
 
-💬* [AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP]*(https://t.me/SmartTipy)
- """
+💬[*AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP*](https://t.me/SmartTipy)"""
 
 def is_admin(user_id):
     """Kontrola admin práv"""
