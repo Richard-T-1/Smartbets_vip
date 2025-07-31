@@ -33,7 +33,7 @@ MATCHES = {
         'pick': 'Zheng vyhrá - 2',
         'odds': '1.90 (Doxxbet)',
         'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/tenis/challenger/lexington?event=64191878&name=evans-daniel-vs-zheng-michael',
-        'image': 'Evans - Zheng' 
+        'image': 'Evans - Zheng.png' 
     },
     
      "match2": {
