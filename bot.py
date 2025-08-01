@@ -44,7 +44,7 @@ MATCHES = {
          'pick': 'Bencic - 2.5 gemu',
          'odds': '1.96 --> 1.84',
          'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-bencic-belinda-muchova-karolina/7284184',
-         'image': 'Bencic - Muchova.png'
+         'image': 'WTA Montreal 2.png'
      },
     
     # "match3": {
