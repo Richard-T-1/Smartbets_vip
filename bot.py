@@ -26,25 +26,25 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'Frýdek-Místek',
-        'team2': 'Hlučín',
-        'tournament': 'MSFL',
-        'time': '18:00',
-        'pick': 'Frýdek-Místek vyhrá - 1',
-        'odds': '1.61',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-frydek-mistek-hlucin/7271957/co-sa-tipuje',
-        'image': 'MSFL.png' 
+        'team1': 'N. Kelly',
+        'team2': 'F. Dupras',
+        'tournament': 'PFL',
+        'time': '0:40',
+        'pick': 'N. Kelly vyhrá - 1,
+        'odds': '1.62',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-kelly-nathan-dupras-frederik/7252468/co-sa-tipuje',
+        'image': 'PFL – kópia.png' 
     },
     
      "match2": {
-         'team1': 'B. Bencic',
-         'team2': 'K. Muchová',
+         'team1': 'A. Kalinskaya',
+         'team2': 'E. Svitolina',
          'tournament': 'WTA Montreal',
-         'time': '0:05',
-         'pick': 'Bencic -2.5 gemu',
-         'odds': '1.96 --> 1.84',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-bencic-belinda-muchova-karolina/7284184',
-         'image': 'WTA Montral 2.png'
+         'time': '2:00',
+         'pick': 'Svitolina vyhrá - 2',
+         'odds': '1.35',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kalinskaya-anna-svitolina-elina/7284234/co-sa-tipuje',
+         'image': 'Kalinskaya - Svitolina – kópia.png'
      },
     
     # "match3": {
@@ -61,41 +61,41 @@ MATCHES = {
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
-    "Frýdek-Místek - Hlučín": {
-        "title": "⚽️ Frýdek-Místek - Hlučín",
-        "sport": "Futbal",
-        "tournament": "MSFL",
-        "time": "18:00",
-        "text": """📊 *ANALÝZA ZÁPASU:  Frýdek-Místek - Hlučín*
+    "N. Kelly - F. Dupras": {
+        "title": "🥊 N. Kelly - F. Dupras",
+        "sport": "MMA",
+        "tournament": "PFL",
+        "time": "0:40",
+        "text": """📊 *ANALÝZA ZÁPASU:  N. Kelly - F. Dupras*
 
-Začína futbalová sezóna a dnes sa bude hrať MSFL, teda 3. liga českého futbalu. V 1. kole nastúpia proti sebe Frýdek-Místek a Hlučín ⚽️
+Po dlhšom čase nazrieme aj do sveta bojových umení. PFL (Professional Fighters League) je celosvetová organizácia, ktorá je alternatívou UFC, teda tento zápas bude zápas MMA.
 
-_Frýdek-Místek už nejaké roky pôsobí v MSFL, má ofenzívnejší štýl a v hre sú konzistentný. Snažia sa o kontrolu hry a držanie lopty, aby súpera nepustili k veľkým šanciam. Takisto majú nové posily, ktoré obohatia ich futbal. Občas môže mať problémy v obrane.
+_Nathan Kelly je írsky bojovník, ktorý má základ v BJJ (Brazilian Jui-Jitsu) a je bývalým šampiónom vo viacerých organizáciách. Zem je teda jeho silnou stránkou, ale to platí aj o postoji (čomu pomáaha aj rozpätie rúk - 180cm). Potvrdzujú to jeho výhry na KO, ktoré zaznamenal. Jeho oficiálny záznam je 11-4-0, čo je porovnateľné s Duprasom 🇮🇪
 
-Hlučín je kvalitný súper, ale zažili značné zmeny kádra po odchode viacerých hráčov (8 v priebehu mesiaca) a tieto prestupy budú pravdepodobne aj pokračovať. V porovnaní s Frýdkom- Místkom majú horší útok, ale lepšiu obranu.
+Frederik Dupras je menej všestranný Kanaďan s rekordom 8-2-0. Je to najmä grappler s agresívnym štýlom, čo môže byť trochu problém proti Kellymu. V postoji je podstatne horší a jeho dosah je o 7 cm menší, čo mu tiež nehrá do karát. Duprasova jediná šanca je dostať sa na zem do lepšej pozície a tam ukázať svoju expertízu na gilotíny. Ináč mu nedávam šance na výhru 🇨🇦_
 
-V tomto zápase bude Hlučín spoliehať na kvalitnú obranu a rýchlymi protiútokmi sa bude snažiť prekvapiť súpera. Otázne je, či sa mu to podarí. Kurz 1.61 vidím stále ako férový a má svoju hodnotu (aj keď už klesol) ⚖️ _
-
-*Frýdek-Místek je vo výbornej forme a myslím si, že by dnes mal Hlučín zdolať vďaka kvalitnejšiemu futbalu ✅*  """
+*Kelly je všestrannejší bojovník so skúsenosťami aj so silnejšími súpermi. Duprasova jediná zbraň je zem, ale tam je Kelly ako doma. Kurz 1.62 vidím ako dosť štedrý ✅*  """
 
     },
     
     "example_basketball": {
-        "title": "🎾 B. Bencic - K. Muchová",
+        "title": "🎾 A. Kalinskaya - E. Svitolina",
         "sport": "Tenis", 
         "tournament": "WTA Montreal",
-        "time": "0:00",
-        "text": """📊 *ANALÝZA ZÁPASU: B. Bencic - K. Muchová*
+        "time": "2:00",
+        "text": """📊 *ANALÝZA ZÁPASU: A. Kalinskaya - E. Svitolina*
 
-Do ďalšieho kola pavúka (už 16finále) sa prebojovali aj 2 tenistky - Belinda Bencic (ATP 20) a Češka Karolína Muchová (ATP 14) 🎾
+V Montreali ešte ostaneme a nenecháme si ujsť takýto (hlavne pre mužov) atraktívny zápas.
 
-_Belinda sa nedávno vrátila na kurty po materskej dovolenke. Je však pomerne mladá (28 rokov) a teda príchod naspäť nebol až taký náročný. Je to agresívna baselinistka, ktorej určite herné IQ neodišlo ani počas dovolenky. Je schopná skoro prijímať loptičky a ziskať kontrolu nad hrou. Vďaka jej agresívnemu štýlu jej vyhovuje aj tvrdý kurt, na ktorom budú hrať. Je možné, že je v trocha oršej forme a v dlhom zápase sa to môže prejaviť 🇨🇭 
+_Elina Svitolina (WTA 13) je výborná tenistka s výnimočným servisom. Počas svojej kariéry podstúpila zmenu herného štýlu - z defenzívneho na agresívny. Viac splošťuje údery a svoje technické schopnosti. Je komfortná aj pri sieti a v zápasoch využíva svoju fyzičku. Tento rok vyhrala Rouen a je momentálne vo výbornej forme 🇺🇦
 
-Dúfam, že sa na mňa za tento pick bratia Česi nenahnevajú, ale Muchovú vidím ako outsiderku. Mala problémy zo zapästím a ako sa sama vyjadrila, dovoľovalo jej to hrať len rezaný backend. Toto môže byť o to väčší problém proti agresívnej Belinde a tvrdému kurtu. Jej štýl je tzv. old-school - teda hrá všestranne a vie dobre variovať údery. Dnes to vidím tak, že sa bude snažiť rezať údery a vzuživať kreativitu, aby zdolala Bencic 🇨🇿
+Anna Kalinskaya (WTA 31) je takisto nebezpečnou hráčkou vďaka solídny groundstrokom. Hrá takisto agresívnejšie a vyznačuje sa dorbým sevisom. Jej zdravotné problémy a zranenia ju však obmedzujú pri progrese a máva kolísavé výkony. V Montrale už má za sebou aj 3-setové zápasy, ktoré môžu byť namáhavé po kondičnej stránke 🇷🇺
 
-V spoločných zápasoch vedie 2:1 Bencic, aj keď zrovna posledný zápas vyhrala Muchová 2:0. Nebude to teda čisto na jednu bránku, ale Bencic je momentálne na kurte o čosi lepšia  _
+V ich vzájomných zápasoch vedie Svitolina 2:0, čo môže byť aj vďaka jej hernému štýlu, ktorý dobre kontruje Kalinskayu _
 
-* Z vyššie menovaných dôvodov som sa rozhodol dať na Bencic - 2.5 gemu. Avšak kvôli zníženiu kurzu sa už oplatí uvažovať aj o čistej výhre Bencic ✅ *  """
+*Svitoline dnes verím a je racionálne podať ju aj s handicapom -2.5/-3.5 ✅*  
+
+Dodatok: Tento zápas aj s predošlým je možné podľa vkusu dať na 1 tiket """        
         
   }
     
