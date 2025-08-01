@@ -30,7 +30,7 @@ MATCHES = {
         'team2': 'F. Dupras',
         'tournament': 'PFL',
         'time': '0:40',
-        'pick': 'N. Kelly vyhrá - 1,
+        'pick': 'N. Kelly vyhrá - 1',
         'odds': '1.62',
         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-kelly-nathan-dupras-frederik/7252468/co-sa-tipuje',
         'image': 'PFL – kópia.png' 
