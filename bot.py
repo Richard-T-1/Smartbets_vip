@@ -26,25 +26,25 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'D. Evans',
-        'team2': 'M. Zheng',
-        'tournament': 'ATP Lexington',
-        'time': '16:00',
-        'pick': 'Zheng vyhrá - 2',
-        'odds': '1.90 (Doxxbet)',
-        'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/tenis/challenger/lexington?event=64191878&name=evans-daniel-vs-zheng-michael',
-        'image': 'Evans - Zheng.png' 
+        'team1': 'Frýdek-Místek',
+        'team2': 'Hlučín',
+        'tournament': 'MSFL',
+        'time': '18:00',
+        'pick': 'Frýdek-Místek vyhrá - 1',
+        'odds': '1.61',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-frydek-mistek-hlucin/7271957/co-sa-tipuje',
+        'image': 'MSFL.png' 
     },
     
      "match2": {
-         'team1': 'Y. H. Hsu',
-         'team2': 'C. Eubanks',
-         'tournament': 'ATP Lexington',
-         'time': '17:10',
-         'pick': 'Hsu vyhrá - 1',
-         'odds': '1.92',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-hsu-yu-hsiou-eubanks-christopher/7281548/co-sa-tipuje',
-         'image': 'Hsu - Eubanks.png'
+         'team1': 'B. Bencic',
+         'team2': 'K. Muchová',
+         'tournament': 'WTA Montreal',
+         'time': '0:05',
+         'pick': 'Bencic - 2.5 gemu',
+         'odds': '1.96 --> 1.84',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-bencic-belinda-muchova-karolina/7284184',
+         'image': 'Bencic - Muchova.png'
      },
     
     # "match3": {
@@ -55,47 +55,47 @@ MATCHES = {
     #     'pick': 'Real Madrid vyhrá - 1',
     #     'odds': '2.10',
     #     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-real-barcelona/example',
-    #     'image': 'Real - Barcelona.png'  # Ďalší obrázok pre futbal
+    #     'image': 'Real - Barcelona.png'
     # }
 }
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
-    "D. Evans - M. Zheng": {
-        "title": "🎾 D. Evans - M. Zheng",
-        "sport": "Tenis",
-        "tournament": "ATP Lexington",
-        "time": "16:00",
-        "text": """📊 *ANALÝZA ZÁPASU:  D. Evans - M. Zheng *
+    "Frýdek-Místek - Hlučín": {
+        "title": "⚽️ Frýdek-Místek - Hlučín",
+        "sport": "Futbal",
+        "tournament": "MSFL",
+        "time": "18:00",
+        "text": """📊 *ANALÝZA ZÁPASU:  Frýdek-Místek - Hlučín*
 
-Máme tu osemfinále vyraďovacej časti ATP Lexington. Medzi inými si zmerajú sily aj Daniel Evans s mladým americkým talentom - Michaelom Zhengom 🎾
+Začína futbalová sezóna a dnes sa bude hrať MSFL, teda 3. liga českého futbalu. V 1. kole nastúpia proti sebe Frýdek-Místek a Hlučín ⚽️
 
-_Michael Zheng (ATP 444) je 21 ročný agresívny baseline hráč. Do druhého kola postúpil po výhre 2:0 s ATP 275. Má veľmi kvalitné podanie a v prvom zápase na žiadnom druhom podaní neurobil dvojchybu. Jeho nevýhodou je menej skúseností na vyššej úrovni a horšie premieňanie breakpointov. Zato však jeho fyzická stránka mu bude slúžiť ako výhoda 🇺🇸
+_Frýdek-Místek už nejaké roky pôsobí v MSFL, má ofenzívnejší štýl a v hre sú konzistentný. Snažia sa o kontrolu hry a držanie lopty, aby súpera nepustili k veľkým šanciam. Takisto majú nové posily, ktoré obohatia ich futbal. Občas môže mať problémy v obrane.
 
-Daniel Evans (ATP 129) je o 14 rokov starší Brit, ktorý je skôr všestranný. Jeho štýl sa dá popísať ako defenzívny baseline, kde používa slice na vynucovanie chýb súperov. Na returne je agresívny, ale zároveň kreatívny. Spolieha sa skôr na herné IQ a zmenu rytmu. Jeho fyzická kondícia je však už horšia a má slabšie aj prvé, aj druhé podanie v porovnaní so Zhengom. Takisto má v tomto roku horšiu bilanciu (dokonca negatívnu: 19-20) 🇬🇧 
+Hlučín je kvalitný súper, ale zažili značné zmeny kádra po odchode viacerých hráčov (8 v priebehu mesiaca) a tieto prestupy budú pravdepodobne aj pokračovať. V porovnaní s Frýdkom- Místkom majú horší útok, ale lepšiu obranu.
 
-Tvrdý povrch vyhovuje skôr Zhengovmu agresívnejšiemu štýlu, čo zväčšuje jeho šance na výhru. _
+V tomto zápase bude Hlučín spoliehať na kvalitnú obranu a rýchlymi protiútokmi sa bude snažiť prekvapiť súpera. Otázne je, či sa mu to podarí. Kurz 1.61 vidím stále ako férový a má svoju hodnotu (aj keď už klesol) ⚖️ _
 
-*Myslím si, že mladý talentovaný Američan v tomto zápase výhodu a jeho rastová tendencia bude pokračovať ✅ *  
-
-Dodatok: Tento zápas je menej predvídateľný, preto odporúčam staviť menšiu sumu ako obvykle"""
+*Frýdek-Místek je vo výbornej forme a myslím si, že by dnes mal Hlučín zdolať vďaka kvalitnejšiemu futbalu ✅*  """
 
     },
     
     "example_basketball": {
-        "title": "🎾 J. H. Hsu - C. Eubanks",
+        "title": "🎾 B. Bencic - K. Muchová",
         "sport": "Tenis", 
-        "tournament": "ATP Lexington",
-        "time": "17:10",
-        "text": """📊 *ANALÝZA ZÁPASU: J. H. Hsu - C. Eubanks*
+        "tournament": "WTA Montreal",
+        "time": "0:00",
+        "text": """📊 *ANALÝZA ZÁPASU: B. Bencic - K. Muchová*
 
-V turnaji v Lexingtone zostane, teraz bude fandiť proti Američanovi. V zápase proti sebe nastúpia Yu Hsiou Hsu a Chistopher Eubanks 🎾
+Do ďalšieho kola pavúka (už 16finále) sa prebojovali aj 2 tenistky - Belinda Bencic (ATP 20) a Češka Karolína Muchová (ATP 14) 🎾
 
-_Hsu (ATP 217) hrá agresívnym štýlom a je silný na podaní. Hsu je zároveň bávalý juniorský šampión Grand Slamov v 4hre (AO, Wimbledon, US Open 2017). Ďalej mu pomáha, že robí málo 2chýb a neopomenieme ani jeho výbornú formu a skúsenosti, ktoré nadobudol na veľkých turnajoch.
+_Belinda sa nedávno vrátila na kurty po materskej dovolenke. Je však pomerne mladá (28 rokov) a teda príchod naspäť nebol až taký náročný. Je to agresívna baselinistka, ktorej určite herné IQ neodišlo ani počas dovolenky. Je schopná skoro prijímať loptičky a ziskať kontrolu nad hrou. Vďaka jej agresívnemu štýlu jej vyhovuje aj tvrdý kurt, na ktorom budú hrať. Je možné, že je v trocha oršej forme a v dlhom zápase sa to môže prejaviť 🇨🇭 
 
-Eubanks (ktorý je mimochodom zároveň tenista aj komentátor) je vysoký Američan, takže už môžeme tušiť, že podanie je jednou z jeho silných stránok. Má takisto kvalitný return a svojim forehandom už potrápil nejedného súpera. Tvrdý povrch mu vyhovuje takisto, ako aj Hsuovi. Eubanks ale výrazne poklesol od svojeho kariérneho maxima (ATP 29) a momentálne nie je v bohvieakej forme. _
+Dúfam, že sa na mňa za tento pick bratia Česi nenahnevajú, ale Muchovú vidím ako outsiderku. Mala problémy zo zapästím a ako sa sama vyjadrila, dovoľovalo jej to hrať len rezaný backend. Toto môže byť o to väčší problém proti agresívnej Belinde a tvrdému kurtu. Jej štýl je tzv. old-school - teda hrá všestranne a vie dobre variovať údery. Dnes to vidím tak, že sa bude snažiť rezať údery a vzuživať kreativitu, aby zdolala Bencic 🇨🇿
 
-*Eubanksova šanca je, že svojho súpera upodáva. Vo výmenách je Hsu lepší hráč, ako po hernej, tak aj po mentálnej stránke ✅ *  """
+V spoločných zápasoch vedie 2:1 Bencic, aj keď zrovna posledný zápas vyhrala Muchová 2:0. Nebude to teda čisto na jednu bránku, ale Bencic je momentálne na kurte o čosi lepšia  _
+
+* Z vyššie menovaných dôvodov som sa rozhodol dať na Bencic - 2.5 gemu. Avšak kvôli zníženiu kurzu sa už oplatí uvažovať aj o čistej výhre Bencic ✅ *  """
         
   }
     
@@ -124,24 +124,24 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV*
-• Výherné tikety: 29✅
+• Výherné tikety: 31✅
 • Prehraté tikety: 6 ❌
 • Úspešnosť: 82.86% 
 
 📈 *FINANČNÉ VÝSLEDKY*
-• Navrátnosť za dané obdobie: 26.85% 
-• Zisk za dané obdobie: +22.72u
-• Investovaná suma: 84.6u
+• Navrátnosť za dané obdobie: 29,40% 
+• Zisk za dané obdobie: +25,90u
+• Investovaná suma: 83.78u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 454€
-⏩pri vklade 200€ ZISK 909€
-⏩pri vklade 500€ ZISK 2272€
+⏩pri vklade 100€ ZISK 518€
+⏩pri vklade 200€ ZISK 1036€
+⏩pri vklade 500€ ZISK 2590€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 11360KC
-⏩pri vklade 5000KC ZISK 22720KC
-⏩pri vklade 12500KC ZISK 56800KC
+⏩pri vklade 2500KC ZISK 12950KC
+⏩pri vklade 5000KC ZISK 25900KC
+⏩pri vklade 12500KC ZISK 64750KC
 
 💬[*AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP*](https://t.me/SmartTipy)"""
 
@@ -402,14 +402,12 @@ def send_ticket_to_channel(match_data=None):
             print("❌ No matches available")
             return False
     
-    # Caption pre tiket
     caption = (f"🏆 {match_data['team1']} vs {match_data['team2']}\n"
               f"🎾 {match_data['tournament']}\n"
               f"🕘 {match_data['time']}\n\n"
               f"🎯 {match_data['pick']}\n"
               f"💰 Kurz: {match_data['odds']}")
     
-    # Inline keyboard
     keyboard = {
         "inline_keyboard": [
             [{"text": "🎯 STAV TERAZ!", "url": match_data['betting_url']}],
@@ -417,7 +415,6 @@ def send_ticket_to_channel(match_data=None):
         ]
     }
     
-    # Skús poslať obrázok
     if 'image' in match_data and match_data['image']:
         image_path = f"images/{match_data['image']}"
         
