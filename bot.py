@@ -11,7 +11,7 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 
 # Konfigurácia
 BOT_TOKEN = os.environ.get('BOT_TOKEN', '8244776373:AAEBQhyFvtBI2BAbnNZSNLKDO5esd4600WM')
-CHANNEL_ID = os.environ.get('CHANNEL_ID', '-1002827606573')
+CHANNEL_ID = os.environ.get('CHANNEL_ID', '-1002328280528')
 ADMIN_ID = int(os.environ.get('ADMIN_ID', '7626888184'))
 PORT = int(os.environ.get('PORT', 10000))
 WEBHOOK_URL = os.environ.get('WEBHOOK_URL', 'https://vip-tikety.onrender.com')
@@ -41,7 +41,7 @@ MATCHES = {
          'team2': 'K. Muchová',
          'tournament': 'WTA Montreal',
          'time': '0:05',
-         'pick': 'Bencic - 2.5 gemu',
+         'pick': 'Bencic -2.5 gemu',
          'odds': '1.96 --> 1.84',
          'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-bencic-belinda-muchova-karolina/7284184',
          'image': 'WTA Montral 2.png'
