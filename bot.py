@@ -72,7 +72,7 @@ Po dlhšom čase sa pozrieme aj na európsky basketbal. Predkvalifikácia MS 202
 
 _Rakúsko má výrazne lepšie východiskové postavenie, keďže sú momentálne v dobrej forme, čo naznačujú posledné zápasy a Eurobasket (kde skončili na čele tabuľky). V nedávnych prípravných zápasoch so Slovenskom ukázali svoju kvalitu - v Bratislave síce prehrali 51:73, ale vo Viedni dokázali zvíťaziť 74:71. Tréner Vidin o nich povedal: "V druhom stretnutí to už bolo trochu lepšie", čo naznačuje progres a schopnosť adaptácie. Majú disciplinovanejší prístup a lepšiu organizáciu hry 🇦🇹
 
-Holandsko je tím, ktorý sa dostal do tejto kvalifikácie MS 2025. Pred týmto bol neúspešných tímom na EuroBasket 2025. V kvalifikácii boli v skupine F s Českom, Gréckom a Veľkou Britániou, kde ich Česko zdolalo výsledkom 96:74 a skončili na poslednom mieste tabuľky. Toto naznačuje problémy v obrane a celkovo slabšie výkony proti kvalitnejším európskym tímom. Ich basketbalový program nie je na najvyššej európskej úrovni 🇳🇱
+Holandsko je tím, ktorý sa dostal do tejto kvalifikácie MS 2025. Pred týmto bol neúspešných tímom na EuroBasket 2025. V kvalifikácii boli v skupine F s Českom, Gréckom a Veľkou Britániou, kde ich Česko zdolalo výsledkom 96:74 a skončili na poslednom mieste tabuľky. Toto naznačuje problémy v obrane a celkovo slabšie výkony proti kvalitnejším európskym tímom. Ich basketbalový program nie je na najvyššej európskej úrovni_ 🇳🇱
 
 *Tento zápas je každopádne vyrovnaný a handicap +5.5 vidím ako rozumnú voľbu. Odporúčam staviť 1/1.5u ✅*  """
 
