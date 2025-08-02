@@ -26,26 +26,26 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'N. Kelly',
-        'team2': 'F. Dupras',
-        'tournament': 'PFL',
-        'time': '0:40',
-        'pick': 'N. Kelly vyhrá - 1',
-        'odds': '1.62',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-kelly-nathan-dupras-frederik/7252468/co-sa-tipuje',
-        'image': 'PFL – kópia.png' 
+        'team1': 'Holandsko',
+        'team2': 'Rakúsko',
+        'tournament': 'MS - kvalifikácia',
+        'time': '14:30',
+        'pick': 'Rakúsko +5.5',
+        'odds': '1.51',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/basketbal-holandsko-rakusko/7013698/co-sa-tipuje',
+        'image': 'Kvalifikacia.png' 
     },
     
-     "match2": {
-         'team1': 'A. Kalinskaya',
-         'team2': 'E. Svitolina',
-         'tournament': 'WTA Montreal',
-         'time': '2:00',
-         'pick': 'Svitolina vyhrá - 2',
-         'odds': '1.35',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kalinskaya-anna-svitolina-elina/7284234/co-sa-tipuje',
-         'image': 'Kalinskaya - Svitolina – kópia.png'
-     },
+   #  "match2": {
+   #      'team1': 'A. Kalinskaya',
+   #      'team2': 'E. Svitolina',
+   #      'tournament': 'WTA Montreal',
+   #      'time': '2:00',
+   #      'pick': 'Svitolina vyhrá - 2',
+   #      'odds': '1.35',
+   #      'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kalinskaya-anna-svitolina-elina/7284234/co-sa-tipuje',
+   #      'image': 'Kalinskaya - Svitolina – kópia.png'
+   #xx  },
     
     # "match3": {
     #     'team1': 'Real Madrid',
@@ -61,43 +61,43 @@ MATCHES = {
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
-    "N. Kelly - F. Dupras": {
-        "title": "🥊 N. Kelly - F. Dupras",
-        "sport": "MMA",
-        "tournament": "PFL",
-        "time": "0:40",
-        "text": """📊 *ANALÝZA ZÁPASU:  N. Kelly - F. Dupras*
+    "Holandsko - Rakúsko": {
+        "title": "🥊 Holandsko - Rakúsko",
+        "sport": "Basketbal",
+        "tournament": "MS - kvalifikácia",
+        "time": "14:30",
+        "text": """📊 *ANALÝZA ZÁPASU:  Holandsko - Rakúsko*
 
-Po dlhšom čase nazrieme aj do sveta bojových umení. PFL (Professional Fighters League) je celosvetová organizácia, ktorá je alternatívou UFC, teda tento zápas bude zápas MMA.
+Po dlhšom čase sa pozrieme aj na európsky basketbal. Predkvalifikácia MS 2027 pokračuje a v skupine C sa stretávajú dva tímy bojujúce o postupové miesta do hlavnej kvalifikácie.
 
-_Nathan Kelly je írsky bojovník, ktorý má základ v BJJ (Brazilian Jui-Jitsu) a je bývalým šampiónom vo viacerých organizáciách. Zem je teda jeho silnou stránkou, ale to platí aj o postoji (čomu pomáaha aj rozpätie rúk - 180cm). Potvrdzujú to jeho výhry na KO, ktoré zaznamenal. Jeho oficiálny záznam je 11-4-0, čo je porovnateľné s Duprasom 🇮🇪
+_Rakúsko má výrazne lepšie východiskové postavenie, keďže sú momentálne v dobrej forme, čo naznačujú posledné zápasy a Eurobasket (kde skončili na čele tabuľky). V nedávnych prípravných zápasoch so Slovenskom ukázali svoju kvalitu - v Bratislave síce prehrali 51:73, ale vo Viedni dokázali zvíťaziť 74:71. Tréner Vidin o nich povedal: "V druhom stretnutí to už bolo trochu lepšie", čo naznačuje progres a schopnosť adaptácie. Majú disciplinovanejší prístup a lepšiu organizáciu hry 🇦🇹
 
-Frederik Dupras je menej všestranný Kanaďan s rekordom 8-2-0. Je to najmä grappler s agresívnym štýlom, čo môže byť trochu problém proti Kellymu. V postoji je podstatne horší a jeho dosah je o 7 cm menší, čo mu tiež nehrá do karát. Duprasova jediná šanca je dostať sa na zem do lepšej pozície a tam ukázať svoju expertízu na gilotíny. Ináč mu nedávam šance na výhru 🇨🇦_
+Holandsko je tím, ktorý sa dostal do tejto kvalifikácie MS 2025. Pred týmto bol neúspešných tímom na EuroBasket 2025. V kvalifikácii boli v skupine F s Českom, Gréckom a Veľkou Britániou, kde ich Česko zdolalo výsledkom 96:74 a skončili na poslednom mieste tabuľky. Toto naznačuje problémy v obrane a celkovo slabšie výkony proti kvalitnejším európskym tímom. Ich basketbalový program nie je na najvyššej európskej úrovni 🇳🇱
 
-*Kelly je všestrannejší bojovník so skúsenosťami aj so silnejšími súpermi. Duprasova jediná zbraň je zem, ale tam je Kelly ako doma. Kurz 1.62 vidím ako dosť štedrý ✅*  """
+*Tento zápas je každopádne vyrovnaný a handicap +5.5 vidím ako rozumnú voľbu. Odporúčam staviť 1/1.5u ✅*  """
 
     },
     
-    "example_basketball": {
-        "title": "🎾 A. Kalinskaya - E. Svitolina",
-        "sport": "Tenis", 
-        "tournament": "WTA Montreal",
-        "time": "2:00",
-        "text": """📊 *ANALÝZA ZÁPASU: A. Kalinskaya - E. Svitolina*
+#    "example_basketball": {
+#        "title": "🎾 A. Kalinskaya - E. Svitolina",
+#        "sport": "Tenis", 
+#        "tournament": "WTA Montreal",
+#        "time": "2:00",
+#        "text": """📊 *ANALÝZA ZÁPASU: A. Kalinskaya - E. Svitolina*
 
-V Montreali ešte ostaneme a nenecháme si ujsť takýto (hlavne pre mužov) atraktívny zápas.
+# V Montreali ešte ostaneme a nenecháme si ujsť takýto (hlavne pre mužov) atraktívny zápas.
 
-_Elina Svitolina (WTA 13) je výborná tenistka s výnimočným servisom. Počas svojej kariéry podstúpila zmenu herného štýlu - z defenzívneho na agresívny. Viac splošťuje údery a svoje technické schopnosti. Je komfortná aj pri sieti a v zápasoch využíva svoju fyzičku. Tento rok vyhrala Rouen a je momentálne vo výbornej forme 🇺🇦
+# _Elina Svitolina (WTA 13) je výborná tenistka s výnimočným servisom. Počas svojej kariéry podstúpila zmenu herného štýlu - z defenzívneho na agresívny. Viac splošťuje údery a svoje technické schopnosti. Je komfortná aj pri sieti a v zápasoch využíva svoju fyzičku. Tento rok vyhrala Rouen a je momentálne vo výbornej forme 🇺🇦
 
-Anna Kalinskaya (WTA 31) je takisto nebezpečnou hráčkou vďaka solídny groundstrokom. Hrá takisto agresívnejšie a vyznačuje sa dorbým sevisom. Jej zdravotné problémy a zranenia ju však obmedzujú pri progrese a máva kolísavé výkony. V Montrale už má za sebou aj 3-setové zápasy, ktoré môžu byť namáhavé po kondičnej stránke 🇷🇺
+# Anna Kalinskaya (WTA 31) je takisto nebezpečnou hráčkou vďaka solídny groundstrokom. Hrá takisto agresívnejšie a vyznačuje sa dorbým sevisom. Jej zdravotné problémy a zranenia ju však obmedzujú pri progrese a máva kolísavé výkony. V Montrale už má za sebou aj 3-setové zápasy, ktoré môžu byť namáhavé po kondičnej stránke 🇷🇺
 
-V ich vzájomných zápasoch vedie Svitolina 2:0, čo môže byť aj vďaka jej hernému štýlu, ktorý dobre kontruje Kalinskayu _
+# V ich vzájomných zápasoch vedie Svitolina 2:0, čo môže byť aj vďaka jej hernému štýlu, ktorý dobre kontruje Kalinskayu _
 
-*Svitoline dnes verím a je racionálne podať ju aj s handicapom -2.5/-3.5 ✅*  
+# *Svitoline dnes verím a je racionálne podať ju aj s handicapom -2.5/-3.5 ✅*  
 
-Dodatok: Tento zápas aj s predošlým je možné podľa vkusu dať na 1 tiket """        
+# Dodatok: Tento zápas aj s predošlým je možné podľa vkusu dať na 1 tiket """        
         
-  }
+#  }
     
 #    "example_basketball": {
 #        "title": "🏀 Lakers - Warriors",
@@ -124,26 +124,25 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV*
-• Výherné tikety: 31✅
-• Prehraté tikety: 6 ❌
-• Úspešnosť: 82.86% 
+• Výherné tikety: 32✅
+• Prehraté tikety: 8 ❌
+• Úspešnosť: 80% 
 
 📈 *FINANČNÉ VÝSLEDKY*
-• Navrátnosť za dané obdobie: 29,40% 
-• Zisk za dané obdobie: +25,90u
-• Investovaná suma: 83.78u
+• Navrátnosť za dané obdobie: 25.91% 
+• Zisk za dané obdobie: +24.12u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 518€
-⏩pri vklade 200€ ZISK 1036€
-⏩pri vklade 500€ ZISK 2590€
+⏩pri vklade 100€ ZISK 482€
+⏩pri vklade 200€ ZISK 964€
+⏩pri vklade 500€ ZISK 2412€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 12950KC
-⏩pri vklade 5000KC ZISK 25900KC
-⏩pri vklade 12500KC ZISK 64750KC
+⏩pri vklade 2500KC ZISK 12060KC
+⏩pri vklade 5000KC ZISK 24120KC
+⏩pri vklade 12500KC ZISK 60300KC
 
-💬[*AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP*](https://t.me/SmartTipy)"""
+💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
 def is_admin(user_id):
     """Kontrola admin práv"""
