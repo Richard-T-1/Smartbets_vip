@@ -36,16 +36,16 @@ MATCHES = {
         'image': 'Kvalifikacia.png' 
     },
     
-   #  "match2": {
-   #      'team1': 'A. Kalinskaya',
-   #      'team2': 'E. Svitolina',
-   #      'tournament': 'WTA Montreal',
-   #      'time': '2:00',
-   #      'pick': 'Svitolina vyhrá - 2',
-   #      'odds': '1.35',
-   #      'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kalinskaya-anna-svitolina-elina/7284234/co-sa-tipuje',
-   #      'image': 'Kalinskaya - Svitolina – kópia.png'
-   #xx  },
+     "match2": {
+         'team1': 'Westerlo',
+         'team2': 'Waregen',
+         'tournament': '1. BL liga',
+         'time': '16:00',
+         'pick': 'Žlté karty - menej ako 4.5',
+         'odds': '1.51',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-westerlo-waregem/7199314',
+         'image': 'BL liga.png'
+     },
     
     # "match3": {
     #     'team1': 'Real Madrid',
@@ -62,7 +62,7 @@ MATCHES = {
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
     "Holandsko - Rakúsko": {
-        "title": "🥊 Holandsko - Rakúsko",
+        "title": "🏀 Holandsko - Rakúsko",
         "sport": "Basketbal",
         "tournament": "MS - kvalifikácia",
         "time": "14:30",
@@ -78,26 +78,26 @@ Holandsko je tím, ktorý sa dostal do tejto kvalifikácie MS 2025. Pred týmto 
 
     },
     
-#    "example_basketball": {
-#        "title": "🎾 A. Kalinskaya - E. Svitolina",
-#        "sport": "Tenis", 
-#        "tournament": "WTA Montreal",
-#        "time": "2:00",
-#        "text": """📊 *ANALÝZA ZÁPASU: A. Kalinskaya - E. Svitolina*
+    "example_basketball": {
+        "title": "⚽️ Westerlo - Waregen",
+        "sport": "Futbal", 
+        "tournament": "1. BL liga",
+        "time": "16:00",
+        "text": """📊 *ANALÝZA ZÁPASU: Westerlo - Warege*
 
-# V Montreali ešte ostaneme a nenecháme si ujsť takýto (hlavne pre mužov) atraktívny zápas.
+Doplnkový zápas bude z prostredia belgického futbalu. Druhé kolo Pro League pokračuje a v dnešnom zápase sa stretávajú dva tímy bojujúce o stabilizáciu po nevydarenom úvode sezóny.
 
-# _Elina Svitolina (WTA 13) je výborná tenistka s výnimočným servisom. Počas svojej kariéry podstúpila zmenu herného štýlu - z defenzívneho na agresívny. Viac splošťuje údery a svoje technické schopnosti. Je komfortná aj pri sieti a v zápasoch využíva svoju fyzičku. Tento rok vyhrala Rouen a je momentálne vo výbornej forme 🇺🇦
+_Westerlo síce má povesť agresívnejšieho tímu, ale domáce štatistiky hovoria inak. V posledných 10 domácich zápasoch majú priemer len 1.4 žltých kariet, čo je výrazne pod ich celosezonným priemerom 2.29. Na domácej pôde Het Kuipje hrajú kontrolovanejšie a menej impulzívne. Navyše po debakli 2:5 s Anderlechtom sa určite sústredia na disciplinovanú hru bez zbytočných riskovaných zákrokov. Druhé kolo sezóny navyše znamená, že rozhodcovia ešte nie sú tak prísni ako v neskorších fázach. Zároveň je na poslednom mieste tbauľky, teda sa budú snažiť vyhýbať zbytočným faulom a vylúčeniam.
 
-# Anna Kalinskaya (WTA 31) je takisto nebezpečnou hráčkou vďaka solídny groundstrokom. Hrá takisto agresívnejšie a vyznačuje sa dorbým sevisom. Jej zdravotné problémy a zranenia ju však obmedzujú pri progrese a máva kolísavé výkony. V Montrale už má za sebou aj 3-setové zápasy, ktoré môžu byť namáhavé po kondičnej stránke 🇷🇺
+Zulte Waregem je klub, ktorý hrá takisto disciplinovaný futbal. Ich štýl hry je postavený na technickom futbale, presných pasoch a vyhýbaní sa konfrontáciám. Sú na 9. mieste tabuľky po remíze v prvom kole a neočakávame u nich agresívnu hru vzhľadom na ich psychológiu.
 
-# V ich vzájomných zápasoch vedie Svitolina 2:0, čo môže byť aj vďaka jej hernému štýlu, ktorý dobre kontruje Kalinskayu _
+Najdôležitejšie sú však historické údaje medzi týmito tímami. Z 29 vzájomných zápasov je priemer len 2 žlté karty na zápas, čo je takmer polovica hranice 4.5. Dokonca aj na domácej pôde Westerlo je priemer len 3 karty celkovo. _
 
-# *Svitoline dnes verím a je racionálne podať ju aj s handicapom -2.5/-3.5 ✅*  
+*Tieto čísla jasne ukazujú, že sa tímy "poznajú" a vytvárajú pokojné zápasy bez veľkých emócií. S takýmito štatistikami je tip pod 4.5 žltých kariet takmer istotou ✅
 
-# Dodatok: Tento zápas aj s predošlým je možné podľa vkusu dať na 1 tiket """        
+Dodatok: Pri tomto zápase som rozmýšľal aj pod 3.5 žltej karty 🟨"""        
         
-#  }
+ }
     
 #    "example_basketball": {
 #        "title": "🏀 Lakers - Warriors",
@@ -402,7 +402,7 @@ def send_ticket_to_channel(match_data=None):
             return False
     
     caption = (f"🏆 {match_data['team1']} vs {match_data['team2']}\n"
-              f"🎾 {match_data['tournament']}\n"
+              f"⚽️ {match_data['tournament']}\n"
               f"🕘 {match_data['time']}\n\n"
               f"🎯 {match_data['pick']}\n"
               f"💰 Kurz: {match_data['odds']}")
