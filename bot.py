@@ -44,7 +44,7 @@ MATCHES = {
          'pick': 'Ordabasy vyhrá - 1',
          'odds': '1.32',
          'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-ordabasy-atyrau/6849513/co-sa-tipuje',
-         'image': '1. KZ liga.png'
+         'image': '1. KZ.png'
      },
     
      "match3": {
@@ -55,7 +55,7 @@ MATCHES = {
          'pick': 'Menej ako 3 góly v zápase',
          'odds': '1.39',
          'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-dfk-dainava-suduva-marijampole/7199601/co-sa-tipuje',
-         'image': '1. LT liga.png'
+         'image': '1. LT.png'
      }
 }
 
