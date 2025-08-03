@@ -55,7 +55,7 @@ MATCHES = {
          'pick': 'Menej ako 3 góly v zápase',
          'odds': '1.39',
          'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-dfk-dainava-suduva-marijampole/7199601/co-sa-tipuje',
-         'image': '1. LT liga'
+         'image': '1. LT liga.png'
      }
 }
 
