@@ -26,96 +26,89 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'Holandsko',
-        'team2': 'Rakúsko',
-        'tournament': 'MS - kvalifikácia',
-        'time': '14:30',
-        'pick': 'Rakúsko +5.5',
-        'odds': '1.51',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/basketbal-holandsko-rakusko/7013698/co-sa-tipuje',
-        'image': 'Kvalifikacia.png' 
+        'team1': 'Francúzsko ž U20',
+        'team2': 'Slovinsko ž U20',
+        'tournament': 'ME div. A',
+        'time': '16:30',
+        'pick': 'Slovinsko +17.5',
+        'odds': '1.75',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/basketbal-francuzsko-z-u20-slovinsko-z-u20/7278830',
+        'image': 'FR - SL.png' 
     },
     
      "match2": {
-         'team1': 'Westerlo',
-         'team2': 'Waregen',
-         'tournament': '1. BL liga',
-         'time': '16:00',
-         'pick': 'Žlté karty - menej ako 4.5',
-         'odds': '1.51',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-westerlo-waregem/7199314',
-         'image': 'BL liga.png'
+         'team1': 'Ordabasy',
+         'team2': 'Atyrau',
+         'tournament': '1. KZ liga',
+         'time': '17:00',
+         'pick': 'Oradabasy vyhrá - 1',
+         'odds': '1.32',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-ordabasy-atyrau/6849513/co-sa-tipuje',
+         'image': '1. KZ liga.png'
      },
     
-    # "match3": {
-    #     'team1': 'Real Madrid',
-    #     'team2': 'FC Barcelona', 
-    #     'tournament': 'La Liga',
-    #     'time': '20.00',
-    #     'pick': 'Real Madrid vyhrá - 1',
-    #     'odds': '2.10',
-    #     'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-real-barcelona/example',
-    #     'image': 'Real - Barcelona.png'
-    # }
+     "match3": {
+         'team1': 'DFK Dainava',
+         'team2': 'Suduva Marijampole', 
+         'tournament': '1. LT liga',
+         'time': '17:25',
+         'pick': 'Menej ako 3 góly v zápase',
+         'odds': '1.39',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-dfk-dainava-suduva-marijampole/7199601/co-sa-tipuje',
+         'image': '1. LT liga'
+     }
 }
 
 # Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
     "Holandsko - Rakúsko": {
-        "title": "🏀 Holandsko - Rakúsko",
-        "sport": "Basketbal",
-        "tournament": "MS - kvalifikácia",
-        "time": "14:30",
-        "text": """📊 *ANALÝZA ZÁPASU:  Holandsko - Rakúsko*
+        "title": "🏀 Francúzsko ž - Slovinsko ž",
+        "text": """📊 *ANALÝZA ZÁPASU:  Francúzsko ž - Slovinsko ž*
 
-Po dlhšom čase sa pozrieme aj na európsky basketbal. Predkvalifikácia MS 2027 pokračuje a v skupine C sa stretávajú dva tímy bojujúce o postupové miesta do hlavnej kvalifikácie.
+Dnes nazrieme aj do ženského basketbalu U20. FIBA U20 Women's EuroBasket 2025 prebieha v Portugalsku a ponúka zaujímavé stávkové príležitosti 🏀
 
-_Rakúsko má výrazne lepšie východiskové postavenie, keďže sú momentálne v dobrej forme, čo naznačujú posledné zápasy a Eurobasket (kde skončili na čele tabuľky). V nedávnych prípravných zápasoch so Slovenskom ukázali svoju kvalitu - v Bratislave síce prehrali 51:73, ale vo Viedni dokázali zvíťaziť 74:71. Tréner Vidin o nich povedal: "V druhom stretnutí to už bolo trochu lepšie", čo naznačuje progres a schopnosť adaptácie. Majú disciplinovanejší prístup a lepšiu organizáciu hry 🇦🇹
+_Slovinky do 20 rokov tvoria tím, ktorý momentálne predvádza vynikajúcu formu. Ich nedávne výsledky to naznačujú - víťazstvo 84:75 nad Nemeckom a prekvapivé víťazstvo 77:75 nad Španielskom (minulý rok získalo striebro) dokazujú konkurencieschopnosť proti top európskym tímom. Ich herný štýl je založený na rýchlom, útočnom basketbale s dôrazom na kolektívny prístup. Kľúčové hráčky ako Sara Sambolic, Nina Stavrov a Ana Vita Micunovic tvoria vyvážený káder. Silnou stránkou je ich momentálna forma a bojovnosť - dokážu prekvapovať favorizovaných súperov. Ako outsider nemajú tlak očakávaní a môžu hrať uvoľnene. Ich slabšou stránkou sú menšie skúsenosti z veľkých turnajov oproti etablovaným tímom 🇸🇮 
 
-Holandsko je tím, ktorý sa dostal do tejto kvalifikácie MS 2025. Pred týmto bol neúspešných tímom na EuroBasket 2025. V kvalifikácii boli v skupine F s Českom, Gréckom a Veľkou Britániou, kde ich Česko zdolalo výsledkom 96:74 a skončili na poslednom mieste tabuľky. Toto naznačuje problémy v obrane a celkovo slabšie výkony proti kvalitnejším európskym tímom. Ich basketbalový program nie je na najvyššej európskej úrovni_ 🇳🇱
+Francúzky sú obhajcami titulu z minulého roku, kde vyhrali finále 83:75 nad Španielskom. Ich herný štýl je založený na kontrole tempa, disciplinovanej obrane a taktickej vyspelosti. Posledný zápas vyhrali 91:50 nad Portugalskom, čo potvrdzuje ich kvalitu. Silnou stránkou sú bohaté turnajové skúsenosti a vysoká individuálna kvalita hráčok. Majú vynikajúcu taktickú pripravenosť a schopnosť kontrolovať tempo zápasu. Slabšou stránkou môže byť tlak očakávaní ako obhajca titulu a možné podcenenie súpera. Historicky mali s týmto súperom vyrovnané zápasy, čo však nie je až tak relevantné pri mládežníckom športe_ 🇫🇷
 
-*Tento zápas je každopádne vyrovnaný a handicap +5.5 vidím ako rozumnú voľbu. Odporúčam staviť 1/1.5u ✅*  """
+*Handicap +17,5 pre Slovinsko vidím ako veľmi atraktívny. Slovinsko je v skvelej forme a dokázalo prekonať kvalitných súperov. Samozrejme Franúzky sú veľmi kvalitné súperky a preto odporúčam dať na tento tip 1, max 1.5u ✅* 
+
+Alternatíva: Trocha rizikovejšie je hrať Slovinsko +15.5 v kurze 1.96, ale kto má chuť, kľudne može skúsiť. V tomto prípade odporúčam staviť 0.5-1u """
 
     },
     
     "example_basketball": {
-        "title": "⚽️ Westerlo - Waregen",
-        "sport": "Futbal", 
-        "tournament": "1. BL liga",
-        "time": "16:00",
-        "text": """📊 *ANALÝZA ZÁPASU: Westerlo - Warege*
+        "title": "⚽️ Dainava - Suduva Marijampole",
+        "text": """📊 *ANALÝZA ZÁPASU: Dainava - Suduva Marijampole*
 
-Doplnkový zápas bude z prostredia belgického futbalu. Druhé kolo Pro League pokračuje a v dnešnom zápase sa stretávajú dva tímy bojujúce o stabilizáciu po nevydarenom úvode sezóny.
+Pri ďalšom zápase prejdeme k futbalu a to do 1. kazašskej ligy. Kazakhstan Premier League ponúka zaujímavé stávkové príležitosti a toto je jedna z nich vďaka 2 tímom z úplne rozdielnou formou.
 
-_Westerlo síce má povesť agresívnejšieho tímu, ale domáce štatistiky hovoria inak. V posledných 10 domácich zápasoch majú priemer len 1.4 žltých kariet, čo je výrazne pod ich celosezonným priemerom 2.29. Na domácej pôde Het Kuipje hrajú kontrolovanejšie a menej impulzívne. Navyše po debakli 2:5 s Anderlechtom sa určite sústredia na disciplinovanú hru bez zbytočných riskovaných zákrokov. Druhé kolo sezóny navyše znamená, že rozhodcovia ešte nie sú tak prísni ako v neskorších fázach. Zároveň je na poslednom mieste tbauľky, teda sa budú snažiť vyhýbať zbytočným faulom a vylúčeniam.
+_DFK Dainava Alytus prežíva najhoršiu sezónu v novodobej histórii klubu. Nachádzajú sa na poslednom 10. mieste A Lygy s katastrofálnou bilanciou 2 víťazstvá, 4 remízy a 16 prehier z 11 odohraných zápasov. Ich herný štýl je tradične defenzívne ladený, ale v aktuálnej sezóne zlyhávajú vo všetkých herných činnostiach. Najlepšími strelcami sú Krystian Okoniewski a Artem Baftalovskiy, no fólov na ich konte nie je vôbec veľa. Teoretickou silnou stránkou by mala byť domáca pôda v Alytuse, ale ani tam nedokážu bodovať. Najväčšou slabou stránkou je ich aktuálna forma - prehrali posledné 4 zápasy s katastrofálnymi výsledkami: 0:3 s FK Panevezys, 1:3 s FA Siauliai, 0:2 s Dziugas Telsiai a 0:3 s FK Kauno Žalgiris. Alarmujúce je, že nevedeli skórovať v 3 z nich, čo signalizuje úplný kolaps ofenzívnych schopností.
 
-Zulte Waregem je klub, ktorý hrá takisto disciplinovaný futbal. Ich štýl hry je postavený na technickom futbale, presných pasoch a vyhýbaní sa konfrontáciám. Sú na 9. mieste tabuľky po remíze v prvom kole a neočakávame u nich agresívnu hru vzhľadom na ich psychológiu.
+FK Suduva Marijampole prešla dramatickou zmenou na konci roku 2024. Po katastrofálnej sezóne 2024, kde tesne unikli zostupu, klub uskutočnil zásadné zmeny. Tréner - Dovydas Lastauskas sa presunul z pozície trénera na post klubového direktora a 21. decembra 2024 bol menovaný nový hlavný tréner Donatas Vencevičius. Tento 51-ročný skúsený tréner už Suduvu viedol v rokoch 2010 a doviedol ju k vicemajstrovskému titulu. Ich herný štýl pod novým vedením využíva formáciu 4-4-2 s dôrazom na kolektívny futbal a taktickú disciplínu. Silnou stránkou je ich stabilita a kvalita kádra s hráčmi ako Steve Lawson a Sidy Sanokho. Slabšou stránkou je relatívne nízka gólová produktivita - v sezóne 2024 dali najmenej gólov v lige. Navyše u nich pretrvávajú finančné problémy od roku 2019, keď stratili hlavného sponzora ARVI Group, čo spôsobuje horšiu mentalitu a nábor hráčov tímu.
 
-Najdôležitejšie sú však historické údaje medzi týmito tímami. Z 29 vzájomných zápasov je priemer len 2 žlté karty na zápas, čo je takmer polovica hranice 4.5. Dokonca aj na domácej pôde Westerlo je priemer len 3 karty celkovo. _
+V rámci ich pravidelných spoločných zápasov padlo viac gólov ako 3 v 2021. Toto bolo 16 zápasov dozadu 💰 _
 
-*Tieto čísla jasne ukazujú, že sa tímy "poznajú" a vytvárajú pokojné zápasy bez veľkých emócií. S takýmito štatistikami je tip pod 4.5 žltých kariet takmer istotou ✅
+*To, že padne menej ako 3 góly vidím až veľmi reálne a čakám, že sa slabší útok a klubové problémy pretavia do "nudnejšieho zápasu" * ✅
 
-Dodatok: Pri tomto zápase som rozmýšľal aj pod 3.5 žltej karty 🟨"""        
+Dodatok: Pri spojení týchto 2 futbalových zápasov na 1 tikete odporúčam staviť 1.5-2u. Týmto tipom plne dôverujem. """               
         
  }
     
-#    "example_basketball": {
-#        "title": "🏀 Lakers - Warriors",
-#        "sport": "Basketbal", 
-#        "tournament": "NBA",
-#        "time": "04:30",
-#        "text": """📊 *ANALÝZA ZÁPASU: Lakers - Warriors*
+    "example_basketball": {
+        "title": "⚽️  Ordabasy - Atyrau",
+        "text": """📊 *ANALÝZA ZÁPASU:  Ordabasy - Atyrau*
 
-# Súboj gigantov v Staples Center! 🏟️
+Po návrate k európskemu futbalu sa zameriame aj na litovskú A Lygu. 
 
-# Lakers sú doma veľmi silní, LeBron a Davis tvoria smrtiacu kombináciu. Russell má domácu formu a Reaves je v životnej forme 💜💛
+_Ordabasy je tím, ktorý sa v tejto sezóne nachádza v strede tabuľky na 7. mieste s priemernou formou. Ich herný štýl je založený na vyváženej hre s dôrazom na domáce prostredie, kde majú slušnú bilanciu. Silnou stránkou je ich domáca forma a solídna defenzíva - majú 6 čistých kont v sezóne, čo je vynikajúci výsledok. Používajú formáciu 4-3-3 a majú 71% úspešnosť udržania náskoku, čo svedčí o mentálnej stabilite. Najlepšími strelcami sú Everton Moraes s 4 gólmi a Sergey Maliy s 3 gólmi. Slabšou stránkou sú ich vonkajšie výkony, čo však nie je tak podstatné 🏆
 
-# Warriors majú problémy vonku, Curry je unavený z dlhej sezóny a Green dostal technické fauly v posledných 3 zápasoch 💙💛
+Atyrau prežíva katastrofálnu sezónu. Nachádzajú sa na poslednom mieste tabuľky s len 8 bodmi z 18 zápasov a zažívali sériu 17 zápasov bez víťazstva až do poslednej výhry s Kyzylharom. Ich herný štýl je extrémne defenzívny, často hrajú na výsledok 0:0. Majú najhorší útok v lige s priemerom len 0,70 gólu na zápas a nevedeli skórovať v posledných 5 ligových zápasoch (ked nerátam posledný). Ich najlepšími strelcami sú Sapanov a Barbosa Soares. Najslabšou stránkou je ich ofenzívna bezmocnosť a najhoršia defenzíva v lige s 35 inkasovanými gólmi (na ktorú sa vlastne spoliehajú).
 
-# *Tip: Lakers -4.5 handicap - kurz 1.75* ✅
+Posledných 7 zápasov Atyrau s Ordabasy nevyhrali, dokázali však urobiť 4 remízy. Remízu vidím ako jediný možný výsledok, čo nás sklame 💰 _
 
-# Alternatíva: Under 225.5 bodov - očakáva sa defenzívny zápas 📈"""
-#    }
+*Momentálna forma a kvalita družstva jasne naznačuje favorita - Odarbasy, a museli by padať fúriky z neba, aby Atyrau predviedol tak dobrý výkon, že dokážu s ním konkurovať ✅"""
+   }
 }
 
 # Nahradené VIP info štatistikami
@@ -124,23 +117,23 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV*
-• Výherné tikety: 32✅
+• Výherné tikety: 34✅
 • Prehraté tikety: 8 ❌
-• Úspešnosť: 80% 
+• Úspešnosť: 81% 
 
 📈 *FINANČNÉ VÝSLEDKY*
-• Navrátnosť za dané obdobie: 25.91% 
-• Zisk za dané obdobie: +24.12u
+• Navrátnosť za dané obdobie: 27.74% 
+• Zisk za dané obdobie: +27.49u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 482€
-⏩pri vklade 200€ ZISK 964€
-⏩pri vklade 500€ ZISK 2412€
+⏩pri vklade 100€ ZISK 550€
+⏩pri vklade 200€ ZISK 1100€
+⏩pri vklade 500€ ZISK 2750€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 12060KC
-⏩pri vklade 5000KC ZISK 24120KC
-⏩pri vklade 12500KC ZISK 60300KC
+⏩pri vklade 2500KC ZISK 13745KC
+⏩pri vklade 5000KC ZISK 27490KC
+⏩pri vklade 12500KC ZISK 68725KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
