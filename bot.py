@@ -94,7 +94,7 @@ V rámci ich pravidelných spoločných zápasov padlo viac gólov ako 3 v 2021.
 Dodatok: Pri spojení týchto 2 futbalových zápasov na 1 tikete odporúčam staviť 1.5-2u. Týmto tipom plne dôverujem. """               
         
  }
-   ANALYSES = { 
+    
     "Ordabasy - Atyrau": {
         "title": "⚽️  Ordabasy - Atyrau",
         "text": """📊 *ANALÝZA ZÁPASU:  Ordabasy - Atyrau*
