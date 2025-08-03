@@ -41,7 +41,7 @@ MATCHES = {
          'team2': 'Atyrau',
          'tournament': '1. KZ liga',
          'time': '17:00',
-         'pick': 'Oradabasy vyhrá - 1',
+         'pick': 'Ordabasy vyhrá - 1',
          'odds': '1.32',
          'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-ordabasy-atyrau/6849513/co-sa-tipuje',
          'image': '1. KZ liga.png'
@@ -93,7 +93,7 @@ V rámci ich pravidelných spoločných zápasov padlo viac gólov ako 3 v 2021.
 
 Dodatok: Pri spojení týchto 2 futbalových zápasov na 1 tikete odporúčam staviť 1.5-2u. Týmto tipom plne dôverujem. """               
         
- }
+ },
     
     "Ordabasy - Atyrau": {
         "title": "⚽️  Ordabasy - Atyrau",
