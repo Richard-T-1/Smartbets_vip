@@ -77,7 +77,7 @@ Alternatíva: Trocha rizikovejšie je hrať Slovinsko +15.5 v kurze 1.96, ale kt
 
     },
     
-    "example_basketball": {
+    "Dainava - Suduva Marijampole": {
         "title": "⚽️ Dainava - Suduva Marijampole",
         "text": """📊 *ANALÝZA ZÁPASU: Dainava - Suduva Marijampole*
 
@@ -95,7 +95,7 @@ Dodatok: Pri spojení týchto 2 futbalových zápasov na 1 tikete odporúčam st
         
  }
    ANALYSES = { 
-    "example_basketball": {
+    "Ordabasy - Atyrau": {
         "title": "⚽️  Ordabasy - Atyrau",
         "text": """📊 *ANALÝZA ZÁPASU:  Ordabasy - Atyrau*
 
