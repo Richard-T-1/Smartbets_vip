@@ -26,114 +26,112 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'Francúzsko ž U20',
-        'team2': 'Slovinsko ž U20',
+        'team1': 'Litva ž U20',
+        'team2': 'Izrael ž U20',
         'tournament': 'ME div. A',
         'time': '16:30',
-        'pick': 'Slovinsko +17.5',
-        'odds': '1.75',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/basketbal-francuzsko-z-u20-slovinsko-z-u20/7278830',
-        'image': 'FR - SL.png' 
+        'pick': 'Počet bodov - menej ako 150.5',
+        'odds': '1.89',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/basketbal-litva-z-u20-izrael-z-u20/7278846/co-sa-tipuje',
+        'image': 'LT - IZ.png' 
     },
     
-     "match2": {
-         'team1': 'Ordabasy',
-         'team2': 'Atyrau',
-         'tournament': '1. KZ liga',
-         'time': '17:00',
-         'pick': 'Ordabasy vyhrá - 1',
-         'odds': '1.32',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-ordabasy-atyrau/6849513/co-sa-tipuje',
-         'image': '1. KZ.png'
-     },
+ #    "match2": {
+ #        'team1': 'Ordabasy',
+ #        'team2': 'Atyrau',
+ #        'tournament': '1. KZ liga',
+ #        'time': '17:00',
+ #        'pick': 'Ordabasy vyhrá - 1',
+ #        'odds': '1.32',
+ #        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-ordabasy-atyrau/6849513/co-sa-tipuje',
+ #        'image': '1. KZ.png'
+ #    },
     
-     "match3": {
-         'team1': 'DFK Dainava',
-         'team2': 'Suduva Marijampole', 
-         'tournament': '1. LT liga',
-         'time': '17:25',
-         'pick': 'Menej ako 3 góly v zápase',
-         'odds': '1.39',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-dfk-dainava-suduva-marijampole/7199601/co-sa-tipuje',
-         'image': '1. LT.png'
-     }
+ #    "match3": {
+ #        'team1': 'DFK Dainava',
+ #        'team2': 'Suduva Marijampole', 
+ #        'tournament': '1. LT liga',
+ #        'time': '17:25',
+ #        'pick': 'Menej ako 3 góly v zápase',
+ #        'odds': '1.39',
+ #        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-dfk-dainava-suduva-marijampole/7199601/co-sa-tipuje',
+ #        'image': '1. LT.png'
+ #    }
 }
 
-# Databáza analýz - tu môžete pridávať nové analýzy
 ANALYSES = {
-    "Holandsko - Rakúsko": {
-        "title": "🏀 Francúzsko ž - Slovinsko ž",
-        "text": """📊 *ANALÝZA ZÁPASU:  Francúzsko ž - Slovinsko ž*
+    "Litva - Izrael": {
+        "title": "🏀 Litva ž - Izrael ž",
+        "text": """📊 *ANALÝZA ZÁPASU:  Litva ž - Izrael ž*
 
-Dnes nazrieme aj do ženského basketbalu U20. FIBA U20 Women's EuroBasket 2025 prebieha v Portugalsku a ponúka zaujímavé stávkové príležitosti 🏀
+Po včerajšom sklamaní ešte dáme šancu raz šancu európskemu basketbalu 🏀
 
-_Slovinky do 20 rokov tvoria tím, ktorý momentálne predvádza vynikajúcu formu. Ich nedávne výsledky to naznačujú - víťazstvo 84:75 nad Nemeckom a prekvapivé víťazstvo 77:75 nad Španielskom (minulý rok získalo striebro) dokazujú konkurencieschopnosť proti top európskym tímom. Ich herný štýl je založený na rýchlom, útočnom basketbale s dôrazom na kolektívny prístup. Kľúčové hráčky ako Sara Sambolic, Nina Stavrov a Ana Vita Micunovic tvoria vyvážený káder. Silnou stránkou je ich momentálna forma a bojovnosť - dokážu prekvapovať favorizovaných súperov. Ako outsider nemajú tlak očakávaní a môžu hrať uvoľnene. Ich slabšou stránkou sú menšie skúsenosti z veľkých turnajov oproti etablovaným tímom 🇸🇮 
+_Litvanky tvoria tím s bohatou basketbalovou tradíciou. Ich herný štýl je charakterizovaný disciplinovanou obranou, tímovo orientovanou hrou a silnou pracovnou morálkou, čo odráža hlboko zakorenenú basketbalovú kultúru Litvy. V poslednom období majú bilanciu 2 víťazstiev a 8 prehier, s priemerom 59.3 bodov na zápas a 73.2 inkasovaných bodov. Momentálne nie sú v najlepšej forme a majú problémy v ofenzíve, čo pomáha nášmu tipu 🇱🇹
 
-Francúzky sú obhajcami titulu z minulého roku, kde vyhrali finále 83:75 nad Španielskom. Ich herný štýl je založený na kontrole tempa, disciplinovanej obrane a taktickej vyspelosti. Posledný zápas vyhrali 91:50 nad Portugalskom, čo potvrdzuje ich kvalitu. Silnou stránkou sú bohaté turnajové skúsenosti a vysoká individuálna kvalita hráčok. Majú vynikajúcu taktickú pripravenosť a schopnosť kontrolovať tempo zápasu. Slabšou stránkou môže byť tlak očakávaní ako obhajca titulu a možné podcenenie súpera. Historicky mali s týmto súperom vyrovnané zápasy, čo však nie je až tak relevantné pri mládežníckom športe_ 🇫🇷
+Izraelčanmi reprezentujú tím, ktorý v tomto turnaji predvádza variabilné výkony. Ich posledný zápas proti Belgicku prehrali jasne 80:104. V posledných 5 zápasoch majú priemer 68,2 bodov na zápas a 68,0 inkasovaných bodov. Oproti Litve majú lepšiu ofenzívu. Slabšou stránkou je nestabilita - dokážu hrať vysokoskórové zápasy, ale proti defenzívne orientovaným tímom ich produkcia často klesá 🇮🇱
 
-*Handicap +17,5 pre Slovinsko vidím ako veľmi atraktívny. Slovinsko je v skvelej forme a dokázalo prekonať kvalitných súperov. Samozrejme Franúzky sú veľmi kvalitné súperky a preto odporúčam dať na tento tip 1, max 1.5u ✅* 
+Jediný relevantný zápas, ktorý spolu hrali bol pred rokom (keďže ide o mládežnícky basketbal), a ten skončil 73:55 pre Izrael _
 
-Alternatíva: Trocha rizikovejšie je hrať Slovinsko +15.5 v kurze 1.96, ale kto má chuť, kľudne može skúsiť. V tomto prípade odporúčam staviť 0.5-1u """
+*Under 150.5 bodov vidím ako tip mierne naklonený v náš prospech (v zmysle rizko/výnos). Odporúčam však staviť konzervatívne 1u ✅*  """
 
     },
     
-    "Dainava - Suduva Marijampole": {
-        "title": "⚽️ Dainava - Suduva Marijampole",
-        "text": """📊 *ANALÝZA ZÁPASU: Dainava - Suduva Marijampole*
+#    "Dainava - Suduva Marijampole": {
+#        "title": "⚽️ Dainava - Suduva Marijampole",
+#        "text": """📊 *ANALÝZA ZÁPASU: Dainava - Suduva Marijampole*
 
-Pri ďalšom zápase prejdeme k futbalu a to do 1. kazašskej ligy. Kazakhstan Premier League ponúka zaujímavé stávkové príležitosti a toto je jedna z nich vďaka 2 tímom z úplne rozdielnou formou.
+# Pri ďalšom zápase prejdeme k futbalu a to do 1. kazašskej ligy. Kazakhstan Premier League ponúka zaujímavé stávkové príležitosti a toto je jedna z nich vďaka 2 tímom z úplne rozdielnou formou.
 
-_DFK Dainava Alytus prežíva najhoršiu sezónu v novodobej histórii klubu. Nachádzajú sa na poslednom 10. mieste A Lygy s katastrofálnou bilanciou 2 víťazstvá, 4 remízy a 16 prehier z 11 odohraných zápasov. Ich herný štýl je tradične defenzívne ladený, ale v aktuálnej sezóne zlyhávajú vo všetkých herných činnostiach. Najlepšími strelcami sú Krystian Okoniewski a Artem Baftalovskiy, no fólov na ich konte nie je vôbec veľa. Teoretickou silnou stránkou by mala byť domáca pôda v Alytuse, ale ani tam nedokážu bodovať. Najväčšou slabou stránkou je ich aktuálna forma - prehrali posledné 4 zápasy s katastrofálnymi výsledkami: 0:3 s FK Panevezys, 1:3 s FA Siauliai, 0:2 s Dziugas Telsiai a 0:3 s FK Kauno Žalgiris. Alarmujúce je, že nevedeli skórovať v 3 z nich, čo signalizuje úplný kolaps ofenzívnych schopností.
+# _DFK Dainava Alytus prežíva najhoršiu sezónu v novodobej histórii klubu. Nachádzajú sa na poslednom 10. mieste A Lygy s katastrofálnou bilanciou 2 víťazstvá, 4 remízy a 16 prehier z 11 odohraných zápasov. Ich herný štýl je tradične defenzívne ladený, ale v aktuálnej sezóne zlyhávajú vo všetkých herných činnostiach. Najlepšími strelcami sú Krystian Okoniewski a Artem Baftalovskiy, no fólov na ich konte nie je vôbec veľa. Teoretickou silnou stránkou by mala byť domáca pôda v Alytuse, ale ani tam nedokážu bodovať. Najväčšou slabou stránkou je ich aktuálna forma - prehrali posledné 4 zápasy s katastrofálnymi výsledkami: 0:3 s FK Panevezys, 1:3 s FA Siauliai, 0:2 s Dziugas Telsiai a 0:3 s FK Kauno Žalgiris. Alarmujúce je, že nevedeli skórovať v 3 z nich, čo signalizuje úplný kolaps ofenzívnych schopností.
 
-FK Suduva Marijampole prešla dramatickou zmenou na konci roku 2024. Po katastrofálnej sezóne 2024, kde tesne unikli zostupu, klub uskutočnil zásadné zmeny. Tréner - Dovydas Lastauskas sa presunul z pozície trénera na post klubového direktora a 21. decembra 2024 bol menovaný nový hlavný tréner Donatas Vencevičius. Tento 51-ročný skúsený tréner už Suduvu viedol v rokoch 2010 a doviedol ju k vicemajstrovskému titulu. Ich herný štýl pod novým vedením využíva formáciu 4-4-2 s dôrazom na kolektívny futbal a taktickú disciplínu. Silnou stránkou je ich stabilita a kvalita kádra s hráčmi ako Steve Lawson a Sidy Sanokho. Slabšou stránkou je relatívne nízka gólová produktivita - v sezóne 2024 dali najmenej gólov v lige. Navyše u nich pretrvávajú finančné problémy od roku 2019, keď stratili hlavného sponzora ARVI Group, čo spôsobuje horšiu mentalitu a nábor hráčov tímu.
+# FK Suduva Marijampole prešla dramatickou zmenou na konci roku 2024. Po katastrofálnej sezóne 2024, kde tesne unikli zostupu, klub uskutočnil zásadné zmeny. Tréner - Dovydas Lastauskas sa presunul z pozície trénera na post klubového direktora a 21. decembra 2024 bol menovaný nový hlavný tréner Donatas Vencevičius. Tento 51-ročný skúsený tréner už Suduvu viedol v rokoch 2010 a doviedol ju k vicemajstrovskému titulu. Ich herný štýl pod novým vedením využíva formáciu 4-4-2 s dôrazom na kolektívny futbal a taktickú disciplínu. Silnou stránkou je ich stabilita a kvalita kádra s hráčmi ako Steve Lawson a Sidy Sanokho. Slabšou stránkou je relatívne nízka gólová produktivita - v sezóne 2024 dali najmenej gólov v lige. Navyše u nich pretrvávajú finančné problémy od roku 2019, keď stratili hlavného sponzora ARVI Group, čo spôsobuje horšiu mentalitu a nábor hráčov tímu.
 
-V rámci ich pravidelných spoločných zápasov padlo viac gólov ako 3 v 2021. Toto bolo 16 zápasov dozadu 💰 _
+# V rámci ich pravidelných spoločných zápasov padlo viac gólov ako 3 v 2021. Toto bolo 16 zápasov dozadu 💰 _
 
-*To, že padne menej ako 3 góly vidím až veľmi reálne a čakám, že sa slabší útok a klubové problémy pretavia do "nudnejšieho zápasu" * ✅
+# *To, že padne menej ako 3 góly vidím až veľmi reálne a čakám, že sa slabší útok a klubové problémy pretavia do "nudnejšieho zápasu" * ✅
 
-Dodatok: Pri spojení týchto 2 futbalových zápasov na 1 tikete odporúčam staviť 1.5-2u. Týmto tipom plne dôverujem. """               
+# Dodatok: Pri spojení týchto 2 futbalových zápasov na 1 tikete odporúčam staviť 1.5-2u. Týmto tipom plne dôverujem. """               
         
- },
+# },
     
-    "Ordabasy - Atyrau": {
-        "title": "⚽️  Ordabasy - Atyrau",
-        "text": """📊 *ANALÝZA ZÁPASU:  Ordabasy - Atyrau*
+#    "Ordabasy - Atyrau": {
+#        "title": "⚽️  Ordabasy - Atyrau",
+#        "text": """📊 *ANALÝZA ZÁPASU:  Ordabasy - Atyrau*
 
-Po návrate k európskemu futbalu sa zameriame aj na litovskú A Lygu. 
+# Po návrate k európskemu futbalu sa zameriame aj na litovskú A Lygu. 
 
-_Ordabasy je tím, ktorý sa v tejto sezóne nachádza v strede tabuľky na 7. mieste s priemernou formou. Ich herný štýl je založený na vyváženej hre s dôrazom na domáce prostredie, kde majú slušnú bilanciu. Silnou stránkou je ich domáca forma a solídna defenzíva - majú 6 čistých kont v sezóne, čo je vynikajúci výsledok. Používajú formáciu 4-3-3 a majú 71% úspešnosť udržania náskoku, čo svedčí o mentálnej stabilite. Najlepšími strelcami sú Everton Moraes s 4 gólmi a Sergey Maliy s 3 gólmi. Slabšou stránkou sú ich vonkajšie výkony, čo však nie je tak podstatné 🏆
+# _Ordabasy je tím, ktorý sa v tejto sezóne nachádza v strede tabuľky na 7. mieste s priemernou formou. Ich herný štýl je založený na vyváženej hre s dôrazom na domáce prostredie, kde majú slušnú bilanciu. Silnou stránkou je ich domáca forma a solídna defenzíva - majú 6 čistých kont v sezóne, čo je vynikajúci výsledok. Používajú formáciu 4-3-3 a majú 71% úspešnosť udržania náskoku, čo svedčí o mentálnej stabilite. Najlepšími strelcami sú Everton Moraes s 4 gólmi a Sergey Maliy s 3 gólmi. Slabšou stránkou sú ich vonkajšie výkony, čo však nie je tak podstatné 🏆
 
-Atyrau prežíva katastrofálnu sezónu. Nachádzajú sa na poslednom mieste tabuľky s len 8 bodmi z 18 zápasov a zažívali sériu 17 zápasov bez víťazstva až do poslednej výhry s Kyzylharom. Ich herný štýl je extrémne defenzívny, často hrajú na výsledok 0:0. Majú najhorší útok v lige s priemerom len 0,70 gólu na zápas a nevedeli skórovať v posledných 5 ligových zápasoch (ked nerátam posledný). Ich najlepšími strelcami sú Sapanov a Barbosa Soares. Najslabšou stránkou je ich ofenzívna bezmocnosť a najhoršia defenzíva v lige s 35 inkasovanými gólmi (na ktorú sa vlastne spoliehajú).
+# Atyrau prežíva katastrofálnu sezónu. Nachádzajú sa na poslednom mieste tabuľky s len 8 bodmi z 18 zápasov a zažívali sériu 17 zápasov bez víťazstva až do poslednej výhry s Kyzylharom. Ich herný štýl je extrémne defenzívny, často hrajú na výsledok 0:0. Majú najhorší útok v lige s priemerom len 0,70 gólu na zápas a nevedeli skórovať v posledných 5 ligových zápasoch (ked nerátam posledný). Ich najlepšími strelcami sú Sapanov a Barbosa Soares. Najslabšou stránkou je ich ofenzívna bezmocnosť a najhoršia defenzíva v lige s 35 inkasovanými gólmi (na ktorú sa vlastne spoliehajú).
 
-Posledných 7 zápasov Atyrau s Ordabasy nevyhrali, dokázali však urobiť 4 remízy. Remízu vidím ako jediný možný výsledok, čo nás sklame 💰 _
+# Posledných 7 zápasov Atyrau s Ordabasy nevyhrali, dokázali však urobiť 4 remízy. Remízu vidím ako jediný možný výsledok, čo nás sklame 💰 _
 
-*Momentálna forma a kvalita družstva jasne naznačuje favorita - Odarbasy, a museli by padať fúriky z neba, aby Atyrau predviedol tak dobrý výkon, že dokážu s ním konkurovať ✅"""
-   }
+# *Momentálna forma a kvalita družstva jasne naznačuje favorita - Odarbasy, a museli by padať fúriky z neba, aby Atyrau predviedol tak dobrý výkon, že dokážu s ním konkurovať ✅"""
+#   }
 }
 
-# Nahradené VIP info štatistikami
 statistics_text = """📈 *SMART BETS ŠTATISTIKY* 
 
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV*
 • Výherné tikety: 34✅
-• Prehraté tikety: 8 ❌
-• Úspešnosť: 81% 
+• Prehraté tikety: 10 ❌
+• Úspešnosť: 77% 
 
 📈 *FINANČNÉ VÝSLEDKY*
-• Navrátnosť za dané obdobie: 27.74% 
-• Zisk za dané obdobie: +27.49u
+• Navrátnosť za dané obdobie: 22.58% 
+• Zisk za dané obdobie: +23.49u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 550€
-⏩pri vklade 200€ ZISK 1100€
-⏩pri vklade 500€ ZISK 2750€
+⏩pri vklade 100€ ZISK 470€
+⏩pri vklade 200€ ZISK 940€
+⏩pri vklade 500€ ZISK 2350€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 13745KC
-⏩pri vklade 5000KC ZISK 27490KC
-⏩pri vklade 12500KC ZISK 68725KC
+⏩pri vklade 2500KC ZISK 11745KC
+⏩pri vklade 5000KC ZISK 23490KC
+⏩pri vklade 12500KC ZISK 58725KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
