@@ -26,88 +26,82 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'Litva ž U20',
-        'team2': 'Izrael ž U20',
-        'tournament': 'ME div. A',
-        'time': '16:30',
-        'pick': 'Počet bodov - menej ako 150.5',
-        'odds': '1.89',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/basketbal-litva-z-u20-izrael-z-u20/7278846/co-sa-tipuje',
-        'image': 'LT - IZ.png' 
+        'team1': 'Glasgow Rangers',
+        'team2': 'Viktoria Plzeň',
+        'tournament': 'Liga majstrov - kvalifikácia',
+        'time': '20:45',
+        'pick': 'Rangers postúpia',
+        'odds': '1.84 (Niké)',
+        'betting_url': 'https://www.nike.sk/tipovanie/futbal/liga-majstrov/liga-majstrov-kvalifikacia',
+        'image': 'Liga majstrov - k.png' 
     },
     
- #    "match2": {
- #        'team1': 'Ordabasy',
- #        'team2': 'Atyrau',
- #        'tournament': '1. KZ liga',
- #        'time': '17:00',
- #        'pick': 'Ordabasy vyhrá - 1',
- #        'odds': '1.32',
- #        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-ordabasy-atyrau/6849513/co-sa-tipuje',
- #        'image': '1. KZ.png'
- #    },
+     "match2": {
+         'team1': 'L. Siegemund',
+         'team2': 'D. Aiava',
+         'tournament': 'WTA Cincinnati',
+         'time': '18:30',
+         'pick': 'Siegemund -2.5 gemu',
+         'odds': '1.41',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-siegemund-laura-aiava-destanee/7297934',
+         'image': 'Cincinnaty 1.png'
+     },
     
- #    "match3": {
- #        'team1': 'DFK Dainava',
- #        'team2': 'Suduva Marijampole', 
- #        'tournament': '1. LT liga',
- #        'time': '17:25',
- #        'pick': 'Menej ako 3 góly v zápase',
- #        'odds': '1.39',
- #        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-dfk-dainava-suduva-marijampole/7199601/co-sa-tipuje',
- #        'image': '1. LT.png'
- #    }
+     "match3": {
+         'team1': 'E. Hozumi',
+         'team2': 'E. Shibahara', 
+         'tournament': 'WTA Cincinnati',
+         'time': '22:30',
+         'pick': 'Shibahara vyhrá 0:2',
+         'odds': '1.32',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-hozumi-eri-shibahara-ena/7297947/co-sa-tipuje',
+         'image': 'Cincinnaty 2.png'
+     }
 }
 
 ANALYSES = {
-    "Litva - Izrael": {
-        "title": "🏀 Litva ž - Izrael ž",
-        "text": """📊 *ANALÝZA ZÁPASU:  Litva ž - Izrael ž*
+    "Liga majstrov": {
+        "title": "⚽️ Glasgow Rangers - Viktoria Plzeň",
+        "text": """📊 *ANALÝZA ZÁPASU:  Glasgow Rangers - Viktoria Plzeň*
 
-Po včerajšom sklamaní ešte dáme šancu raz šancu európskemu basketbalu 🏀
+Dnes sa pozrieme na zaujímavý futbalový duel - semifinále kvalifikácie Ligy majstrov na Ibroxe, kde sa stretnú Glasgow Rangers a česká Viktoria Plzeň.
 
-_Litvanky tvoria tím s bohatou basketbalovou tradíciou. Ich herný štýl je charakterizovaný disciplinovanou obranou, tímovo orientovanou hrou a silnou pracovnou morálkou, čo odráža hlboko zakorenenú basketbalovú kultúru Litvy. V poslednom období majú bilanciu 2 víťazstiev a 8 prehier, s priemerom 59.3 bodov na zápas a 73.2 inkasovaných bodov. Momentálne nie sú v najlepšej forme a majú problémy v ofenzíve, čo pomáha nášmu tipu 🇱🇹
+_Glasgow Rangers tvoria tím v procese transformácie pod novým trénerom Russellom Martinom. Ich herný štýl je založený na dominancii držania lopty, s preferovanou formáciou 4-3-3, s dôrazom na plynulé budovanie útoku, držanie lopty a vysoký presing. Pravý bek - James Tavernier potvrdil, že Martinov štýl je "odlišný od všetkého, čo predtým v Rangers hral". Rangers postúpili cez Panathinaikos (3:1), ale v lige remizovali s Motherwell 1:1, čo vyvolalo tvrdú kritiku od Martina, ktorý obvinil hráčov z mentalitných problémov a nedostatočnej intenzity. Slabšou stránkou sú mentálne problémy, adaptácia na nový štýl hry a absencie kľúčových hráčov - Thelo Aasgaard a Hamza Igamane chýbajú pre zranenia spolu s ďalšími hráčmi 🏴󠁧󠁢󠁳󠁣󠁴󠁿
 
-Izraelčanmi reprezentujú tím, ktorý v tomto turnaji predvádza variabilné výkony. Ich posledný zápas proti Belgicku prehrali jasne 80:104. V posledných 5 zápasoch majú priemer 68,2 bodov na zápas a 68,0 inkasovaných bodov. Oproti Litve majú lepšiu ofenzívu. Slabšou stránkou je nestabilita - dokážu hrať vysokoskórové zápasy, ale proti defenzívne orientovaným tímom ich produkcia často klesá 🇮🇱
+Viktoria Plzeň reprezentuje český tím s veľkými ambíciami, ale výrazne oslabený prestupmi. Ich herný štýl je založený na dynamickej formácii 4-2-3-1, so silnou kreatívnou osou v strede poľa. V poslednom zápase postúpili cez Servette výsledkom 3:1 v odvete po prehre 0:1 doma (aj keď už tu mali problémy). Hlavnou zmenou je prestup ich kľúčového hráča Pavla Šulca, ktorý minulú sezónu zaznamenal 15 gólov a 9 asistencií v českej lige a získal Zlatú loptu pre najlepšieho českého hráča,  do Lyonu za 7,5 mil. €. Silnou stránkou je skúsenosť z európskych súťaží a nedávna slušná forma. Tento tím však oslabuje strata najlepšieho hráča a absencia stredopoliara Adriana Zeljkoviča pre vylúčenie v zápase so Servette _ 🇨🇿 
 
-Jediný relevantný zápas, ktorý spolu hrali bol pred rokom (keďže ide o mládežnícky basketbal), a ten skončil 73:55 pre Izrael _
-
-*Under 150.5 bodov vidím ako tip mierne naklonený v náš prospech (v zmysle rizko/výnos). Odporúčam však staviť konzervatívne 1u ✅*  """
+*Kurz 1.84 na postup Rangers vidím ako nadhodnotený a hodný využitia (čakal by som niečo okolo 1.70). Na tento zápas odporúčam staviť 1.5u ✅*  """
 
     },
     
-#    "Dainava - Suduva Marijampole": {
-#        "title": "⚽️ Dainava - Suduva Marijampole",
-#        "text": """📊 *ANALÝZA ZÁPASU: Dainava - Suduva Marijampole*
+    "Dainava - Suduva Marijampole": {
+        "title": "🎾 L. Siegemund - D. Aiava",
+        "text": """📊 *ANALÝZA ZÁPASU: L. Siegemund - D. Aiava*
 
-# Pri ďalšom zápase prejdeme k futbalu a to do 1. kazašskej ligy. Kazakhstan Premier League ponúka zaujímavé stávkové príležitosti a toto je jedna z nich vďaka 2 tímom z úplne rozdielnou formou.
+Ďalší zápas bude takisto s loptou (resp. loptičkou), ale bude to tenis. Zo Spojeného Kráľovstva sa presúvame cez more do amerického Cincinnati. Tu sa v semifinále kvalifikácie stretnú Laura Siegemund a Destanee Aiava 🎾
 
-# _DFK Dainava Alytus prežíva najhoršiu sezónu v novodobej histórii klubu. Nachádzajú sa na poslednom 10. mieste A Lygy s katastrofálnou bilanciou 2 víťazstvá, 4 remízy a 16 prehier z 11 odohraných zápasov. Ich herný štýl je tradične defenzívne ladený, ale v aktuálnej sezóne zlyhávajú vo všetkých herných činnostiach. Najlepšími strelcami sú Krystian Okoniewski a Artem Baftalovskiy, no fólov na ich konte nie je vôbec veľa. Teoretickou silnou stránkou by mala byť domáca pôda v Alytuse, ale ani tam nedokážu bodovať. Najväčšou slabou stránkou je ich aktuálna forma - prehrali posledné 4 zápasy s katastrofálnymi výsledkami: 0:3 s FK Panevezys, 1:3 s FA Siauliai, 0:2 s Dziugas Telsiai a 0:3 s FK Kauno Žalgiris. Alarmujúce je, že nevedeli skórovať v 3 z nich, čo signalizuje úplný kolaps ofenzívnych schopností.
+_Laura Siegemund (WTA 54) je skúsená 37-ročna Nemka, ktorej herný štýl je založený na taktickej variabilite. Kombinuje dropshoty, rezanie lôpt a aj hru na sieti. Hrať baseline štýlom jej však tiež nerobí problém (je to teda all-court hráčka). Ďalej sa vyznačuje sa vynikajúcou technikou a schopnosťou hrať dlhé výmeny (napriek svojmu veku). O niečo viac jej však vyhovuje tráva v porovnaní s hardom 🇩🇪
+ 
+Destanee Aiava (WTA 177) je mladá Austrálčanka. Jej herný štýl je založený na agresívnej hre s dobrým forhendom a snahou o rýchle zakončenia. V tomto januári na Australian Open dosiahla prelom - po 8 rokoch získala svoje prvé víťazstvo na Grand Slam turnaji, keď zdolala Greet Minnen v 3 setoch (potom bola vyradená v ďalšom kole pavúka). Jej rastúca forma a mentálne zdravie po prekonaní problémov sú jej súčasťou. Tvrdý povrch jej celkom vyhovuje, vďaka agresívnejšiemu štýlu  🇦🇺
 
-# FK Suduva Marijampole prešla dramatickou zmenou na konci roku 2024. Po katastrofálnej sezóne 2024, kde tesne unikli zostupu, klub uskutočnil zásadné zmeny. Tréner - Dovydas Lastauskas sa presunul z pozície trénera na post klubového direktora a 21. decembra 2024 bol menovaný nový hlavný tréner Donatas Vencevičius. Tento 51-ročný skúsený tréner už Suduvu viedol v rokoch 2010 a doviedol ju k vicemajstrovskému titulu. Ich herný štýl pod novým vedením využíva formáciu 4-4-2 s dôrazom na kolektívny futbal a taktickú disciplínu. Silnou stránkou je ich stabilita a kvalita kádra s hráčmi ako Steve Lawson a Sidy Sanokho. Slabšou stránkou je relatívne nízka gólová produktivita - v sezóne 2024 dali najmenej gólov v lige. Navyše u nich pretrvávajú finančné problémy od roku 2019, keď stratili hlavného sponzora ARVI Group, čo spôsobuje horšiu mentalitu a nábor hráčov tímu.
+Zatiaľ spolu odohrali 2 zápasy a oba vyhrala Siegemund 2:0, boli však dávnejšie, čiže sa netreba výhradne spoliehať na túto bilanciu _
 
-# V rámci ich pravidelných spoločných zápasov padlo viac gólov ako 3 v 2021. Toto bolo 16 zápasov dozadu 💰 _
-
-# *To, že padne menej ako 3 góly vidím až veľmi reálne a čakám, že sa slabší útok a klubové problémy pretavia do "nudnejšieho zápasu" * ✅
-
-# Dodatok: Pri spojení týchto 2 futbalových zápasov na 1 tikete odporúčam staviť 1.5-2u. Týmto tipom plne dôverujem. """               
+*V tomto zápase je vďaka hernej kvalite a výborným skúsenostiam favoritkou Siegemund. Takisto jej pomáha aj úctyhodná kondícia, čo často býva problémom oproti mladým hráčkam. Handicap -2.5 vidím ako pomerne konzervatívnu voľbu. Na tento zápas v kombinácii s ďalším odporúčam staviť 1u * ✅ """               
         
-# },
+ },
     
-#    "Ordabasy - Atyrau": {
-#        "title": "⚽️  Ordabasy - Atyrau",
-#        "text": """📊 *ANALÝZA ZÁPASU:  Ordabasy - Atyrau*
+    "Ordabasy - Atyrau": {
+        "title": "🎾  E. Hozumi - E. Shibahara",
+        "text": """📊 *ANALÝZA ZÁPASU:  E. Hozumi - E. Shibahara*
 
-# Po návrate k európskemu futbalu sa zameriame aj na litovskú A Lygu. 
+V Cincinnati ešte ostaneme a pozrieme si duel 2 Japoniek - Eri Hozumi s Enou Shibaharou 🎾
 
-# _Ordabasy je tím, ktorý sa v tejto sezóne nachádza v strede tabuľky na 7. mieste s priemernou formou. Ich herný štýl je založený na vyváženej hre s dôrazom na domáce prostredie, kde majú slušnú bilanciu. Silnou stránkou je ich domáca forma a solídna defenzíva - majú 6 čistých kont v sezóne, čo je vynikajúci výsledok. Používajú formáciu 4-3-3 a majú 71% úspešnosť udržania náskoku, čo svedčí o mentálnej stabilite. Najlepšími strelcami sú Everton Moraes s 4 gólmi a Sergey Maliy s 3 gólmi. Slabšou stránkou sú ich vonkajšie výkony, čo však nie je tak podstatné 🏆
+_Ena Shibahara (WTA 124) je 27 ročná Japonka s all-court štýlom. Toto je aj vďaka jej minulosti, kde hrávala 4hry. V 2hre dosiahli prielom minulý rok, keď postúpila 570. na 119. miesto v rebríčku. Jej forma stále rastie a zároveň tvrdý povrch je jej obľúbený 🇯🇵
 
-# Atyrau prežíva katastrofálnu sezónu. Nachádzajú sa na poslednom mieste tabuľky s len 8 bodmi z 18 zápasov a zažívali sériu 17 zápasov bez víťazstva až do poslednej výhry s Kyzylharom. Ich herný štýl je extrémne defenzívny, často hrajú na výsledok 0:0. Majú najhorší útok v lige s priemerom len 0,70 gólu na zápas a nevedeli skórovať v posledných 5 ligových zápasoch (ked nerátam posledný). Ich najlepšími strelcami sú Sapanov a Barbosa Soares. Najslabšou stránkou je ich ofenzívna bezmocnosť a najhoršia defenzíva v lige s 35 inkasovanými gólmi (na ktorú sa vlastne spoliehajú).
+Eri Hozumi (WTA 1447) zažíva výrazný pokles formy. Je opakom Shibahary, keďže prešla z 2hry na 4hry - z kariérneho maxima v 2hre klesla o viac ako 1300 priečok. Jej bilancia je teda každý rok negatívna. Má takisto all-court štýl hry s dobrým pohybom po dvorci a takticky inteligentnou hrou. Slušný return a hra na tvrdom povrchu je tiež jednou z jej dobrých stránok 🇯🇵 _
 
-# Posledných 7 zápasov Atyrau s Ordabasy nevyhrali, dokázali však urobiť 4 remízy. Remízu vidím ako jediný možný výsledok, čo nás sklame 💰 _
-
-# *Momentálna forma a kvalita družstva jasne naznačuje favorita - Odarbasy, a museli by padať fúriky z neba, aby Atyrau predviedol tak dobrý výkon, že dokážu s ním konkurovať ✅"""
-#   }
+* Každopádne v tomto zápase je priepasť medzi hráčkami (keď berieme do úvahy 2hru) výrazná a Shibahare ako mladšej hráčke s oveľa lepšou hrou plne verím. Tento zápas som skombinoval s predlošlým a odporúčam dať na túto akovku 1u *✅"""
+  }
 }
 
 statistics_text = """📈 *SMART BETS ŠTATISTIKY* 
@@ -116,22 +110,22 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 
 🏆 *BILANCIA TIKETOV*
 • Výherné tikety: 34✅
-• Prehraté tikety: 10 ❌
-• Úspešnosť: 77% 
+• Prehraté tikety: 11 ❌
+• Úspešnosť: 76% 
 
-📈 *FINANČNÉ VÝSLEDKY*
-• Navrátnosť za dané obdobie: 22.58% 
-• Zisk za dané obdobie: +23.49u
+📈 *NAŠA ÚSPEŠNOSŤ*
+• Navrátnosť za dané obdobie: 20.27% 
+• Zisk za dané obdobie: +21.50u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 470€
-⏩pri vklade 200€ ZISK 940€
-⏩pri vklade 500€ ZISK 2350€
+⏩pri vklade 100€ ZISK 430€
+⏩pri vklade 200€ ZISK 860€
+⏩pri vklade 500€ ZISK 2150€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 11745KC
-⏩pri vklade 5000KC ZISK 23490KC
-⏩pri vklade 12500KC ZISK 58725KC
+⏩pri vklade 2500KC ZISK 10750KC
+⏩pri vklade 5000KC ZISK 21500KC
+⏩pri vklade 12500KC ZISK 53750KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
