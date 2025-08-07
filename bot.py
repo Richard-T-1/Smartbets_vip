@@ -61,8 +61,8 @@ MATCHES = {
 
 ANALYSES = {
     "ATP Cincinnati 1": {
-        "title": "🎾 T. M. Etcheverry - J. Shang",
-        "text": """📊 *ANALÝZA ZÁPASU:  T. M. Etcheverry - J. Shang*
+        "title": "🎾 J. Thompson - A. Mannarino",
+        "text": """📊 *ANALÝZA ZÁPASU:  J. Thompson - A. Mannarino*
 
 V turnaji ATP Cincinnati začína vyraďovacia časť, ktorá nám priniesla aj zápas Jordana Thompsona a Adriana Mannarina 🎾
 
