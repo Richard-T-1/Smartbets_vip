@@ -26,26 +26,26 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'Rumunsko ž',
-        'team2': 'Chorvátsko ž',
-        'tournament': 'Kvalifikácia ME',
-        'time': '17:00',
-        'pick': 'Rumunsko vyhrá - 1',
-        'odds': '1.57 (Doxxbet)',
-        'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/volejbal/medzinarodne-zeny/majstrovstva-europy-kvalifikacia?event=64415452&name=rumunsko-vs-chorvatsko',
-        'image': 'RU - CH.png' 
+        'team1': 'J. Thompson',
+        'team2': 'A. Mannarino',
+        'tournament': 'ATP Cincinnati',
+        'time': '20:30',
+        'pick': 'Mannarino vyhrá - 2',
+        'odds': '1.83',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-thompson-jordan-mannarino-adrian/7305162/co-sa-tipuje',
+        'image': 'ATP Cincinnati 1.png' 
     },
     
-#     "match2": {
-#         'team1': 'L. Siegemund',
-#         'team2': 'D. Aiava',
-#         'tournament': 'WTA Cincinnati',
-#         'time': '18:30',
-#         'pick': 'Siegemund -2.5 gemu',
-#         'odds': '1.41',
-#         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-siegemund-laura-aiava-destanee/7297934',
-#         'image': 'Cincinnaty 1.png'
-#     },
+     "match2": {
+         'team1': 'T. M. Etcheverry',
+         'team2': 'J. Shang',
+         'tournament': 'ATP Cincinnati',
+         'time': '19:20',
+         'pick': 'Etcheverry vyhrá - 1',
+         'odds': '1.65',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-etcheverry-tomas-martin-shang-juncheng/7301501/co-sa-tipuje',
+         'image': 'ATP Cincinnati 2.png'
+     },
     
 #     "match3": {
 #         'team1': 'E. Hozumi',
@@ -55,41 +55,41 @@ MATCHES = {
 #         'pick': 'Shibahara vyhrá 0:2',
 #         'odds': '1.32',
 #         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-hozumi-eri-shibahara-ena/7297947/co-sa-tipuje',
-#         'image': 'Cincinnaty 2.png'
+#         'image': 'ATP Cincinnati 2.png'
 #     }
 }
 
 ANALYSES = {
-    "Liga majstrov": {
-        "title": "🏐 Rumunsko ž - Chorvátsko ž",
-        "text": """📊 *ANALÝZA ZÁPASU:  Rumunsko ž - Chorvátsko ž*
+    "ATP Cincinnati 1": {
+        "title": "🎾 T. M. Etcheverry - J. Shang",
+        "text": """📊 *ANALÝZA ZÁPASU:  T. M. Etcheverry - J. Shang*
 
-Dnes sa pozrieme na zaujímavý volejbalový duel v kvalifikácii na ME 2026, kde sa stretnú rumunské a chorvátske ženy. 
+V turnaji ATP Cincinnati začína vyraďovacia časť, ktorá nám priniesla aj zápas Jordana Thompsona a Adriana Mannarina 🎾
 
-_Rumunsko ženy tvoria tím s rastúcou formou v európskom volejbale. Ich herný štýl je založený na silnej defenzíve a tímovej súhre. V posledných rokoch sa výrazne zlepšujú - získali titul v European Silver League 2022. Ich momentálne výsledky sú uspokojivé: 9/11 🇷🇴
+_Adrian Mannarino (ATP 94) je výborný tenista aj napriek tomu, že už má pokročilejší vek. Túto sezónu nezačal najlepšie, ale už je konečne vo forme. To potvrdzujú jeho zápasy so Svrčinom a Kruegerom, ktoré vyhral suverénne. Takisto porazil Girona 2:0. Jeho herný štýl je defenzívny, zároveň to je baseliner a majster kontraúderov. Dokáže presmerovať silu súpera a dostať ho do nepríjemných pozícií. Používa extrémne nízke napätie strún, čo mu umožňuje hrať plochými údermi s krátkym rozšvihuom a sústrediť sa na presnosť namiesto sily. Jeho ľavácky servis vytvára výborné uhly a dokáže rozhádzať súperov z jednej strany na druhú. Mannarino je známy svojou rýchlosťou po kurte a konzistentnosťou z baseline. Jeho kariérne maximum bola ATP 17 začiatkom minulého roka. Problémom je skorej jeho kolísavá forma. Tráva je jeho najlepší povrch, ale aj na harde je nebezpečný súper 🇫🇷 
 
-Chorvátsko ženy reprezentujú tím s tradíciou ale variabilnými výkonmi. Ich herný štýl je kombinuje techniku s fyzickou silou. Chorvátsko má skúsenosti z medzinárodných turnajov a pravidelne sa kvalifikuje na európske šampionáty, čiže tiež ide o kvalitný tím 🇭🇷
+Jordan Thompson (ATP 44) je hráč s rastúcou formou v svetovom tenise. Jeho herný štýl je založený na silnej baseline hre a výbornej fyzickej kondícii. Austrálčan má za sebou fantastický rok 2024, keď získal svoj prvý ATP titul v Los Cabos. Má výborný servis a solídnu baseline hru, pričom vyniká vo vypätých situáciach. Slabšou stránkou je, že občas má problémy s koncentráciou a horšie štarty do zápasov 🇦🇺
 
-Oba tímy nie sú úplne konzistentné a nemajú takú finančnú podporu ako volejbalové veľmoci. Vrámci spoločných zápasov to bolo rôznorodé. Z posledných zápasov (od roku 2020) Rumunky vedú 4:2. V ich dlhej histórii žiadny zápas sa zároveň nehral na 5 setov - väčšinou tím, čo vyhral 1. set aj udržal toto vedenie _
+Z vzájomných zápasov vyplýva, že Mannarino vedie celkovú bilanciu 5:4, ale Thompson vyhral ich posledné stretnutie 7-5, 7-6 _
 
-*Rumunsko je vďaka lepšej hre a lepším výsledkom favoritom v tomto zápase. Nie je to však také jednoznačné, preto odporúčam staviť 1u ✅*  """
+*V tomto zápase sa prikláňam k Mannarinovi kvôli jeho forme a celkovej kvalite hry. Tento zápas bude každopádne vyrovnaný, teda odporúčam staviť 1u (poprípade 0.75u) ✅*  """
     },
     
-#    "Dainava - Suduva Marijampole": {
-#        "title": "🎾 L. Siegemund - D. Aiava",
-#        "text": """📊 *ANALÝZA ZÁPASU: L. Siegemund - D. Aiava*
+    "ATP Cincinnati 2": {
+        "title": "🎾 T. M. Etcheverry - J. Shang",
+        "text": """📊 *ANALÝZA ZÁPASU: T. M. Etcheverry - J. Shang*
 
-#Ďalší zápas bude takisto s loptou (resp. loptičkou), ale bude to tenis. Zo Spojeného Kráľovstva sa presúvame cez more do amerického Cincinnati. Tu sa v semifinále kvalifikácie stretnú Laura Siegemund a Destanee Aiava 🎾
+V Cincinnati ešte ostaneme a pozrieme sa na zápas Tomasa Etcheverryho s Junchengom Shangom  🎾
 
-#_Laura Siegemund (WTA 54) je skúsená 37-ročna Nemka, ktorej herný štýl je založený na taktickej variabilite. Kombinuje dropshoty, rezanie lôpt a aj hru na sieti. Hrať baseline štýlom jej však tiež nerobí problém (je to teda all-court hráčka). Ďalej sa vyznačuje sa vynikajúcou technikou a schopnosťou hrať dlhé výmeny (napriek svojmu veku). O niečo viac jej však vyhovuje tráva v porovnaní s hardom 🇩🇪
+_Tomas Martin Etcheverry (ATP 60) má klasický antukársky štýl s bohatými skúsenosťami. Jeho štýl je založený na silnej baseline hre s dôrazom na topspin údery a fyzickú odolnosť. Argentínčan dosiahol kariérne maximum ATP 27 a má za sebou tri finále ATP turnajov. Etcheverry má výborný bekhend s oboma rukami a vie hrať dlhé výmeny s vysokou intenzitou. Silnou stránkou je jeho mentálna odolnosť a skúsenosti z veľkých zápasov. Jeho výkony na tvrdom kurte sú horšie ako na antuke, ale už aj tu si zobral pál skalpov - napr. minulý týždeň porazil Griekspoora. Zároveň treba spomenúť, mesiac dozadu porazil Bena Sheltona  🇦🇷
  
-#Destanee Aiava (WTA 177) je mladá Austrálčanka. Jej herný štýl je založený na agresívnej hre s dobrým forhendom a snahou o rýchle zakončenia. V tomto januári na Australian Open dosiahla prelom - po 8 rokoch získala svoje prvé víťazstvo na Grand Slam turnaji, keď zdolala Greet Minnen v 3 setoch (potom bola vyradená v ďalšom kole pavúka). Jej rastúca forma a mentálne zdravie po prekonaní problémov sú jej súčasťou. Tvrdý povrch jej celkom vyhovuje, vďaka agresívnejšiemu štýlu  🇦🇺
+Juncheng Shang (ATP 109) reprezentuje novú generáciu čínskych tenistov s veľkým potenciálom.  Jeho herný štýl je all-court s výbornou technikou a rýchlosťou po kurte. Jeho ľavácky herný štýl vytvára problémy súperom a má výborné anticipovanie. Shang je syn bývalého futbalistu a majsterky sveta v stolnom tenise, čo mu dáva športové gény. Problémom je jeho mladý vek a niekedy nedostatočné skúsenosti v kľúčových momentoch, najmä proti skúsenejším súperom. Tento rok však toho neodohral. Zranil sa na začiatku sezóny v Hongkongu a potom aj na Australian open s Fokinou 🇨🇳
 
-#Zatiaľ spolu odohrali 2 zápasy a oba vyhrala Siegemund 2:0, boli však dávnejšie, čiže sa netreba výhradne spoliehať na túto bilanciu _
+Zatiaľ spolu odohrali 2 zápasy a oba vyhrala Shang. Verím však, že teraz je Etcheverry v lepšej forme a Shang nebude po zraneniach hrať tak dobre _
 
-#*V tomto zápase je vďaka hernej kvalite a výborným skúsenostiam favoritkou Siegemund. Takisto jej pomáha aj úctyhodná kondícia, čo často býva problémom oproti mladým hráčkam. Handicap -2.5 vidím ako pomerne konzervatívnu voľbu. Na tento zápas v kombinácii s ďalším odporúčam staviť 1u * ✅ """               
+*Tento zápas bude však vyrovnaný, kde môže rozhodnúť Etcheverryho forma a herné skúsenosti. Odporúčam staviť 1u (poprípade 0.75u ako zápas predtým) * ✅ """               
         
-# },
+ }
     
 #    "Ordabasy - Atyrau": {
 #        "title": "🎾  E. Hozumi - E. Shibahara",
@@ -110,23 +110,23 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV*
-• Výherné tikety: 34✅
+• Výherné tikety: 36✅
 • Prehraté tikety: 12 ❌
-• Úspešnosť: 74% 
+• Úspešnosť: 75% 
 
 📈 *NAŠA ÚSPEŠNOSŤ*
-• Navrátnosť za dané obdobie: 18,04% 
-• Zisk za dané obdobie: +19.50u
+• Navrátnosť za dané obdobie: 17,68% 
+• Zisk za dané obdobie: +19.63u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 390€
-⏩pri vklade 200€ ZISK 780€
-⏩pri vklade 500€ ZISK 1950€
+⏩pri vklade 100€ ZISK 393€
+⏩pri vklade 200€ ZISK 785€
+⏩pri vklade 500€ ZISK 1963€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 9750KC
-⏩pri vklade 5000KC ZISK 19500KC
-⏩pri vklade 12500KC ZISK 48750KC
+⏩pri vklade 2500KC ZISK 9815KC
+⏩pri vklade 5000KC ZISK 19630KC
+⏩pri vklade 12500KC ZISK 49075KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
@@ -388,7 +388,7 @@ def send_ticket_to_channel(match_data=None):
             return False
     
     caption = (f"🏆 {match_data['team1']} vs {match_data['team2']}\n"
-              f"🏐 {match_data['tournament']}\n"
+              f"🎾{match_data['tournament']}\n"
               f"🕘 {match_data['time']}\n\n"
               f"🎯 {match_data['pick']}\n"
               f"💰 Kurz: {match_data['odds']}")
