@@ -98,7 +98,7 @@ Dukla Praha B reprezentuje rezervný tím tradičného pražského klubu, ktorý
 
 *Očakávam jednostranný zápas bez veľkých prekvapení a staviť 1.5u (až 2u) na Kladno. Tento zápas som chcel pôvodne spojiť s predošlým, ale kvôli nižšiemu kurzu na Tiposrte sa to viac oplatí podať samostatne (na Niké) * ✅ """               
         
- }
+ },
     
     "Analýza 3": {
         "title": "🎾  L. Zhu - L. Bronzetti",
