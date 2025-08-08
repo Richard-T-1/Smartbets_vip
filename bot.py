@@ -26,107 +26,135 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'J. Thompson',
-        'team2': 'A. Mannarino',
-        'tournament': 'ATP Cincinnati',
-        'time': '20:30',
-        'pick': 'Mannarino vyhrá - 2',
-        'odds': '1.83',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-thompson-jordan-mannarino-adrian/7305162/co-sa-tipuje',
-        'image': 'ATP Cincinnati 1.png' 
+        'team1': 'Petřvald na Moravě',
+        'team2': 'Bílovec',
+        'tournament': 'Česko - 4. liga',
+        'time': '18:00',
+        'pick': 'Petřvald vyhrá - 1',
+        'odds': '1.50',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-petrvald-na-morave-bilovec/7187357/co-sa-tipuje',
+        'image': 'Petrvald - Bilovec.png' 
     },
     
      "match2": {
-         'team1': 'T. M. Etcheverry',
-         'team2': 'J. Shang',
-         'tournament': 'ATP Cincinnati',
-         'time': '19:20',
-         'pick': 'Etcheverry vyhrá - 1',
-         'odds': '1.65',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-etcheverry-tomas-martin-shang-juncheng/7301501/co-sa-tipuje',
-         'image': 'ATP Cincinnati 2.png'
+         'team1': 'Kladno',
+         'team2': 'Dukla Praha B', 
+         'tournament': 'Česko - 3.liga',
+         'time': '18:00',
+         'pick': 'Kladno vyhrá - 1',
+         'odds': '1.34 (Niké)',
+         'betting_url': 'https://www.nike.sk/tipovanie/futbal/cesko/cesko-iii-liga-cfl-skupina-a',
+         'image': 'Kladno - Praha.png'
      },
     
-#     "match3": {
-#         'team1': 'E. Hozumi',
-#         'team2': 'E. Shibahara', 
-#         'tournament': 'WTA Cincinnati',
-#         'time': '22:30',
-#         'pick': 'Shibahara vyhrá 0:2',
-#         'odds': '1.32',
-#         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-hozumi-eri-shibahara-ena/7297947/co-sa-tipuje',
-#         'image': 'ATP Cincinnati 2.png'
-#     }
+     "match3": {
+         'team1': 'L. Zhu',
+         'team2': 'L. Bronzetti', 
+         'tournament': 'WTA Cincinnati',
+         'time': '17:05',
+         'pick': 'L. Zhu vyhrá - 1',
+         'odds': '1.60 x 1.27',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-zhu-lin-bronzetti-lucia/7303609/co-sa-tipuje',
+         'image': 'Zhu - Bronzetti.png'
+     },
+    
+    "match4": {
+        'team1': 'H. Dellien',
+        'team2': 'R. Opelka', 
+        'tournament': 'ATP Cincinnati',
+        'time': '19:20',
+        'pick': 'Opelka -2.5 gemu',
+        'odds': '1.27 x 1.60',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-dellien-hugo-opelka-reilly/7301514/co-sa-tipuje',
+        'image': 'Dellien - Opelka.png'
+    }
 }
 
 ANALYSES = {
-    "ATP Cincinnati 1": {
-        "title": "🎾 J. Thompson - A. Mannarino",
-        "text": """📊 *ANALÝZA ZÁPASU:  J. Thompson - A. Mannarino*
+    "Analýza 1": {
+        "title": "⚽️ Petřvald na Moravě - Bílovec",
+        "text": """📊 *ANALÝZA ZÁPASU:  Petřvald na Moravě - Bílovec*
 
-V turnaji ATP Cincinnati začína vyraďovacia časť, ktorá nám priniesla aj zápas Jordana Thompsona a Adriana Mannarina 🎾
+Dnes sa pozrieme na zaujímavý futbalový duel v Divíze F, kde sa stretnú Petřvald na Moravě a Bílovec ⚽️
 
-_Adrian Mannarino (ATP 94) je výborný tenista aj napriek tomu, že už má pokročilejší vek. Túto sezónu nezačal najlepšie, ale už je konečne vo forme. To potvrdzujú jeho zápasy so Svrčinom a Kruegerom, ktoré vyhral suverénne. Takisto porazil Girona 2:0. Jeho herný štýl je defenzívny, zároveň to je baseliner a majster kontraúderov. Dokáže presmerovať silu súpera a dostať ho do nepríjemných pozícií. Používa extrémne nízke napätie strún, čo mu umožňuje hrať plochými údermi s krátkym rozšvihuom a sústrediť sa na presnosť namiesto sily. Jeho ľavácky servis vytvára výborné uhly a dokáže rozhádzať súperov z jednej strany na druhú. Mannarino je známy svojou rýchlosťou po kurte a konzistentnosťou z baseline. Jeho kariérne maximum bola ATP 17 začiatkom minulého roka. Problémom je skorej jeho kolísavá forma. Tráva je jeho najlepší povrch, ale aj na harde je nebezpečný súper 🇫🇷 
+_Petřvald na Moravě je tím s rastúcimi ambíciami v moravskom futbale, ktorý prechádza zaujímavou transformáciou. Ich herný štýl je založený na kombinácii solídnej defenzívy s rýchlymi protiútokmi, pričom sa spoliehajú na kolektívny výkon celého tímu. Výhodou je určite domáce prostredie na ich štadióne v Petřvalde, kde majú výbornú podporu miestnych fanúšikov. Ich útočná sila sa opiera najmä o produktívneho Ondřeja Pyclíka, ktorý strelil oba góly proti Opave B a ukázal svoju schopnosť skórovať v kľúčových momentoch. Slabšou stránkou je však výrazná nekonzistentnosť výkonov, ktorá sa prejavuje najmä v tom, že dokážu predviesť výborný futbal proti silným súperom, ale potom sa im nedarí proti teoreticky slabším tímom 🏆 
 
-Jordan Thompson (ATP 44) je hráč s rastúcou formou v svetovom tenise. Jeho herný štýl je založený na silnej baseline hre a výbornej fyzickej kondícii. Austrálčan má za sebou fantastický rok 2024, keď získal svoj prvý ATP titul v Los Cabos. Má výborný servis a solídnu baseline hru, pričom vyniká vo vypätých situáciach. Slabšou stránkou je, že občas má problémy s koncentráciou a horšie štarty do zápasov 🇦🇺
+Bílovec je tím s bohatou tradíciou, ale momentálne prechádza ťažkým obdobím, ktoré ovplyvňuje ich celkový herný prejav. Ich futbalový štýl kombinuje klasický český prístup s dôrazom na techniku a organizáciu hry, pričom sa snažia využívať skúsených hráčov v kombinácii s mladými talentami. Táto podpora mládeže má občas svoju daň, keďže im chýbajú skúsenosti a väčšinou nedokážu konkurovať skúseným hráčom. Ich aktuálna forma nie je tiež nič extra, keď z posledných 11 zápasov majú 7 prehier. 
 
-Z vzájomných zápasov vyplýva, že Mannarino vedie celkovú bilanciu 5:4, ale Thompson vyhral ich posledné stretnutie 7-5, 7-6 _
+Posledný vzájomný zápas vyhral Petrvald 3-1a minulú sezónu mali o 12b viac ako Bílovec. _
 
-*V tomto zápase sa prikláňam k Mannarinovi kvôli jeho forme a celkovej kvalite hry. Tento zápas bude každopádne vyrovnaný, teda odporúčam staviť 1u (poprípade 0.75u) ✅*  """
+*V tomto zápase je Petrvald favoritom vďaka kvalitnejšiemu kádru, kde väčšina hráčov má skúsenosti aj z vyšších líg. Odporúčam podať za 1.5u (ak kurz výraznejšie klesle z 1.50, tak 1u) ✅*  """
     },
     
-    "ATP Cincinnati 2": {
-        "title": "🎾 T. M. Etcheverry - J. Shang",
-        "text": """📊 *ANALÝZA ZÁPASU: T. M. Etcheverry - J. Shang*
+    "Analýza 2": {
+        "title": "⚽️ Kladno - Dukla Praha B",
+        "text": """📊 *ANALÝZA ZÁPASU: Kladno - Dukla Praha B*
 
-V Cincinnati ešte ostaneme a pozrieme sa na zápas Tomasa Etcheverryho s Junchengom Shangom  🎾
+Pri českom futbale ostaneme a druhý zápas bude z 3. ligy ČFL A. Tu sa stretne Kladno s Duklou Prahou B ⚽️
 
-_Tomas Martin Etcheverry (ATP 60) má klasický antukársky štýl s bohatými skúsenosťami. Jeho štýl je založený na silnej baseline hre s dôrazom na topspin údery a fyzickú odolnosť. Argentínčan dosiahol kariérne maximum ATP 27 a má za sebou tri finále ATP turnajov. Etcheverry má výborný bekhend s oboma rukami a vie hrať dlhé výmeny s vysokou intenzitou. Silnou stránkou je jeho mentálna odolnosť a skúsenosti z veľkých zápasov. Jeho výkony na tvrdom kurte sú horšie ako na antuke, ale už aj tu si zobral pál skalpov - napr. minulý týždeň porazil Griekspoora. Zároveň treba spomenúť, mesiac dozadu porazil Bena Sheltona  🇦🇷
+_SK Kladno tvorí tím s veľkými ambíciami a profesionálnym prístupom, ktorý prechádza vzostupom v posledných rokoch. Ich herný štýl je založený na solídnej organizácii hry s dôrazom na kombináciu skúsenosti a mladých talentov, pričom sa snažia dominovať hre. Klub má za sebou výborný predchádzajúci ročník, keď skončil ako nováčik na vynikajúcom druhom mieste v skupine B. Naberajú do tímu nových hráčov z vyšších líg a vrámci prípravy vyhrali všetky 4 zápasy (vrátane pôsobivého víťazstva 5:0 nad Loko Praha). Toto ich robí kandidátom na víťaza celej ligy 🏆
  
-Juncheng Shang (ATP 109) reprezentuje novú generáciu čínskych tenistov s veľkým potenciálom.  Jeho herný štýl je all-court s výbornou technikou a rýchlosťou po kurte. Jeho ľavácky herný štýl vytvára problémy súperom a má výborné anticipovanie. Shang je syn bývalého futbalistu a majsterky sveta v stolnom tenise, čo mu dáva športové gény. Problémom je jeho mladý vek a niekedy nedostatočné skúsenosti v kľúčových momentoch, najmä proti skúsenejším súperom. Tento rok však toho neodohral. Zranil sa na začiatku sezóny v Hongkongu a potom aj na Australian open s Fokinou 🇨🇳
+Dukla Praha B reprezentuje rezervný tím tradičného pražského klubu, ktorý slúži predovšetkým na výchovu mladých talentov pre A-tím. Ich herný štýl je typicky technický s dôrazom na kombinačnú hru a rozvoj individuálnych schopností mladých hráčov, pričom ich prioritou nie sú až tak výsledky. Hlavnou slabinou Dukly B je prirodzená nestabilita kádra, keďže najlepší hráči sú priebežne presúvaní do A-tímu alebo prestupujú do iných klubov. _
 
-Zatiaľ spolu odohrali 2 zápasy a oba vyhrala Shang. Verím však, že teraz je Etcheverry v lepšej forme a Shang nebude po zraneniach hrať tak dobre _
-
-*Tento zápas bude však vyrovnaný, kde môže rozhodnúť Etcheverryho forma a herné skúsenosti. Odporúčam staviť 1u (poprípade 0.75u ako zápas predtým) * ✅ """               
+*Očakávam jednostranný zápas bez veľkých prekvapení a staviť 1.5u (až 2u) na Kladno. Tento zápas som chcel pôvodne spojiť s predošlým, ale kvôli nižšiemu kurzu na Tiposrte sa to viac oplatí podať samostatne (na Niké) * ✅ """               
         
  }
     
-#    "Ordabasy - Atyrau": {
-#        "title": "🎾  E. Hozumi - E. Shibahara",
-#        "text": """📊 *ANALÝZA ZÁPASU:  E. Hozumi - E. Shibahara*
+    "Analýza 3": {
+        "title": "🎾  L. Zhu - L. Bronzetti",
+        "text": """📊 *ANALÝZA ZÁPASU:  L. Zhu - L. Bronzetti*
 
-#V Cincinnati ešte ostaneme a pozrieme si duel 2 Japoniek - Eri Hozumi s Enou Shibaharou 🎾
+Teraz presedláme na tenis a pozrieme si konkrétne ten ženský 🎾
 
-#_Ena Shibahara (WTA 124) je 27 ročná Japonka s all-court štýlom. Toto je aj vďaka jej minulosti, kde hrávala 4hry. V 2hre dosiahli prielom minulý rok, keď postúpila 570. na 119. miesto v rebríčku. Jej forma stále rastie a zároveň tvrdý povrch je jej obľúbený 🇯🇵
+_Lin Zhu (WTA 304) je čínska hráčka s veľmi agresívnym herným štýlom. Jej najlepší a obľúbený úder je forhend, ktorým dokáže diktovať tempo hry. Má rýchly, útočný prístup a snaží sa skracovať body tvrdými údermi. Prežíva síce dramatický pokles z WTA 31 kvôli zraneniu, ale už sa zotavuje. To sa potvrdio aj v Montreali, kde sa dostala do 4. kola. Zároveň je tvrdý povrch je najlepším 🇨🇳
 
-#Eri Hozumi (WTA 1447) zažíva výrazný pokles formy. Je opakom Shibahary, keďže prešla z 2hry na 4hry - z kariérneho maxima v 2hre klesla o viac ako 1300 priečok. Jej bilancia je teda každý rok negatívna. Má takisto all-court štýl hry s dobrým pohybom po dvorci a takticky inteligentnou hrou. Slušný return a hra na tvrdom povrchu je tiež jednou z jej dobrých stránok 🇯🇵 _
+Lucia Bronzetti (WTA 61) je talianska hráčka s vyváženou baseline hrou a dobrým taktickým cítením. Je všestranná - dokáže adaptovať svoju hru na rôznym súperkám. Je to však najmä antukárka, čo potvrdzuje mimo jej štýlu aj negatívna bilancia na ostatných povrchoch. Momentálne nie je ani v bohvieakej forme 🇮🇹
 
-#* Každopádne v tomto zápase je priepasť medzi hráčkami (keď berieme do úvahy 2hru) výrazná a Shibahare ako mladšej hráčke s oveľa lepšou hrou plne verím. Tento zápas som skombinoval s predlošlým a odporúčam dať na túto akovku 1u *✅"""
-#  }
+Odohrali spolu zatiaľ jeden zápas minulý rok, ktorý Zhu vyhrala 7-5, 6-1 _
+
+* Tu sa teda prikláňam k zdatnej Číňanke a verím, že zápas vyhrá. Odporúčam staviť 1u v kombinácii s ďalším zápasom *✅"""
+  },
+
+    "Analýza 4": {
+        "title": "🎾  H. Dellien - R. Opelka",
+        "text": """📊 *ANALÝZA ZÁPASU:  H. Dellien - R. Opelka*
+
+Dodatočnú príležitosť na tikete som vybral zo zápasu Opelku s Dellienom 🎾
+
+_Reilly Opelka (ATP 73) je moderna verzia "servebot" hráča s vylepšenou baseline hrou. Jeho hra je postavená na Devastačnom servise, agresívnej hre a silovom tenise. Takisto má výškovú výhodu (211cm), čo mu umožňuje byť tak nepríjemný na podaní. Z tohto nám už môže vyplývať, že preferuje rýchlejšie povrchy, čo mu dnes hrá do karát 🇺🇸
+
+Hugo Dellien (ATP 108) je klasický clay-court specialist s defenzívnym baseline herným štýlom. Je to vytrvalostný hráč typu "counterpuncher", ktorý stavá na konzistentnosti a vysokom tenisovom IQ. Využíva pokrytie kurtu a svoju kondíciu na prekonanie súperov. Môžeme však tušiť, že je najmä antukár a na harde odohral len 4 zápasy, kde má skóre 2-2 🇧🇴 _
+
+*Myslím, že Opelka je suverénny favorit a -2.5 gemu je ten najmenší problém. Verím mu, že tento zápas s prehľadom vyhrá *✅
+
+Alternatíva: Dá sa uvažvať aj o tom, že Opelka vyhrá 0:2 """
+        
+  }
+
 }
 
 statistics_text = """📈 *SMART BETS ŠTATISTIKY* 
 
 📊 *Naše výsledky za posledné obdobie:*
 
-🏆 *BILANCIA TIKETOV*
-• Výherné tikety: 36✅
-• Prehraté tikety: 12 ❌
-• Úspešnosť: 75% 
+🏆 *BILANCIA TIKETOV - AUGUST*
+• Výherné tikety: 2✅
+• Prehraté tikety: 0❌
+• Dlhodobá úspešnosť: 76% 
 
 📈 *NAŠA ÚSPEŠNOSŤ*
-• Navrátnosť za dané obdobie: 17,68% 
-• Zisk za dané obdobie: +19.63u
+• Navrátnosť za dané obdobie: 82% 
+• Zisk za dané obdobie: +3.28u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 393€
-⏩pri vklade 200€ ZISK 785€
-⏩pri vklade 500€ ZISK 1963€
+⏩pri vklade 100€ ZISK 66€
+⏩pri vklade 200€ ZISK 131€
+⏩pri vklade 500€ ZISK 328€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 9815KC
-⏩pri vklade 5000KC ZISK 19630KC
-⏩pri vklade 12500KC ZISK 49075KC
+⏩pri vklade 2500KC ZISK 1640KC
+⏩pri vklade 5000KC ZISK 3280KC
+⏩pri vklade 12500KC ZISK 8200KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
