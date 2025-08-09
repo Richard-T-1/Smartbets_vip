@@ -26,110 +26,110 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'Petřvald na Moravě',
-        'team2': 'Bílovec',
-        'tournament': 'Česko - 4. liga',
-        'time': '18:00',
-        'pick': 'Petřvald vyhrá - 1',
-        'odds': '1.50',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-petrvald-na-morave-bilovec/7187357/co-sa-tipuje',
-        'image': 'Petrvald - Bilovec.png' 
+        'team1': 'O. Benedito',
+        'team2': 'E. Dassi',
+        'tournament': 'PFL',
+        'time': '18:50',
+        'pick': 'Benedito vyhrá - 1',
+        'odds': '1.84',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-benedito-osvaldo-dassi-emilios/7293226/co-sa-tipuje',
+        'image': 'PFL 2.png' 
     },
     
      "match2": {
-         'team1': 'Kladno',
-         'team2': 'Dukla Praha B', 
-         'tournament': 'Česko - 3.liga',
-         'time': '18:00',
-         'pick': 'Kladno vyhrá - 1',
-         'odds': '1.34 (Niké)',
-         'betting_url': 'https://www.nike.sk/tipovanie/futbal/cesko/cesko-iii-liga-cfl-skupina-a',
-         'image': 'Kladno - Praha.png'
-     },
+         'team1': 'L. E. Steyn',
+         'team2': 'A. Errachidy', 
+         'tournament': 'Errachidy vyhrá - 2',
+         'time': '18:20',
+         'pick': 'Errachidy vyhrá - 2',
+         'odds': '2.73',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-steyn-elbert-lukas-errachidy-abderrahman/7293231',
+         'image': 'PFL 3.png'
+     }
     
-     "match3": {
-         'team1': 'L. Zhu',
-         'team2': 'L. Bronzetti', 
-         'tournament': 'WTA Cincinnati',
-         'time': '17:05',
-         'pick': 'L. Zhu vyhrá - 1',
-         'odds': '1.60 x 1.27',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-zhu-lin-bronzetti-lucia/7303609/co-sa-tipuje',
-         'image': 'Zhu - Bronzetti.png'
-     },
+#     "match3": {
+#         'team1': 'L. Zhu',
+#         'team2': 'L. Bronzetti', 
+#         'tournament': 'WTA Cincinnati',
+#         'time': '17:05',
+#         'pick': 'L. Zhu vyhrá - 1',
+#         'odds': '1.60 x 1.27',
+#         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-zhu-lin-bronzetti-lucia/7303609/co-sa-tipuje',
+#         'image': 'Zhu - Bronzetti.png'
+#     },
     
-    "match4": {
-        'team1': 'H. Dellien',
-        'team2': 'R. Opelka', 
-        'tournament': 'ATP Cincinnati',
-        'time': '19:20',
-        'pick': 'Opelka -2.5 gemu',
-        'odds': '1.27 x 1.60',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-dellien-hugo-opelka-reilly/7301514/co-sa-tipuje',
-        'image': 'Dellien - Opelka.png'
-    }
+#    "match4": {
+#        'team1': 'H. Dellien',
+#        'team2': 'R. Opelka', 
+#        'tournament': 'ATP Cincinnati',
+#        'time': '19:20',
+#        'pick': 'Opelka -2.5 gemu',
+#        'odds': '1.27 x 1.60',
+#        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-dellien-hugo-opelka-reilly/7301514/co-sa-tipuje',
+#        'image': 'Dellien - Opelka.png'
+#    }
 }
 
 ANALYSES = {
     "Analýza 1": {
-        "title": "⚽️ Petřvald na Moravě - Bílovec",
-        "text": """📊 *ANALÝZA ZÁPASU:  Petřvald na Moravě - Bílovec*
+        "title": "🥊 O. Benedito - E. Dassi",
+        "text": """📊 *ANALÝZA ZÁPASU:  O. Benedito - E. Dassi*
 
-Dnes sa pozrieme na zaujímavý futbalový duel v Divíze F, kde sa stretnú Petřvald na Moravě a Bílovec ⚽️
+V dnešných tiketoch zavítame do africkej PFL. Prvý zápas, ktorý som vybral bude zápas Osvalda Benedita a Emiliosa Dassiho 🥊
 
-_Petřvald na Moravě je tím s rastúcimi ambíciami v moravskom futbale, ktorý prechádza zaujímavou transformáciou. Ich herný štýl je založený na kombinácii solídnej defenzívy s rýchlymi protiútokmi, pričom sa spoliehajú na kolektívny výkon celého tímu. Výhodou je určite domáce prostredie na ich štadióne v Petřvalde, kde majú výbornú podporu miestnych fanúšikov. Ich útočná sila sa opiera najmä o produktívneho Ondřeja Pyclíka, ktorý strelil oba góly proti Opave B a ukázal svoju schopnosť skórovať v kľúčových momentoch. Slabšou stránkou je však výrazná nekonzistentnosť výkonov, ktorá sa prejavuje najmä v tom, že dokážu predviesť výborný futbal proti silným súperom, ale potom sa im nedarí proti teoreticky slabším tímom 🏆 
+_Osvaldo Benedito (3-1) je bojovník z Angoly s prezývkou "Créu", ktorý trénuje v Angolan Top Team. Je nebezpečný grappler, ktorý dokáže systematicky ničiť súperov. Dokáže finishovať zápasy aj postojačky (1 KO/TKO). Jeho jediná prehra prišla cez KO/TKO, ale to je pochopiteľné - grappleri mávajú slabiny v striking fáze 🇦🇴
 
-Bílovec je tím s bohatou tradíciou, ale momentálne prechádza ťažkým obdobím, ktoré ovplyvňuje ich celkový herný prejav. Ich futbalový štýl kombinuje klasický český prístup s dôrazom na techniku a organizáciu hry, pričom sa snažia využívať skúsených hráčov v kombinácii s mladými talentami. Táto podpora mládeže má občas svoju daň, keďže im chýbajú skúsenosti a väčšinou nedokážu konkurovať skúseným hráčom. Ich aktuálna forma nie je tiež nič extra, keď z posledných 11 zápasov majú 7 prehier. 
+Emilios Dassi (4-1) je bojovník z Kamerunu trénujúci v Francis Ngannou Foundation. Na prvý pohľad vyzerá devastačne - všetky jeho víťazstva (100%) prišli cez KO/TKO, čo ukazuje jeho knockout power. Svoj jediný zápas prehral takisto na KO/TKO. V týchto zápasoch sa stretol aj s graplermi, ale boli o dosť nižšie v rebríčku v porovnaní s Beneditom 🇨🇲
 
-Posledný vzájomný zápas vyhral Petrvald 3-1a minulú sezónu mali o 12b viac ako Bílovec. _
+Títo páni sa stretnú po prvýkrát a ich matchup štýlov bude zaujímavý. Bude to klasické stretnutie postojárskeho štýlu s graplingom _
 
-*V tomto zápase je Petrvald favoritom vďaka kvalitnejšiemu kádru, kde väčšina hráčov má skúsenosti aj z vyšších líg. Odporúčam podať za 1.5u (ak kurz výraznejšie klesle z 1.50, tak 1u) ✅*  """
+*Tento zápas je celkom vyrovnaný, ale prikláňam sa k Beneditovi. Je všestrannejší bojovník a ak sa mu aspoň raz podarí boj previesť na zem, môže to byť pre Dassiho smrteľné. Odporúčam staviť 0.75u ✅*  """
     },
     
     "Analýza 2": {
-        "title": "⚽️ Kladno - Dukla Praha B",
-        "text": """📊 *ANALÝZA ZÁPASU: Kladno - Dukla Praha B*
+        "title": "🥊 L. E. Steyn - A. Errachidy",
+        "text": """📊 *ANALÝZA ZÁPASU: L. E. Steyn - A. Errachidy*
 
-Pri českom futbale ostaneme a druhý zápas bude z 3. ligy ČFL A. Tu sa stretne Kladno s Duklou Prahou B ⚽️
+Druhý zápas bude takisto z PFL Afrika. Tu ma zaujal kurz na Errachidyho, ktorého vôbec nevidím, ako takého outsidera 🥊
 
-_SK Kladno tvorí tím s veľkými ambíciami a profesionálnym prístupom, ktorý prechádza vzostupom v posledných rokoch. Ich herný štýl je založený na solídnej organizácii hry s dôrazom na kombináciu skúsenosti a mladých talentov, pričom sa snažia dominovať hre. Klub má za sebou výborný predchádzajúci ročník, keď skončil ako nováčik na vynikajúcom druhom mieste v skupine B. Naberajú do tímu nových hráčov z vyšších líg a vrámci prípravy vyhrali všetky 4 zápasy (vrátane pôsobivého víťazstva 5:0 nad Loko Praha). Toto ich robí kandidátom na víťaza celej ligy 🏆
- 
-Dukla Praha B reprezentuje rezervný tím tradičného pražského klubu, ktorý slúži predovšetkým na výchovu mladých talentov pre A-tím. Ich herný štýl je typicky technický s dôrazom na kombinačnú hru a rozvoj individuálnych schopností mladých hráčov, pričom ich prioritou nie sú až tak výsledky. Hlavnou slabinou Dukly B je prirodzená nestabilita kádra, keďže najlepší hráči sú priebežne presúvaní do A-tímu alebo prestupujú do iných klubov. _
+_Abderrahman Errachidy (4-1) je 24-ročný bojovník z Maroka trénujúci v Rebels Team Casablanca. Má devastačnú úderovú hru - všetky jeho víťazstva (100%) prišli cez KO/TKO, čo ukazuje jeho knockout power. V regionálnom rebríčku je #405. Jeho jediná prehra prišla proti Ramazan Gitinovovi, ktorý je však veľmi kvalitným bojovníkom a bývalým 3-násobným IMMAF svetovým šampiónom 🇲🇦
 
-*Očakávam jednostranný zápas bez veľkých prekvapení a staviť 1.5u (až 2u) na Kladno. Tento zápas som chcel pôvodne spojiť s predošlým, ale kvôli nižšiemu kurzu na Tiposrte sa to viac oplatí podať samostatne (na Niké) * ✅ """               
+Elbert Lukas Steyn (3-0) je 25-ročný bojovník z Južnej Afriky s prezývkou "Pikachu". Je to bývalý wrestler s impozantným pozadím - 22 titulov v Južnej Afrike, 3-násobný africký šampión a Junior Olympian. Má však za sebou 6-ročnú prestávku medzi amatérskym a profesionálnym bojovaním kvôli mentálnym problémom. Pri návrate jeho súperi neboli až tak kvalitní. Teda jeho výhry sú trocha nadhodnotené 🇿🇦 _
+
+*Ak sa dostane boj na zem, Steyn má veľkú výhodu. Úlohou Errachidyho je udržať boj v postoji a dať KO/TKO skôr, ako dostane takedown. Tu odporúčam podať 0.5u, keďže tento tip má vyššie riziko (ale pri kurze 2.73 sa to oplatí skúsiť) * ✅ """               
         
- },
+ }
     
-    "Analýza 3": {
-        "title": "🎾  L. Zhu - L. Bronzetti",
-        "text": """📊 *ANALÝZA ZÁPASU:  L. Zhu - L. Bronzetti*
+#    "Analýza 3": {
+#        "title": "🎾  L. Zhu - L. Bronzetti",
+#        "text": """📊 *ANALÝZA ZÁPASU:  L. Zhu - L. Bronzetti*
 
-Teraz presedláme na tenis a pozrieme si konkrétne ten ženský 🎾
+#Teraz presedláme na tenis a pozrieme si konkrétne ten ženský 🎾
 
-_Lin Zhu (WTA 304) je čínska hráčka s veľmi agresívnym herným štýlom. Jej najlepší a obľúbený úder je forhend, ktorým dokáže diktovať tempo hry. Má rýchly, útočný prístup a snaží sa skracovať body tvrdými údermi. Prežíva síce dramatický pokles z WTA 31 kvôli zraneniu, ale už sa zotavuje. To sa potvrdio aj v Montreali, kde sa dostala do 4. kola. Zároveň je tvrdý povrch je najlepším 🇨🇳
+#_Lin Zhu (WTA 304) je čínska hráčka s veľmi agresívnym herným štýlom. Jej najlepší a obľúbený úder je forhend, ktorým dokáže diktovať tempo hry. Má rýchly, útočný prístup a snaží sa skracovať body tvrdými údermi. Prežíva síce dramatický pokles z WTA 31 kvôli zraneniu, ale už sa zotavuje. To sa potvrdio aj v Montreali, kde sa dostala do 4. kola. Zároveň je tvrdý povrch je najlepším 🇨🇳
 
-Lucia Bronzetti (WTA 61) je talianska hráčka s vyváženou baseline hrou a dobrým taktickým cítením. Je všestranná - dokáže adaptovať svoju hru na rôznym súperkám. Je to však najmä antukárka, čo potvrdzuje mimo jej štýlu aj negatívna bilancia na ostatných povrchoch. Momentálne nie je ani v bohvieakej forme 🇮🇹
+#Lucia Bronzetti (WTA 61) je talianska hráčka s vyváženou baseline hrou a dobrým taktickým cítením. Je všestranná - dokáže adaptovať svoju hru na rôznym súperkám. Je to však najmä antukárka, čo potvrdzuje mimo jej štýlu aj negatívna bilancia na ostatných povrchoch. Momentálne nie je ani v bohvieakej forme 🇮🇹
 
-Odohrali spolu zatiaľ jeden zápas minulý rok, ktorý Zhu vyhrala 7-5, 6-1 _
+#Odohrali spolu zatiaľ jeden zápas minulý rok, ktorý Zhu vyhrala 7-5, 6-1 _
 
-* Tu sa teda prikláňam k zdatnej Číňanke a verím, že zápas vyhrá. Odporúčam staviť 1u v kombinácii s ďalším zápasom *✅"""
-  },
+#* Tu sa teda prikláňam k zdatnej Číňanke a verím, že zápas vyhrá. Odporúčam staviť 1u v kombinácii s ďalším zápasom *✅"""
+#  },
 
-    "Analýza 4": {
-        "title": "🎾  H. Dellien - R. Opelka",
-        "text": """📊 *ANALÝZA ZÁPASU:  H. Dellien - R. Opelka*
+#    "Analýza 4": {
+#        "title": "🎾  H. Dellien - R. Opelka",
+#        "text": """📊 *ANALÝZA ZÁPASU:  H. Dellien - R. Opelka*
 
-Dodatočnú príležitosť na tikete som vybral zo zápasu Opelku s Dellienom 🎾
+#Dodatočnú príležitosť na tikete som vybral zo zápasu Opelku s Dellienom 🎾
 
-_Reilly Opelka (ATP 73) je moderna verzia "servebot" hráča s vylepšenou baseline hrou. Jeho hra je postavená na Devastačnom servise, agresívnej hre a silovom tenise. Takisto má výškovú výhodu (211cm), čo mu umožňuje byť tak nepríjemný na podaní. Z tohto nám už môže vyplývať, že preferuje rýchlejšie povrchy, čo mu dnes hrá do karát 🇺🇸
+#_Reilly Opelka (ATP 73) je moderna verzia "servebot" hráča s vylepšenou baseline hrou. Jeho hra je postavená na Devastačnom servise, agresívnej hre a silovom tenise. Takisto má výškovú výhodu (211cm), čo mu umožňuje byť tak nepríjemný na podaní. Z tohto nám už môže vyplývať, že preferuje rýchlejšie povrchy, čo mu dnes hrá do karát 🇺🇸
 
-Hugo Dellien (ATP 108) je klasický clay-court specialist s defenzívnym baseline herným štýlom. Je to vytrvalostný hráč typu "counterpuncher", ktorý stavá na konzistentnosti a vysokom tenisovom IQ. Využíva pokrytie kurtu a svoju kondíciu na prekonanie súperov. Môžeme však tušiť, že je najmä antukár a na harde odohral len 4 zápasy, kde má skóre 2-2 🇧🇴 _
+#Hugo Dellien (ATP 108) je klasický clay-court specialist s defenzívnym baseline herným štýlom. Je to vytrvalostný hráč typu "counterpuncher", ktorý stavá na konzistentnosti a vysokom tenisovom IQ. Využíva pokrytie kurtu a svoju kondíciu na prekonanie súperov. Môžeme však tušiť, že je najmä antukár a na harde odohral len 4 zápasy, kde má skóre 2-2 🇧🇴 _
 
-*Myslím, že Opelka je suverénny favorit a -2.5 gemu je ten najmenší problém. Verím mu, že tento zápas s prehľadom vyhrá *✅
+#*Myslím, že Opelka je suverénny favorit a -2.5 gemu je ten najmenší problém. Verím mu, že tento zápas s prehľadom vyhrá *✅
 
-Alternatíva: Dá sa uvažvať aj o tom, že Opelka vyhrá 0:2 """
+#Alternatíva: Dá sa uvažovať aj o tom, že Opelka vyhrá 0:2 """
         
-  }
+#  }
 
 }
 
@@ -138,23 +138,23 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV - AUGUST*
-• Výherné tikety: 2✅
-• Prehraté tikety: 0❌
-• Dlhodobá úspešnosť: 76% 
+• Výherné tikety: 3✅
+• Prehraté tikety: 2❌
+• Dlhodobá úspešnosť: 74% 
 
 📈 *NAŠA ÚSPEŠNOSŤ*
-• Navrátnosť za dané obdobie: 82% 
-• Zisk za dané obdobie: +3.28u
+• Navrátnosť za dané obdobie: -1.83% 
+• Zisk za dané obdobie: -0.22u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 66€
-⏩pri vklade 200€ ZISK 131€
-⏩pri vklade 500€ ZISK 328€
+⏩pri vklade 100€ ZISK 318€
+⏩pri vklade 200€ ZISK 636€
+⏩pri vklade 500€ ZISK 1590€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 1640KC
-⏩pri vklade 5000KC ZISK 3280KC
-⏩pri vklade 12500KC ZISK 8200KC
+⏩pri vklade 2500KC ZISK 7950KC
+⏩pri vklade 5000KC ZISK 15900KC
+⏩pri vklade 12500KC ZISK 31800KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
@@ -416,7 +416,7 @@ def send_ticket_to_channel(match_data=None):
             return False
     
     caption = (f"🏆 {match_data['team1']} vs {match_data['team2']}\n"
-              f"🎾{match_data['tournament']}\n"
+              f"🥊{match_data['tournament']}\n"
               f"🕘 {match_data['time']}\n\n"
               f"🎯 {match_data['pick']}\n"
               f"💰 Kurz: {match_data['odds']}")
