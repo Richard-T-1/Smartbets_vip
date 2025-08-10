@@ -26,25 +26,25 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'O. Benedito',
-        'team2': 'E. Dassi',
-        'tournament': 'PFL',
-        'time': '18:50',
-        'pick': 'Benedito vyhrá - 1',
-        'odds': '1.84',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-benedito-osvaldo-dassi-emilios/7293226/co-sa-tipuje',
-        'image': 'PFL 2.png' 
+        'team1': 'V. Kudermetová',
+        'team2': 'B. Bencic',
+        'tournament': 'WTA Cincinnati',
+        'time': '17:05',
+        'pick': 'Bencic vyhrá + bude viac ako 17.5 gemu',
+        'odds': '2.05',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kudermetova-veronika-bencic-belinda/7310190/co-sa-tipuje',
+        'image': 'Cincinnati 5.png' 
     },
     
      "match2": {
-         'team1': 'L. E. Steyn',
-         'team2': 'A. Errachidy', 
-         'tournament': 'Errachidy vyhrá - 2',
-         'time': '18:20',
-         'pick': 'Errachidy vyhrá - 2',
-         'odds': '2.73',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-steyn-elbert-lukas-errachidy-abderrahman/7293231',
-         'image': 'PFL 3.png'
+         'team1': 'J. Menšík',
+         'team2': 'E. Quinn', 
+         'tournament': 'ATP Cincinnati',
+         'time': '18:10',
+         'pick': 'Quinn + 3.5 gemu',
+         'odds': '1.64',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-mensik-jakub-quinn-ethan/7310140',
+         'image': 'Cincinnati 4.png'
      }
     
 #     "match3": {
@@ -72,10 +72,10 @@ MATCHES = {
 
 ANALYSES = {
     "Analýza 1": {
-        "title": "🥊 O. Benedito - E. Dassi",
-        "text": """📊 *ANALÝZA ZÁPASU:  O. Benedito - E. Dassi*
+        "title": "🎾 V. Kudermetová - B. Bencic",
+        "text": """📊 *ANALÝZA ZÁPASU:  V. Kudermetová - B. Bencic*
 
-V dnešných tiketoch zavítame do africkej PFL. Prvý zápas, ktorý som vybral bude zápas Osvalda Benedita a Emiliosa Dassiho 🥊
+Vraciame sa späť do Cincinnati, kde momentálne prebieha 2. kolo pavúka. Tu sa stretne Veronika Kudermetová s Belindou Bencic 🎾
 
 _Osvaldo Benedito (3-1) je bojovník z Angoly s prezývkou "Créu", ktorý trénuje v Angolan Top Team. Je nebezpečný grappler, ktorý dokáže systematicky ničiť súperov. Dokáže finishovať zápasy aj postojačky (1 KO/TKO). Jeho jediná prehra prišla cez KO/TKO, ale to je pochopiteľné - grappleri mávajú slabiny v striking fáze 🇦🇴
 
@@ -138,23 +138,23 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV - AUGUST*
-• Výherné tikety: 3✅
+• Výherné tikety: 4✅
 • Prehraté tikety: 2❌
 • Dlhodobá úspešnosť: 74% 
 
 📈 *NAŠA ÚSPEŠNOSŤ*
-• Navrátnosť za dané obdobie: -1.83% 
-• Zisk za dané obdobie: -0.22u
+• Navrátnosť za dané obdobie: 0.3% 
+• Zisk za dané obdobie: +0.05u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 318€
-⏩pri vklade 200€ ZISK 636€
-⏩pri vklade 500€ ZISK 1590€
+⏩pri vklade 100€ ZISK 270€
+⏩pri vklade 200€ ZISK 540€
+⏩pri vklade 500€ ZISK 1350€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 7950KC
-⏩pri vklade 5000KC ZISK 15900KC
-⏩pri vklade 12500KC ZISK 31800KC
+⏩pri vklade 2500KC ZISK 6750KC
+⏩pri vklade 5000KC ZISK 13500KC
+⏩pri vklade 12500KC ZISK 33750KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
