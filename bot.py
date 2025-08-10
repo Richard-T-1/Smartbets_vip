@@ -42,8 +42,8 @@ MATCHES = {
          'tournament': 'ATP Cincinnati',
          'time': '18:10',
          'pick': 'Quinn + 3.5 gemu',
-         'odds': '1.64',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-mensik-jakub-quinn-ethan/7310140',
+         'odds': '1.65 (Tipos)',
+         'betting_url': 'https://tipkurz.etipos.sk/zapasy/0/1990396cxx4199/267724046?searchBy=Men%C5%A1%C3%AD&gameGroup=69&categoryId=0',
          'image': 'Cincinnati 4.png'
      }
     
@@ -77,26 +77,28 @@ ANALYSES = {
 
 Vraciame sa späť do Cincinnati, kde momentálne prebieha 2. kolo pavúka. Tu sa stretne Veronika Kudermetová s Belindou Bencic 🎾
 
-_Osvaldo Benedito (3-1) je bojovník z Angoly s prezývkou "Créu", ktorý trénuje v Angolan Top Team. Je nebezpečný grappler, ktorý dokáže systematicky ničiť súperov. Dokáže finishovať zápasy aj postojačky (1 KO/TKO). Jeho jediná prehra prišla cez KO/TKO, ale to je pochopiteľné - grappleri mávajú slabiny v striking fáze 🇦🇴
+_Belinda Bencic (WTA 19) je 28-ročná švajčiarska hráčka, ktorá sa nedávno vrátila po materskej dovolenke (ako sme už spomínali naposledy), a tento návrat zvládla výborne (o čom hovorí jej umietnenie v rebričku). Má deväť WTA titulov a je známa svojou všestrannosťou na rôznych povrchoch. V roku 2025 už vyhrala titul v Abu Dhabi a dosiahla semifinále Wimbledonu, kde prehrala s Igou Swiatek. Bencic je technicky vyspelá hráčka s výborným returnom a schopnosťou adaptovať sa na rôzne herné štýly. Na tvrdých povrchoch má takisto výborné výsledky 🇨🇭 
 
-Emilios Dassi (4-1) je bojovník z Kamerunu trénujúci v Francis Ngannou Foundation. Na prvý pohľad vyzerá devastačne - všetky jeho víťazstva (100%) prišli cez KO/TKO, čo ukazuje jeho knockout power. Svoj jediný zápas prehral takisto na KO/TKO. V týchto zápasoch sa stretol aj s graplermi, ale boli o dosť nižšie v rebríčku v porovnaní s Beneditom 🇨🇲
+Veronika Kudermetová (WTA 36)  je 28-ročná ruská hráčka, ktorá prežíva zmiešanú sezónu. Je bývalou svetovou deviatkou (najvyšší ranking v októbri 2022) a špecializuje sa na antuku. Má za sebou skvelý doubles úspech - nedávno vyhrala Wimbledon s Elise Mertens a je bývalou dvojkovou hráčkou sveta v debli. Jej hra je založená na silných základných úderoch a vynikajúcej kondícii, ale má problémy s konzistentnosťou na rýchlych tvrdých povrchoch. 🇷🇺
 
-Títo páni sa stretnú po prvýkrát a ich matchup štýlov bude zaujímavý. Bude to klasické stretnutie postojárskeho štýlu s graplingom _
+Vzájomne majú vyrovnanú bilanciu, ale ich posledné stretnutie v Abu Dhabi 2025 jasne vyhrala Bencic 6-0, 6-0, čo bolo devastačné víťazstvo pre Švajčiarku. To ukazuje aktuálny pomer síl medzi nimi. _
 
-*Tento zápas je celkom vyrovnaný, ale prikláňam sa k Beneditovi. Je všestrannejší bojovník a ak sa mu aspoň raz podarí boj previesť na zem, môže to byť pre Dassiho smrteľné. Odporúčam staviť 0.75u ✅*  """
+*V tomto zápase sa prikláňam k Belinde Bencic. Zároveň verím, že minulý debakel 6-0, 6-0 bol skôr anomáliou a Kudermetovej sa podarí uhrať aspoň tých 6 gemov. Odporúčam staviť 1u ✅*  """
     },
     
     "Analýza 2": {
-        "title": "🥊 L. E. Steyn - A. Errachidy",
-        "text": """📊 *ANALÝZA ZÁPASU: L. E. Steyn - A. Errachidy*
+        "title": "🎾 J. Menšík - E. Quinn",
+        "text": """📊 *ANALÝZA ZÁPASU: J. Menšík - E. Quinn*
 
-Druhý zápas bude takisto z PFL Afrika. Tu ma zaujal kurz na Errachidyho, ktorého vôbec nevidím, ako takého outsidera 🥊
+Druhý zápas bude takisto zo Cincinnati. Bude to zápas Jakuba Menšíka s Ethanom Quinnom 🎾
 
-_Abderrahman Errachidy (4-1) je 24-ročný bojovník z Maroka trénujúci v Rebels Team Casablanca. Má devastačnú úderovú hru - všetky jeho víťazstva (100%) prišli cez KO/TKO, čo ukazuje jeho knockout power. V regionálnom rebríčku je #405. Jeho jediná prehra prišla proti Ramazan Gitinovovi, ktorý je však veľmi kvalitným bojovníkom a bývalým 3-násobným IMMAF svetovým šampiónom 🇲🇦
+_Ethan Quinn (ATP 82) je 21-ročný americký hráč. V roku 2025 má bilanciu 36-20, na tvrdých kurtoch 18-9. Quinn je bývalý majster NCAA z roku 2023 za University of Georgia a profesionálnu kariéru začal až po skončení štúdia. Jeho hlavná zbraň je podanie v spojení so silným forehandom. Výmeny hrá agresívne, kde mu pomáha aj jeho tenisové IQ (ako sa o ňom vyjadril jeho tréner). Môžeme teda dedukovať, že aj tvrdý povrch mu k tomu bude dnes dopomáhať 🇺🇸 
 
-Elbert Lukas Steyn (3-0) je 25-ročný bojovník z Južnej Afriky s prezývkou "Pikachu". Je to bývalý wrestler s impozantným pozadím - 22 titulov v Južnej Afrike, 3-násobný africký šampión a Junior Olympian. Má však za sebou 6-ročnú prestávku medzi amatérskym a profesionálnym bojovaním kvôli mentálnym problémom. Pri návrate jeho súperi neboli až tak kvalitní. Teda jeho výhry sú trocha nadhodnotené 🇿🇦 _
+ Jakub Mensík (ATP 17) je 19-ročný český hráč narodený, ktorý má za sebou výnimočný rok 2025. Jeho najväčším úspechom v roku 2025 bolo víťazstvo na Masters 1000 v Miami, kde vo finále porazil Novaka Djokoviča 7-6(4), 7-6(4). Jeho hra je založená na agresívnych baseline úderoch a vynikajúcej fyzickej pripravenosti. V Cincinnatiho minulom roku dosiahol iba kvalifikácie, kde prehral s Aleksandarom Vukicom 7-6(5), 6-2 🇨🇿 
+ 
+ Ich vzájomná bilancia je 1:0 pre Menšíka, keď na madridskej antuke porazil Quinna 2:0_
 
-*Ak sa dostane boj na zem, Steyn má veľkú výhodu. Úlohou Errachidyho je udržať boj v postoji a dať KO/TKO skôr, ako dostane takedown. Tu odporúčam podať 0.5u, keďže tento tip má vyššie riziko (ale pri kurze 2.73 sa to oplatí skúsiť) * ✅ """               
+*Jakub Menšík je v tomto zápase favorit, ale nie až taký veľký ako ho niektoré stávkovky opisujú. Quinnov herný štýl výborne zapadá k povrchu a má aj svoje zbrane, ktorými bude proti Menšíkovi bojovať. Odporúčam staviť 1u na Quinna +3.5 gemu * ✅ """               
         
  }
     
@@ -416,7 +418,7 @@ def send_ticket_to_channel(match_data=None):
             return False
     
     caption = (f"🏆 {match_data['team1']} vs {match_data['team2']}\n"
-              f"🥊{match_data['tournament']}\n"
+              f"🎾 {match_data['tournament']}\n"
               f"🕘 {match_data['time']}\n\n"
               f"🎯 {match_data['pick']}\n"
               f"💰 Kurz: {match_data['odds']}")
