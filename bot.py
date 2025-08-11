@@ -26,25 +26,25 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'V. Kudermetová',
-        'team2': 'B. Bencic',
-        'tournament': 'WTA Cincinnati',
-        'time': '17:05',
-        'pick': 'Bencic vyhrá + bude viac ako 17.5 gemu',
-        'odds': '2.05',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kudermetova-veronika-bencic-belinda/7310190/co-sa-tipuje',
-        'image': 'Cincinnati 5.png' 
+        'team1': 'A. Donski',
+        'team2': 'A. Shah',
+        'tournament': 'ATP Sofia',
+        'time': '15:30',
+        'pick': 'Donski vyhrá - 1',
+        'odds': '2.11 (Niké)',
+        'betting_url': 'https://www.nike.sk/tipovanie/tenis/challenger/challenger-sofia',
+        'image': 'Sofia.png' 
     },
     
      "match2": {
-         'team1': 'J. Menšík',
-         'team2': 'E. Quinn', 
+         'team1': 'F. Tiafoe',
+         'team2': 'U. Humbert', 
          'tournament': 'ATP Cincinnati',
          'time': '18:10',
-         'pick': 'Quinn + 3.5 gemu',
-         'odds': '1.65 (Tipos)',
-         'betting_url': 'https://tipkurz.etipos.sk/zapasy/0/1990396cxx4199/267724046?searchBy=Men%C5%A1%C3%AD&gameGroup=69&categoryId=0',
-         'image': 'Cincinnati 4.png'
+         'pick': 'Tiafoe vyhrá - 1',
+         'odds': '1.70',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-tiafoe-frances-humbert-ugo/7312331/co-sa-tipuje',
+         'image': 'Cincinnati 6.png'
      }
     
 #     "match3": {
@@ -72,33 +72,31 @@ MATCHES = {
 
 ANALYSES = {
     "Analýza 1": {
-        "title": "🎾 V. Kudermetová - B. Bencic",
-        "text": """📊 *ANALÝZA ZÁPASU:  V. Kudermetová - B. Bencic*
+        "title": "🎾 A. Donski - A. Shah",
+        "text": """📊 *ANALÝZA ZÁPASU:  A. Donski - A. Shah*
 
-Vraciame sa späť do Cincinnati, kde momentálne prebieha 2. kolo pavúka. Tu sa stretne Veronika Kudermetová s Belindou Bencic 🎾
+Presúvame sa do Bulharskej Sofie, konkrétne do 16finále. Dnes sa odohrá zaujímavý zápas Alexandra Donskiho a Aryana Shaha 🎾
 
-_Belinda Bencic (WTA 19) je 28-ročná švajčiarska hráčka, ktorá sa nedávno vrátila po materskej dovolenke (ako sme už spomínali naposledy), a tento návrat zvládla výborne (o čom hovorí jej umietnenie v rebričku). Má deväť WTA titulov a je známa svojou všestrannosťou na rôznych povrchoch. V roku 2025 už vyhrala titul v Abu Dhabi a dosiahla semifinále Wimbledonu, kde prehrala s Igou Swiatek. Bencic je technicky vyspelá hráčka s výborným returnom a schopnosťou adaptovať sa na rôzne herné štýly. Na tvrdých povrchoch má takisto výborné výsledky 🇨🇭 
+_Alexander Donski (ATP 655) je 26-ročný bulharský hráč, ktorý pôvodne reprezentoval Kanadu do roku 2016. Donskiho herný štýl je primárne založený na agresívnej hre z baseline, ale má skúsenosti aj na antuke. Má solídne podania a zároveň podporu domáceho prostredia. V domácom Bulharsku už zahral v Dobriči 2 veľmi slušné turnaje, kde porazil hráčov ako Tabura, Berretiniho či Gurriho  🇧🇬  
 
-Veronika Kudermetová (WTA 36)  je 28-ročná ruská hráčka, ktorá prežíva zmiešanú sezónu. Je bývalou svetovou deviatkou (najvyšší ranking v októbri 2022) a špecializuje sa na antuku. Má za sebou skvelý doubles úspech - nedávno vyhrala Wimbledon s Elise Mertens a je bývalou dvojkovou hráčkou sveta v debli. Jej hra je založená na silných základných úderoch a vynikajúcej kondícii, ale má problémy s konzistentnosťou na rýchlych tvrdých povrchoch. 🇷🇺
+Aryan Shah (ATP 395) je 19-ročný hráč, ktorý je jednoznačne nádejou indického tenisu a do budúcna má určite lepšie výhliadky v porovnaní s Donskim. Mal by mať o niečo lepšiu kondíciu a priamejší štýl hry. S antukou však nemá veľké skúsenosti a jeho skóre tu nie je nič extra 🇮🇳 _
 
-Vzájomne majú vyrovnanú bilanciu, ale ich posledné stretnutie v Abu Dhabi 2025 jasne vyhrala Bencic 6-0, 6-0, čo bolo devastačné víťazstvo pre Švajčiarku. To ukazuje aktuálny pomer síl medzi nimi. _
-
-*V tomto zápase sa prikláňam k Belinde Bencic. Zároveň verím, že minulý debakel 6-0, 6-0 bol skôr anomáliou a Kudermetovej sa podarí uhrať aspoň tých 6 gemov. Odporúčam staviť 1u ✅*  """
+*Tento zápas bude zaujímavý, ale je zároveň rizikovejší. Kurz 2.10 na Niké vidím ako nadcenený, a preto som sa rozohodol hrať Donskiho. Odporúčam však staviť maximálne 1u (ideálne asi 0.75u) ✅*  """
     },
     
     "Analýza 2": {
-        "title": "🎾 J. Menšík - E. Quinn",
-        "text": """📊 *ANALÝZA ZÁPASU: J. Menšík - E. Quinn*
+        "title": "🎾 F. Tiafoe - U. Humbert",
+        "text": """📊 *ANALÝZA ZÁPASU: F. Tiafoe - U. Humbert*
 
-Druhý zápas bude takisto zo Cincinnati. Bude to zápas Jakuba Menšíka s Ethanom Quinnom 🎾
+Druhý zápas poobedný zápas bude zo Cincinnati. Bude to zápas Francesa Tiafoe s Ugom Humbertom 🎾
 
-_Ethan Quinn (ATP 82) je 21-ročný americký hráč. V roku 2025 má bilanciu 36-20, na tvrdých kurtoch 18-9. Quinn je bývalý majster NCAA z roku 2023 za University of Georgia a profesionálnu kariéru začal až po skončení štúdia. Jeho hlavná zbraň je podanie v spojení so silným forehandom. Výmeny hrá agresívne, kde mu pomáha aj jeho tenisové IQ (ako sa o ňom vyjadril jeho tréner). Môžeme teda dedukovať, že aj tvrdý povrch mu k tomu bude dnes dopomáhať 🇺🇸 
+_Frances Tiafoe (ATP 14) je americký reprezentant, ktorý dosiahol kariérový rekord 10. miesta v ATP rebríčku pred 2 rokmi, a stal sa tak prvým americkým mužom so sierra leonskými koreňmi v top 10. Má 3 ATP tituly - Delray Beach 2018, Houston 2023 na antuke a Stuttgart 2023 na tráve. Tiafoeov herný štýl je založený na výraznej atletike a explozívnej hre. Je známy svojimi spektakulárnymi údermi a showmanstvom na kurte. Má výborné podanie a jeho forehand je jeho hlavnou zbraňou - dokáže robiť víťazné údery z takmer nemožných pozícií. Obľubuje agresívnu hru a rychle tempo. Jeho atletika mu umožňuje pokrývať kurt veľmi efektívne a často robiť obranné údery, ktoré sa zmenia na útoky 🇺🇸 
 
- Jakub Mensík (ATP 17) je 19-ročný český hráč narodený, ktorý má za sebou výnimočný rok 2025. Jeho najväčším úspechom v roku 2025 bolo víťazstvo na Masters 1000 v Miami, kde vo finále porazil Novaka Djokoviča 7-6(4), 7-6(4). Jeho hra je založená na agresívnych baseline úderoch a vynikajúcej fyzickej pripravenosti. V Cincinnatiho minulom roku dosiahol iba kvalifikácie, kde prehral s Aleksandarom Vukicom 7-6(5), 6-2 🇨🇿 
+Ugo Humbert (ATP 25) e 27-ročný francúzsky hráč, ktorý má takisto viacero ATP titulov. Jeho hra je založená na tlaku a rýchlom ukončovaní výmen. Preferuje tvrdé kurty a je charakterizovaný ako skutočný ofenzívny hráč, ktorý rád volleyuje. Má výborný backend a aj slušné podania 🇫🇷
  
- Ich vzájomná bilancia je 1:0 pre Menšíka, keď na madridskej antuke porazil Quinna 2:0_
+Zatiaľ spolu odohrali 3 zápasy a Tiafoe vedie 2:1. Tieto zápasy však boli 4 a viac rokov dozadu, čiže neposkytujú až tak dobrý obraz o ich kvalitách _
 
-*Jakub Menšík je v tomto zápase favorit, ale nie až taký veľký ako ho niektoré stávkovky opisujú. Quinnov herný štýl výborne zapadá k povrchu a má aj svoje zbrane, ktorými bude proti Menšíkovi bojovať. Odporúčam staviť 1u na Quinna +3.5 gemu * ✅ """               
+*Tiafoe je v tomto zápase miernym favoritom a prikláňam sa k jeho výhre. Je o niečo kvalitenjší hráč a je aj rozohratý z minulých turnajov. Odporúčam staviť 1u (poprípade 1.25u)* ✅ """               
         
  }
     
@@ -141,22 +139,22 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 
 🏆 *BILANCIA TIKETOV - AUGUST*
 • Výherné tikety: 4✅
-• Prehraté tikety: 2❌
-• Dlhodobá úspešnosť: 74% 
+• Prehraté tikety: 4❌
+• Dlhodobá úspešnosť: 71% 
 
-📈 *NAŠA ÚSPEŠNOSŤ*
-• Navrátnosť za dané obdobie: 0.3% 
-• Zisk za dané obdobie: +0.05u
+#📈 *NAŠA ÚSPEŠNOSŤ*
+#• Navrátnosť za dané obdobie: 0.3% 
+#• Zisk za dané obdobie: +0.05u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 270€
-⏩pri vklade 200€ ZISK 540€
-⏩pri vklade 500€ ZISK 1350€
+⏩pri vklade 100€ ZISK 248€
+⏩pri vklade 200€ ZISK 496€
+⏩pri vklade 500€ ZISK 1240€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 6750KC
-⏩pri vklade 5000KC ZISK 13500KC
-⏩pri vklade 12500KC ZISK 33750KC
+⏩pri vklade 2500KC ZISK 6200KC
+⏩pri vklade 5000KC ZISK 12400KC
+⏩pri vklade 12500KC ZISK 31000KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
