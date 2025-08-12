@@ -26,110 +26,109 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'A. Donski',
-        'team2': 'A. Shah',
-        'tournament': 'ATP Sofia',
-        'time': '15:30',
-        'pick': 'Donski vyhrá - 1',
-        'odds': '2.11 (Niké)',
-        'betting_url': 'https://www.nike.sk/tipovanie/tenis/challenger/challenger-sofia',
-        'image': 'Sofia.png' 
+        'team1': 'Havlíčkův Brod',
+        'team2': 'Zbrojovka Brno',
+        'tournament': 'Český pohár',
+        'time': '17:30',
+        'pick': 'Brno vyhrá 1. polčas',
+        'odds': '1.31 x 1.45',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-havlickuv-brod-zbrojovka-brno/7310871/co-sa-tipuje',
+        'image': 'Mol cup 1.png' 
     },
     
      "match2": {
-         'team1': 'F. Tiafoe',
-         'team2': 'U. Humbert', 
-         'tournament': 'ATP Cincinnati',
-         'time': '18:10',
-         'pick': 'Tiafoe vyhrá - 1',
-         'odds': '1.70',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-tiafoe-frances-humbert-ugo/7312331/co-sa-tipuje',
-         'image': 'Cincinnati 6.png'
+         'team1': 'Přepeře',
+         'team2': 'Česká Lípa', 
+         'tournament': 'Český pohár',
+         'time': '18:00',
+         'pick': 'Česká Lípa vyhrá - 2',
+         'odds': '1.45 x 1.31',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-prepere-ceska-lipa/7310875/co-sa-tipuje',
+         'image': 'Mol cup 2.png'
      }
     
-#     "match3": {
-#         'team1': 'L. Zhu',
-#         'team2': 'L. Bronzetti', 
-#         'tournament': 'WTA Cincinnati',
-#         'time': '17:05',
-#         'pick': 'L. Zhu vyhrá - 1',
-#         'odds': '1.60 x 1.27',
-#         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-zhu-lin-bronzetti-lucia/7303609/co-sa-tipuje',
-#         'image': 'Zhu - Bronzetti.png'
-#     },
+     "match3": {
+         'team1': 'A. Popyrin',
+         'team2': 'A. Rublev', 
+         'tournament': 'ATP Cincinnati',
+         'time': '17:00',
+         'pick': 'Rublev vyhrá - 2',
+         'odds': '1.52',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-popyrin-alexei-rublev-andrey/7314517/co-sa-tipuje',
+         'image': 'Cincinnati 7.png'
+     },
     
-#    "match4": {
-#        'team1': 'H. Dellien',
-#        'team2': 'R. Opelka', 
-#        'tournament': 'ATP Cincinnati',
-#        'time': '19:20',
-#        'pick': 'Opelka -2.5 gemu',
-#        'odds': '1.27 x 1.60',
-#        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-dellien-hugo-opelka-reilly/7301514/co-sa-tipuje',
-#        'image': 'Dellien - Opelka.png'
-#    }
+    "match4": {
+        'team1': 'M. Talha',
+        'team2': 'S. Baysangur', 
+        'tournament': 'D.W. Contender Series',
+        'time': '13.8. 1:00',
+        'pick': 'Talha vyhrá - 1',
+        'odds': '3.74',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-talha-murtaza-baysangur-susurkaev/7313974',
+        'image': 'D.W. Contender Series.png'
+    }
 }
 
 ANALYSES = {
     "Analýza 1": {
-        "title": "🎾 A. Donski - A. Shah",
-        "text": """📊 *ANALÝZA ZÁPASU:  A. Donski - A. Shah*
+        "title": "⚽️ Havlíčkův Brod - Zbrojovka Brno",
+        "text": """📊 *ANALÝZA ZÁPASU: Havlíčkův Brod - Zbrojovka Brno*
 
-Presúvame sa do Bulharskej Sofie, konkrétne do 16finále. Dnes sa odohrá zaujímavý zápas Alexandra Donskiho a Aryana Shaha 🎾
+Ako ste si už všimli, Český pohár je jeden z našich obľbúbených turnajov, ktoré práve prebiehajú. A teda si z neho dnes zoberieme 2 zápasy. Prvý je: Havlíčkův Brod - Zbrojovka Brno ⚽️
 
-_Alexander Donski (ATP 655) je 26-ročný bulharský hráč, ktorý pôvodne reprezentoval Kanadu do roku 2016. Donskiho herný štýl je primárne založený na agresívnej hre z baseline, ale má skúsenosti aj na antuke. Má solídne podania a zároveň podporu domáceho prostredia. V domácom Bulharsku už zahral v Dobriči 2 veľmi slušné turnaje, kde porazil hráčov ako Tabura, Berretiniho či Gurriho  🇧🇬  
+_FC Zbrojovka Brno je tradičný český klub s bohatou históriou, ktorý momentálne pôsobí v FNL (druhá najvyššia súťaž). Momentálne je na čele tabuľky zo 4 výhrami a 1 remízou. Ich herný štýl je založený na kombinačnej hre s dôrazom na stredovú líniu. Tento klub mal v minulých obdobiach finančné problémy, ale ich kvalita kádra je stále vysoká.
 
-Aryan Shah (ATP 395) je 19-ročný hráč, ktorý je jednoznačne nádejou indického tenisu a do budúcna má určite lepšie výhliadky v porovnaní s Donskim. Mal by mať o niečo lepšiu kondíciu a priamejší štýl hry. S antukou však nemá veľké skúsenosti a jeho skóre tu nie je nič extra 🇮🇳 _
+FC Slovan Havlíčkův Brod je regionálny klub z Havlíčkova Brodu, ktorý hrá v nižšej českej súťaži. V divízii D je na spodku tabuľky zatiaľ s 2 prehrami. Ich herný štýl je typický pre české nižšie súťaže - organizovaná defenzíva, spoliehanie sa na štandardné situácie a snaha o rýchle kontútoky. _
 
-*Tento zápas bude zaujímavý, ale je zároveň rizikovejší. Kurz 2.10 na Niké vidím ako nadcenený, a preto som sa rozohodol hrať Donskiho. Odporúčam však staviť maximálne 1u (ideálne asi 0.75u) ✅*  """
+*Brno je dnes výrazným favoritom a tak si myslím, že už v 1. polčase sa dostanú do vedenia. Tento zápas som skombinoval s ďalším a odporúčam staviť 1.25-1.5u ✅*  """
     },
     
     "Analýza 2": {
-        "title": "🎾 F. Tiafoe - U. Humbert",
-        "text": """📊 *ANALÝZA ZÁPASU: F. Tiafoe - U. Humbert*
+        "title": "⚽️ Přepeře - Česká Lípa",
+        "text": """📊 *ANALÝZA ZÁPASU: Přepeře - Česká Lípa*
 
-Druhý zápas poobedný zápas bude zo Cincinnati. Bude to zápas Francesa Tiafoe s Ugom Humbertom 🎾
+Druhý zápas z Českého pohára bude Přepeře - Česká Lípa ⚽️
 
-_Frances Tiafoe (ATP 14) je americký reprezentant, ktorý dosiahol kariérový rekord 10. miesta v ATP rebríčku pred 2 rokmi, a stal sa tak prvým americkým mužom so sierra leonskými koreňmi v top 10. Má 3 ATP tituly - Delray Beach 2018, Houston 2023 na antuke a Stuttgart 2023 na tráve. Tiafoeov herný štýl je založený na výraznej atletike a explozívnej hre. Je známy svojimi spektakulárnymi údermi a showmanstvom na kurte. Má výborné podanie a jeho forehand je jeho hlavnou zbraňou - dokáže robiť víťazné údery z takmer nemožných pozícií. Obľubuje agresívnu hru a rychle tempo. Jeho atletika mu umožňuje pokrývať kurt veľmi efektívne a často robiť obranné údery, ktoré sa zmenia na útoky 🇺🇸 
+_Arsenal Česká Lípa pôsobí v CFL (tretej najvyššej súťaži) a má za sebou solídnu formu v poslednom období. Klub má organizovanejšiu štruktúru ako ich dnešný súper a disponuje kvalitnejším kádrom s hráčmi ako Hassan Usman, Matěj Šimon a Ivan Kozak v útoku. Ich herný štýl je viac ofenzívne ladený s dôrazom na kombinačnú hru a využívanie krídiel. Česká Lípa má lepšiu techniku a fyzickú pripravenosť, čo im dáva výhodu v dlhšom priebehu zápasu.
 
-Ugo Humbert (ATP 25) e 27-ročný francúzsky hráč, ktorý má takisto viacero ATP titulov. Jeho hra je založená na tlaku a rýchlom ukončovaní výmen. Preferuje tvrdé kurty a je charakterizovaný ako skutočný ofenzívny hráč, ktorý rád volleyuje. Má výborný backend a aj slušné podania 🇫🇷
+FK Přepeře je malý klub z českej regionálnej súťaže, ktorý má za sebou skromné výsledky v poslednom období. Klub má obmedzené financie a spolieha sa prevažne na lokálnych hráčov. Ich herný štýl je pragmatický - defenzívne orientovaný s dôrazom na kompaktnosť a využívanie chýb súpera. V kádri majú niekoľko zahraničných hráčov vrátane Anthonyho Obonogwu a Samuela Chisoma, ktorí môžu priniesť kvalitu do útočnej fázy. Slabými stránkami sú nedostatok hĺbky kádra a technické limity väčšiny hráčov.
  
-Zatiaľ spolu odohrali 3 zápasy a Tiafoe vedie 2:1. Tieto zápasy však boli 4 a viac rokov dozadu, čiže neposkytujú až tak dobrý obraz o ich kvalitách _
+Zatiaľ spolu odohrali 4 zápasy a Prepere nevyhralo ani 1. Maximu, čo sa im podarilo urobiť je remíza. Posledný zápas prehrali 2:0 _
 
-*Tiafoe je v tomto zápase miernym favoritom a prikláňam sa k jeho výhre. Je o niečo kvalitenjší hráč a je aj rozohratý z minulých turnajov. Odporúčam staviť 1u (poprípade 1.25u)* ✅ """               
+*Česká Lípa je jednoznačným favoritom, ktorý má kvality aj na postup do vyššej ligy. Přepeře je klub s nižšou úrovňou je tento zápas vidím ako zápas na jednu bránu. V kombinácii s predošlým zápasom odporúčam staviť 1.25-1.5u* ✅ """               
         
- }
+ },
     
-#    "Analýza 3": {
-#        "title": "🎾  L. Zhu - L. Bronzetti",
-#        "text": """📊 *ANALÝZA ZÁPASU:  L. Zhu - L. Bronzetti*
+    "Analýza 3": {
+        "title": "🎾  A. Popyrin - A. Rubleb",
+        "text": """📊 *ANALÝZA ZÁPASU:  A. Popyrin - A. Rubleb*
 
-#Teraz presedláme na tenis a pozrieme si konkrétne ten ženský 🎾
+Po futbale nás čaká tenisové stretnutie 2 veľkých mien: Andreya Rubleva (ATP 11) a Alexeia Popyrina (ATP 19)  🎾
 
-#_Lin Zhu (WTA 304) je čínska hráčka s veľmi agresívnym herným štýlom. Jej najlepší a obľúbený úder je forhend, ktorým dokáže diktovať tempo hry. Má rýchly, útočný prístup a snaží sa skracovať body tvrdými údermi. Prežíva síce dramatický pokles z WTA 31 kvôli zraneniu, ale už sa zotavuje. To sa potvrdio aj v Montreali, kde sa dostala do 4. kola. Zároveň je tvrdý povrch je najlepším 🇨🇳
+_Andrey Rublev je 27-ročný ruský hráč, ktoré maximum bolo 5. miesto v ATP rebíčku. Má 17 ATP titulov vrátane dvoch Masters 1000 (Monte-Carlo 2023, Madrid 2024). Rublev je známy svojím explozívnym štýlom hry s devastačným forehendom ako obľúbeným úderom. Priemerne má 7.4 és na zápas a 70% úspešnosťou 1. podania. Jeho powerfull baseline hra môže dominovať súperom, ale mentálna nestabilita je jeho achillova päta 🇷🇺
 
-#Lucia Bronzetti (WTA 61) je talianska hráčka s vyváženou baseline hrou a dobrým taktickým cítením. Je všestranná - dokáže adaptovať svoju hru na rôznym súperkám. Je to však najmä antukárka, čo potvrdzuje mimo jej štýlu aj negatívna bilancia na ostatných povrchoch. Momentálne nie je ani v bohvieakej forme 🇮🇹
+Alexei Popyrin má za sebou úspešnú sezónu 2025. Jeho najväčším úspechom je víťazstvo na Masters 1000 v Kanade 2024, kde vo finále porazil práve Rubleva 6-2, 6-4. V roku 2025 dosiahol štvrťfinále v Monte-Carlo, Ženeve a Toronte. Popyrinov herný štýl je založený na výbornom servise s 8.5 esami na zápas a 61% úspešnosťou prvého podania (ale vyšším počtom dvojchýb). Je fyzicky silný hráč s výškou 195 cm a preferuje agresívnu hru z baseline. Jeho slabšou stránkou je konzistentnosť - dokáže hrať výnimočne, ale aj sklamať v dôležitých momentoch 🇦🇺
 
-#Odohrali spolu zatiaľ jeden zápas minulý rok, ktorý Zhu vyhrala 7-5, 6-1 _
+Odohrali spolu zatiaľ 3 zápasy a Popyrin vedie 2-1. Na tvrdých kurtoch v hlavných turnajoch vedie Popyrin 1-0. _
 
-#* Tu sa teda prikláňam k zdatnej Číňanke a verím, že zápas vyhrá. Odporúčam staviť 1u v kombinácii s ďalším zápasom *✅"""
-#  },
-
-#    "Analýza 4": {
-#        "title": "🎾  H. Dellien - R. Opelka",
-#        "text": """📊 *ANALÝZA ZÁPASU:  H. Dellien - R. Opelka*
-
-#Dodatočnú príležitosť na tikete som vybral zo zápasu Opelku s Dellienom 🎾
-
-#_Reilly Opelka (ATP 73) je moderna verzia "servebot" hráča s vylepšenou baseline hrou. Jeho hra je postavená na Devastačnom servise, agresívnej hre a silovom tenise. Takisto má výškovú výhodu (211cm), čo mu umožňuje byť tak nepríjemný na podaní. Z tohto nám už môže vyplývať, že preferuje rýchlejšie povrchy, čo mu dnes hrá do karát 🇺🇸
-
-#Hugo Dellien (ATP 108) je klasický clay-court specialist s defenzívnym baseline herným štýlom. Je to vytrvalostný hráč typu "counterpuncher", ktorý stavá na konzistentnosti a vysokom tenisovom IQ. Využíva pokrytie kurtu a svoju kondíciu na prekonanie súperov. Môžeme však tušiť, že je najmä antukár a na harde odohral len 4 zápasy, kde má skóre 2-2 🇧🇴 _
-
-#*Myslím, že Opelka je suverénny favorit a -2.5 gemu je ten najmenší problém. Verím mu, že tento zápas s prehľadom vyhrá *✅
-
-#Alternatíva: Dá sa uvažovať aj o tom, že Opelka vyhrá 0:2 """
+*Po dôkladnom uvážení vyberám Rubleva, ktorý si myslím, že má (momentálne) o niečo lepšiu formu. 2 dni dozadu predviedol výborný výkon proti Tienovi. Popyrin síce zobral 1 set Zverevovi, ale Zverev sám tvrdil, že sa necíti herne na tom dobre. Odporúčam ale staviť 1u, keďže zápas sa môže aj skomplikovať *✅"""
         
-#  }
+  },
+
+    "Analýza 4": {
+        "title": "🥊  M. Talha - S. Baysangur",
+        "text": """📊 *ANALÝZA ZÁPASU:  M. Talha - S. Baysangu*
+
+Ako čerešničku na torte si zvolíme zápas uchádzačov do UFC: Murtaza Talha - Susurkaev Baysangur 🥊
+
+_Murtaza Talha (7-1) je 29-ročný bojovník z Bahrajnu, ktorý má za sebou druhú šancu na DWCS po neúspešnom pokuse v roku 2023, keď prehral s Rodolfom Bellatom KO v druhom kole. Talha má bohatú amatérsku kariéru s bilanciou 12-0 a bol niekoľkonásobným majstrom sveta IMMAF aj Európy. Jeho profesionálna kariéra začala výborne - všetkých prvých šesť súperov porazil finišom, pričom len jeden zápas sa dostal do druhého kola. Talhov herný štýl je založený na bezuzdnej agresivite a explozívnosti. Je známy divokými, looping údermi s plnou silou zameranými na knockout. Z týchto úderov prechádza priamo na double leg takedowny a keď dostane súpera na zem, aplikuje devastačný ground-and-pound, až kým rozhodca nezastaví zápas. Jeho kmeňové bojové umenie je wrestling a grappling, čo mu umožňuje efektívne kombinovať úder-takedown. Problémom je, že v dlhších zápasoch má tendenciu sa vyčerpať 🇧🇭
+
+Susurkaev Baysangur (8-0) je 24-ročný neporazený bojovník z Čečenska, ktorý vstupuje do DWCS s perfektným rekordom. Má sedem víťazstiev KO/TKO a jedno na body, pričom šesť finišov dosiahol už v prvom kole. Jeho posledný zápas bol v februári na Fury FC 102, kde finišoval Irakliho Kuchukhidzeho TKO v druhom kole. Susurkaev prijal tento zápas na týždeň pred súbojom ako náhradník a je na radaroch UFC už dlhší čas. Kľúčovým faktorom je, že je jedným z hlavných tréningových partnerov Khamzata Chimaeva pri príprave na Dricusa Du Plessisa. Susurkaev je metodický striker s technickým prístupom. Na rozdiel od Talhovej divokosti je systematický v svojom rozklade súperov. Využíva calf kick, útoky na telo a hlavu. Je tiež známy svojimi kolenami smerom nahor, ktoré môžu zastaviť grapplingové pokusy súperov 🇷🇺_
+
+*Baysangur je v tomto zápase favoritom vďaka dobrej technickej stránke a postoju. Talha s kurzom 3.74 mi však príde veľmi podceňovaný. Je to stále výborný bojovník, ktorý má len jedinu prehru a vie dobre kombinovať postoj so zemou. Odporúčam si staviť 0.25-0.5u  *✅ """
+        
+  }
 
 }
 
@@ -138,23 +137,23 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV - AUGUST*
-• Výherné tikety: 4✅
+• Výherné tikety: 5✅
 • Prehraté tikety: 4❌
-• Dlhodobá úspešnosť: 71% 
+• Dlhodobá úspešnosť: 72% 
 
-#📈 *NAŠA ÚSPEŠNOSŤ*
-#• Navrátnosť za dané obdobie: 0.3% 
-#• Zisk za dané obdobie: +0.05u
+📈 *NAŠA ÚSPEŠNOSŤ*
+• Navrátnosť: 9.5% 
+• Zisk: +12.65u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 248€
-⏩pri vklade 200€ ZISK 496€
-⏩pri vklade 500€ ZISK 1240€
+⏩pri vklade 100€ ZISK 253€
+⏩pri vklade 200€ ZISK 506€
+⏩pri vklade 500€ ZISK 1265€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 6200KC
-⏩pri vklade 5000KC ZISK 12400KC
-⏩pri vklade 12500KC ZISK 31000KC
+⏩pri vklade 2500KC ZISK 6325KC
+⏩pri vklade 5000KC ZISK 12650KC
+⏩pri vklade 12500KC ZISK 31620KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
