@@ -45,7 +45,7 @@ MATCHES = {
          'odds': '1.45 x 1.31',
          'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-prepere-ceska-lipa/7310875/co-sa-tipuje',
          'image': 'Mol cup 2.png'
-     }
+     },
     
      "match3": {
          'team1': 'A. Popyrin',
