@@ -26,109 +26,109 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'Havlíčkův Brod',
-        'team2': 'Zbrojovka Brno',
-        'tournament': 'Český pohár',
-        'time': '17:30',
-        'pick': 'Brno vyhrá 1. polčas',
-        'odds': '1.31 x 1.45',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-havlickuv-brod-zbrojovka-brno/7310871/co-sa-tipuje',
-        'image': 'Mol cup 1.png' 
+        'team1': 'N. B. Kjaer',
+        'team2': 'V. Vacherot',
+        'tournament': 'ATP Todi',
+        'time': '15:10',
+        'pick': 'Vacherot vyhrá - 2',
+        'odds': '1.85',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-budkov-kjaer-nicolai-vacherot-valentin/7321673/co-sa-tipuje',
+        'image': 'ATP Todi.png' 
     },
     
      "match2": {
-         'team1': 'Přepeře',
-         'team2': 'Česká Lípa', 
-         'tournament': 'Český pohár',
-         'time': '18:00',
-         'pick': 'Česká Lípa vyhrá - 2',
-         'odds': '1.45 x 1.31',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/futbal-prepere-ceska-lipa/7310875/co-sa-tipuje',
-         'image': 'Mol cup 2.png'
+         'team1': 'L. Bronzetti',
+         'team2': 'C. Gauff', 
+         'tournament': 'WTA Cincinnati',
+         'time': '17:05',
+         'pick': 'Gauff -4.5 gemu',
+         'odds': '1.34 x 1.59',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-bronzetti-lucia-gauff-cori/7320455/co-sa-tipuje',
+         'image': 'Cincinnati 8.png'
      },
     
      "match3": {
-         'team1': 'A. Popyrin',
-         'team2': 'A. Rublev', 
-         'tournament': 'ATP Cincinnati',
-         'time': '17:00',
-         'pick': 'Rublev vyhrá - 2',
-         'odds': '1.52',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-popyrin-alexei-rublev-andrey/7314517/co-sa-tipuje',
-         'image': 'Cincinnati 7.png'
-     },
+         'team1': 'V. Kudermetova',
+         'team2': 'M. Linette', 
+         'tournament': 'WTA Cincinnati',
+         'time': '15.8. 1:00',
+         'pick': 'Kudermetová vyhrá - 1',
+         'odds': '1.59 x 1.34',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kudermetova-veronika-linette-magda/7324520/co-sa-tipuje',
+         'image': 'Cincinnati 9.png'
+     }
     
-    "match4": {
-        'team1': 'M. Talha',
-        'team2': 'S. Baysangur', 
-        'tournament': 'D.W. Contender Series',
-        'time': '13.8. 1:00',
-        'pick': 'Talha vyhrá - 1',
-        'odds': '3.74',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-talha-murtaza-baysangur-susurkaev/7313974',
-        'image': 'D.W. Contender Series.png'
-    }
+ #   "match4": {
+ #       'team1': 'M. Talha',
+ #       'team2': 'S. Baysangur', 
+ #       'tournament': 'D.W. Contender Series',
+ #       'time': '13.8. 1:00',
+ #       'pick': 'Talha vyhrá - 1',
+ #       'odds': '3.74',
+ #       'betting_url': 'https://www.tipsport.sk/kurzy/zapas/bojove-sporty-talha-murtaza-baysangur-susurkaev/7313974',
+ #       'image': 'D.W. Contender Series.png'
+ #   }
 }
 
 ANALYSES = {
     "Analýza 1": {
-        "title": "⚽️ Havlíčkův Brod - Zbrojovka Brno",
-        "text": """📊 *ANALÝZA ZÁPASU: Havlíčkův Brod - Zbrojovka Brno*
+        "title": "🎾 N. B. Kjaer - V. Vacherot",
+        "text": """📊 *ANALÝZA ZÁPASU: N. B. Kjaer - V. Vacherot*
 
-Ako ste si už všimli, Český pohár je jeden z našich obľbúbených turnajov, ktoré práve prebiehajú. A teda si z neho dnes zoberieme 2 zápasy. Prvý je: Havlíčkův Brod - Zbrojovka Brno ⚽️
+Dnes máme tenisový deň. Prvý tip bude na zápas Kjaera s Vacherotom 🎾
 
-_FC Zbrojovka Brno je tradičný český klub s bohatou históriou, ktorý momentálne pôsobí v FNL (druhá najvyššia súťaž). Momentálne je na čele tabuľky zo 4 výhrami a 1 remízou. Ich herný štýl je založený na kombinačnej hre s dôrazom na stredovú líniu. Tento klub mal v minulých obdobiach finančné problémy, ale ich kvalita kádra je stále vysoká.
+_Valentin Vacherot (ATP 246) má za sebou solídnu kariéru s career high 110. miestom v rebríčku. 26-ročný Monačan zakldá na technickom tenise s dobrým servisom (aj vďaka 193 cm). Je to vyspelý baseline hráč, ktorý má vyvážený štýl medzi obranou a útokom. Ďalej dobre dokáže kontrolovať tempo hry. Turnajom prechádza veľmi hladko a verím, že prejde aj ďalej 🇲🇨
 
-FC Slovan Havlíčkův Brod je regionálny klub z Havlíčkova Brodu, ktorý hrá v nižšej českej súťaži. V divízii D je na spodku tabuľky zatiaľ s 2 prehrami. Ich herný štýl je typický pre české nižšie súťaže - organizovaná defenzíva, spoliehanie sa na štandardné situácie a snaha o rýchle kontútoky. _
+Nicolai Budkov Kjaer (ATP 163) je 18-ročný nórsky fenomén s agresívnym baseline štýlom a vysokým tempom hry. Jeho silnou zbraňou je forehand down the line (po čiare) a crosscourt winnery (krížne údery). Zároveň často pribieha k sieti. Antuka mu preto môže menej vyhovovať, čo sa ukázalo aj v turnaji, keďže mal veľké problémy 🇳🇴 _
 
-*Brno je dnes výrazným favoritom a tak si myslím, že už v 1. polčase sa dostanú do vedenia. Tento zápas som skombinoval s ďalším a odporúčam staviť 1.25-1.5u ✅*  """
+*Títo hráči sú vyrovnaní, ale vďaka lepšej forme a štýlu prispôsobeného antuke volím Vacherota. Kjaer môže však chytiť formu a v tomto zápase prekvapiť, preto podávam 1u ✅*  """
     },
     
     "Analýza 2": {
-        "title": "⚽️ Přepeře - Česká Lípa",
-        "text": """📊 *ANALÝZA ZÁPASU: Přepeře - Česká Lípa*
+        "title": "🎾 L. Bronzetti - C. Gauff",
+        "text": """📊 *ANALÝZA ZÁPASU: L. Bronzetti - C. Gauff*
 
-Druhý zápas z Českého pohára bude Přepeře - Česká Lípa ⚽️
+Druhý tiket bude zo Cincinnati, kde oba zápasy sú zo ženského tenisu. Prvým je zápas Lucie Bronzetti s Cori Gauff 🎾
 
-_Arsenal Česká Lípa pôsobí v CFL (tretej najvyššej súťaži) a má za sebou solídnu formu v poslednom období. Klub má organizovanejšiu štruktúru ako ich dnešný súper a disponuje kvalitnejším kádrom s hráčmi ako Hassan Usman, Matěj Šimon a Ivan Kozak v útoku. Ich herný štýl je viac ofenzívne ladený s dôrazom na kombinačnú hru a využívanie krídiel. Česká Lípa má lepšiu techniku a fyzickú pripravenosť, čo im dáva výhodu v dlhšom priebehu zápasu.
+_Cori Gauff (WTA 2) e 21-ročná americká superstar s extrémne rýchlym a atletickým štýlom. Konvertuje 55% brejkových príležitostí a má vysoké tempo hry so schopnosťou rýchlo prejsť z obrany do útoku. Je to typický moderný power hráč s výborným returnom a fyzickou dominanciou. Jej menšou slabinou môže byť občasná netrpezlivosť a forsírovanie úderov 🇺🇸
 
-FK Přepeře je malý klub z českej regionálnej súťaže, ktorý má za sebou skromné výsledky v poslednom období. Klub má obmedzené financie a spolieha sa prevažne na lokálnych hráčov. Ich herný štýl je pragmatický - defenzívne orientovaný s dôrazom na kompaktnosť a využívanie chýb súpera. V kádri majú niekoľko zahraničných hráčov vrátane Anthonyho Obonogwu a Samuela Chisoma, ktorí môžu priniesť kvalitu do útočnej fázy. Slabými stránkami sú nedostatok hĺbky kádra a technické limity väčšiny hráčov.
+Lucia Bronzetti (WTA 61) je 26-ročná Talianka s agresívnym baseline štýlom a vynikajúcou fyzickou kondíciou. Má dobrú formu - zdolala v Cincinnati Kasatkinu a Ostapenko, čím dosiahla svoje prvé tri víťazstvá za sebou od februára. Preferuje kontroný štýl s dobrým pohybom po kurte a schopnosťou hrať dlhé rallye. Jej problémom môže byť nekonzistentnosť a náchylnosť k chybám pod tlakom 🇮🇹
  
-Zatiaľ spolu odohrali 4 zápasy a Prepere nevyhralo ani 1. Maximu, čo sa im podarilo urobiť je remíza. Posledný zápas prehrali 2:0 _
+V ich zápasoch vedie Gauff 2:0 (6-2, 7-6; 6-4, 6-4)._
 
-*Česká Lípa je jednoznačným favoritom, ktorý má kvality aj na postup do vyššej ligy. Přepeře je klub s nižšou úrovňou je tento zápas vidím ako zápas na jednu bránu. V kombinácii s predošlým zápasom odporúčam staviť 1.25-1.5u* ✅ """               
+*Cori Gauff je v tomto zápase jednoznačnou favoritkou a preto ju pridávam na vylepšenie kurzu do tohto tiketu. Verím, že súperku aspoň 3 krát breakne. Na tento tiket odporúčam staviť 0.75u * ✅ """               
         
  },
     
     "Analýza 3": {
-        "title": "🎾  A. Popyrin - A. Rubleb",
-        "text": """📊 *ANALÝZA ZÁPASU:  A. Popyrin - A. Rubleb*
+        "title": "🎾  V. Kudermetova - M. Linette",
+        "text": """📊 *ANALÝZA ZÁPASU:  V. Kudermetova - M. Linette*
 
-Po futbale nás čaká tenisové stretnutie 2 veľkých mien: Andreya Rubleva (ATP 11) a Alexeia Popyrina (ATP 19)  🎾
+Druhým zápasom na tikete bude súboj Veroniky Kudermetovej s Magdou Linette z osemfinále WTA Cincinnati 🎾
 
-_Andrey Rublev je 27-ročný ruský hráč, ktoré maximum bolo 5. miesto v ATP rebíčku. Má 17 ATP titulov vrátane dvoch Masters 1000 (Monte-Carlo 2023, Madrid 2024). Rublev je známy svojím explozívnym štýlom hry s devastačným forehendom ako obľúbeným úderom. Priemerne má 7.4 és na zápas a 70% úspešnosťou 1. podania. Jeho powerfull baseline hra môže dominovať súperom, ale mentálna nestabilita je jeho achillova päta 🇷🇺
+_Veronika Kudermetova (WTA 36) je 28-ročná Ruska s výrazne agresívnym baseline štýlom a dvojručným bekhendom. Má career high 9. miesto a vyhrala 2 WTA tituly vrátane nedávneho Grand Slam víťazstva v doubles na Wimbledone 2025. Je známa svojim silným servisom a mocnými údermi z baseline, dokáže diktovať tempo hry a preferuje rýchly, agresívny štýl. Najelpšia je na tráve, ale aj na tvrdých kurtoch má slušnú bilanciu 🇷🇺
 
-Alexei Popyrin má za sebou úspešnú sezónu 2025. Jeho najväčším úspechom je víťazstvo na Masters 1000 v Kanade 2024, kde vo finále porazil práve Rubleva 6-2, 6-4. V roku 2025 dosiahol štvrťfinále v Monte-Carlo, Ženeve a Toronte. Popyrinov herný štýl je založený na výbornom servise s 8.5 esami na zápas a 61% úspešnosťou prvého podania (ale vyšším počtom dvojchýb). Je fyzicky silný hráč s výškou 195 cm a preferuje agresívnu hru z baseline. Jeho slabšou stránkou je konzistentnosť - dokáže hrať výnimočne, ale aj sklamať v dôležitých momentoch 🇦🇺
+Magda Linette (WTA 40) je 33-ročná Poľka s takticky vyspelým baseline štýlom charakterizovaným silnou základnou hrou. Má career high 19. miesto a 3 WTA tituly vrátane semifinále Australian Open 2023. Je známa svojou vytrvalosťou, taktickou inteligenciou a schopnosťou hrať dlhé rallye. Na indoor hard kurtoch má najlepšiu bilanciu (62%), celkovo na hardoch je tiež silná 🇵🇱
 
-Odohrali spolu zatiaľ 3 zápasy a Popyrin vedie 2-1. Na tvrdých kurtoch v hlavných turnajoch vedie Popyrin 1-0. _
+Odohrali spolu zatiaľ 1 zápas, ktorý vyhrala Linette otočkou po prehre 1. setu _
 
-*Po dôkladnom uvážení vyberám Rubleva, ktorý si myslím, že má (momentálne) o niečo lepšiu formu. 2 dni dozadu predviedol výborný výkon proti Tienovi. Popyrin síce zobral 1 set Zverevovi, ale Zverev sám tvrdil, že sa necíti herne na tom dobre. Odporúčam ale staviť 1u, keďže zápas sa môže aj skomplikovať *✅"""
-        
-  },
-
-    "Analýza 4": {
-        "title": "🥊  M. Talha - S. Baysangur",
-        "text": """📊 *ANALÝZA ZÁPASU:  M. Talha - S. Baysangu*
-
-Ako čerešničku na torte si zvolíme zápas uchádzačov do UFC: Murtaza Talha - Susurkaev Baysangur 🥊
-
-_Murtaza Talha (7-1) je 29-ročný bojovník z Bahrajnu, ktorý má za sebou druhú šancu na DWCS po neúspešnom pokuse v roku 2023, keď prehral s Rodolfom Bellatom KO v druhom kole. Talha má bohatú amatérsku kariéru s bilanciou 12-0 a bol niekoľkonásobným majstrom sveta IMMAF aj Európy. Jeho profesionálna kariéra začala výborne - všetkých prvých šesť súperov porazil finišom, pričom len jeden zápas sa dostal do druhého kola. Talhov herný štýl je založený na bezuzdnej agresivite a explozívnosti. Je známy divokými, looping údermi s plnou silou zameranými na knockout. Z týchto úderov prechádza priamo na double leg takedowny a keď dostane súpera na zem, aplikuje devastačný ground-and-pound, až kým rozhodca nezastaví zápas. Jeho kmeňové bojové umenie je wrestling a grappling, čo mu umožňuje efektívne kombinovať úder-takedown. Problémom je, že v dlhších zápasoch má tendenciu sa vyčerpať 🇧🇭
-
-Susurkaev Baysangur (8-0) je 24-ročný neporazený bojovník z Čečenska, ktorý vstupuje do DWCS s perfektným rekordom. Má sedem víťazstiev KO/TKO a jedno na body, pričom šesť finišov dosiahol už v prvom kole. Jeho posledný zápas bol v februári na Fury FC 102, kde finišoval Irakliho Kuchukhidzeho TKO v druhom kole. Susurkaev prijal tento zápas na týždeň pred súbojom ako náhradník a je na radaroch UFC už dlhší čas. Kľúčovým faktorom je, že je jedným z hlavných tréningových partnerov Khamzata Chimaeva pri príprave na Dricusa Du Plessisa. Susurkaev je metodický striker s technickým prístupom. Na rozdiel od Talhovej divokosti je systematický v svojom rozklade súperov. Využíva calf kick, útoky na telo a hlavu. Je tiež známy svojimi kolenami smerom nahor, ktoré môžu zastaviť grapplingové pokusy súperov 🇷🇺_
-
-*Baysangur je v tomto zápase favoritom vďaka dobrej technickej stránke a postoju. Talha s kurzom 3.74 mi však príde veľmi podceňovaný. Je to stále výborný bojovník, ktorý má len jedinu prehru a vie dobre kombinovať postoj so zemou. Odporúčam si staviť 0.25-0.5u  *✅ """
+*Po dôkladnom uvážení vyberám Kudermetovú, ktorá je vo výbornej forme a rýchly tvrdý povrch jej silu ešte zvyšuje. Odporúčam ju pridať na tiket s Guaff a stávkou 0.75u *✅"""
         
   }
+
+#    "Analýza 4": {
+#        "title": "🥊  M. Talha - S. Baysangur",
+#        "text": """📊 *ANALÝZA ZÁPASU:  M. Talha - S. Baysangu*
+
+#Ako čerešničku na torte si zvolíme zápas uchádzačov do UFC: Murtaza Talha - Susurkaev Baysangur 🥊
+
+#_Murtaza Talha (7-1) je 29-ročný bojovník z Bahrajnu, ktorý má za sebou druhú šancu na DWCS po neúspešnom pokuse v roku 2023, keď prehral s Rodolfom Bellatom KO v druhom kole. Talha má bohatú amatérsku kariéru s bilanciou 12-0 a bol niekoľkonásobným majstrom sveta IMMAF aj Európy. Jeho profesionálna kariéra začala výborne - všetkých prvých šesť súperov porazil finišom, pričom len jeden zápas sa dostal do druhého kola. Talhov herný štýl je založený na bezuzdnej agresivite a explozívnosti. Je známy divokými, looping údermi s plnou silou zameranými na knockout. Z týchto úderov prechádza priamo na double leg takedowny a keď dostane súpera na zem, aplikuje devastačný ground-and-pound, až kým rozhodca nezastaví zápas. Jeho kmeňové bojové umenie je wrestling a grappling, čo mu umožňuje efektívne kombinovať úder-takedown. Problémom je, že v dlhších zápasoch má tendenciu sa vyčerpať 🇧🇭
+
+#Susurkaev Baysangur (8-0) je 24-ročný neporazený bojovník z Čečenska, ktorý vstupuje do DWCS s perfektným rekordom. Má sedem víťazstiev KO/TKO a jedno na body, pričom šesť finišov dosiahol už v prvom kole. Jeho posledný zápas bol v februári na Fury FC 102, kde finišoval Irakliho Kuchukhidzeho TKO v druhom kole. Susurkaev prijal tento zápas na týždeň pred súbojom ako náhradník a je na radaroch UFC už dlhší čas. Kľúčovým faktorom je, že je jedným z hlavných tréningových partnerov Khamzata Chimaeva pri príprave na Dricusa Du Plessisa. Susurkaev je metodický striker s technickým prístupom. Na rozdiel od Talhovej divokosti je systematický v svojom rozklade súperov. Využíva calf kick, útoky na telo a hlavu. Je tiež známy svojimi kolenami smerom nahor, ktoré môžu zastaviť grapplingové pokusy súperov 🇷🇺_
+
+#*Baysangur je v tomto zápase favoritom vďaka dobrej technickej stránke a postoju. Talha s kurzom 3.74 mi však príde veľmi podceňovaný. Je to stále výborný bojovník, ktorý má len jedinu prehru a vie dobre kombinovať postoj so zemou. Odporúčam si staviť 0.25-0.5u  *✅ """
+        
+#  }
 
 }
 
@@ -137,23 +137,23 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV - AUGUST*
-• Výherné tikety: 5✅
+• Výherné tikety: 10✅
 • Prehraté tikety: 4❌
-• Dlhodobá úspešnosť: 72% 
+• Dlhodobá úspešnosť: 74% 
 
-📈 *NAŠA ÚSPEŠNOSŤ*
-• Navrátnosť: 9.5% 
-• Zisk: +12.65u
+📈 *NAŠA ÚSPEŠNOSŤ - AUGUST*
+• Navrátnosť: 15.42% 
+• Zisk: +6.4u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 253€
-⏩pri vklade 200€ ZISK 506€
-⏩pri vklade 500€ ZISK 1265€
+⏩pri vklade 100€ ZISK 447€
+⏩pri vklade 200€ ZISK 894€
+⏩pri vklade 500€ ZISK 2234€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 6325KC
-⏩pri vklade 5000KC ZISK 12650KC
-⏩pri vklade 12500KC ZISK 31620KC
+⏩pri vklade 2500KC ZISK 11175KC
+⏩pri vklade 5000KC ZISK 22350KC
+⏩pri vklade 12500KC ZISK 55875KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
