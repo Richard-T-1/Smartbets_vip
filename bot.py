@@ -26,37 +26,37 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'N. B. Kjaer',
-        'team2': 'V. Vacherot',
-        'tournament': 'ATP Todi',
-        'time': '15:10',
-        'pick': 'Vacherot vyhrá - 2',
-        'odds': '1.85',
-        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-budkov-kjaer-nicolai-vacherot-valentin/7321673/co-sa-tipuje',
-        'image': 'ATP Todi.png' 
+        'team1': 'V Gracheva',
+        'team2': 'V. Kudermetova',
+        'tournament': 'WTA Cincinnati',
+        'time': '23:10',
+        'pick': 'Kudermetová -2.5 gemu',
+        'odds': '1.67 (Doxxbet)',
+        'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/tenis/wta/cincinnati?event=64853624&name=gracheva-varvara-vs-kudermetova-veronika',
+        'image': 'Cincinnati 10.png' 
     },
     
      "match2": {
-         'team1': 'L. Bronzetti',
+         'team1': 'J. Paolini',
          'team2': 'C. Gauff', 
          'tournament': 'WTA Cincinnati',
-         'time': '17:05',
-         'pick': 'Gauff -4.5 gemu',
-         'odds': '1.34 x 1.59',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-bronzetti-lucia-gauff-cori/7320455/co-sa-tipuje',
-         'image': 'Cincinnati 8.png'
-     },
-    
-     "match3": {
-         'team1': 'V. Kudermetova',
-         'team2': 'M. Linette', 
-         'tournament': 'WTA Cincinnati',
-         'time': '15.8. 1:00',
-         'pick': 'Kudermetová vyhrá - 1',
-         'odds': '1.59 x 1.34',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kudermetova-veronika-linette-magda/7324520/co-sa-tipuje',
-         'image': 'Cincinnati 9.png'
+         'time': '16.8. 3:00',
+         'pick': 'Gauff -2.5 gemu',
+         'odds': '1.63',
+         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-paolini-jasmine-gauff-cori/7329992',
+         'image': 'Cincinnati 11.png'
      }
+    
+#     "match3": {
+#         'team1': 'V. Kudermetova',
+#         'team2': 'M. Linette', 
+#         'tournament': 'WTA Cincinnati',
+#         'time': '15.8. 1:00',
+#         'pick': 'Kudermetová vyhrá - 1',
+#         'odds': '1.59 x 1.34',
+#         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kudermetova-veronika-linette-magda/7324520/co-sa-tipuje',
+#         'image': 'Cincinnati 9.png'
+#     }
     
  #   "match4": {
  #       'team1': 'M. Talha',
@@ -72,49 +72,51 @@ MATCHES = {
 
 ANALYSES = {
     "Analýza 1": {
-        "title": "🎾 N. B. Kjaer - V. Vacherot",
-        "text": """📊 *ANALÝZA ZÁPASU: N. B. Kjaer - V. Vacherot*
+        "title": "🎾 V Gracheva - V. Kudermetova",
+        "text": """📊 *ANALÝZA ZÁPASU: V Gracheva - V. Kudermetova*
 
-Dnes máme tenisový deň. Prvý tip bude na zápas Kjaera s Vacherotom 🎾
-
-_Valentin Vacherot (ATP 246) má za sebou solídnu kariéru s career high 110. miestom v rebríčku. 26-ročný Monačan zakldá na technickom tenise s dobrým servisom (aj vďaka 193 cm). Je to vyspelý baseline hráč, ktorý má vyvážený štýl medzi obranou a útokom. Ďalej dobre dokáže kontrolovať tempo hry. Turnajom prechádza veľmi hladko a verím, že prejde aj ďalej 🇲🇨
-
-Nicolai Budkov Kjaer (ATP 163) je 18-ročný nórsky fenomén s agresívnym baseline štýlom a vysokým tempom hry. Jeho silnou zbraňou je forehand down the line (po čiare) a crosscourt winnery (krížne údery). Zároveň často pribieha k sieti. Antuka mu preto môže menej vyhovovať, čo sa ukázalo aj v turnaji, keďže mal veľké problémy 🇳🇴 _
-
-*Títo hráči sú vyrovnaní, ale vďaka lepšej forme a štýlu prispôsobeného antuke volím Vacherota. Kjaer môže však chytiť formu a v tomto zápase prekvapiť, preto podávam 1u ✅*  """
-    },
-    
-    "Analýza 2": {
-        "title": "🎾 L. Bronzetti - C. Gauff",
-        "text": """📊 *ANALÝZA ZÁPASU: L. Bronzetti - C. Gauff*
-
-Druhý tiket bude zo Cincinnati, kde oba zápasy sú zo ženského tenisu. Prvým je zápas Lucie Bronzetti s Cori Gauff 🎾
-
-_Cori Gauff (WTA 2) e 21-ročná americká superstar s extrémne rýchlym a atletickým štýlom. Konvertuje 55% brejkových príležitostí a má vysoké tempo hry so schopnosťou rýchlo prejsť z obrany do útoku. Je to typický moderný power hráč s výborným returnom a fyzickou dominanciou. Jej menšou slabinou môže byť občasná netrpezlivosť a forsírovanie úderov 🇺🇸
-
-Lucia Bronzetti (WTA 61) je 26-ročná Talianka s agresívnym baseline štýlom a vynikajúcou fyzickou kondíciou. Má dobrú formu - zdolala v Cincinnati Kasatkinu a Ostapenko, čím dosiahla svoje prvé tri víťazstvá za sebou od februára. Preferuje kontroný štýl s dobrým pohybom po kurte a schopnosťou hrať dlhé rallye. Jej problémom môže byť nekonzistentnosť a náchylnosť k chybám pod tlakom 🇮🇹
- 
-V ich zápasoch vedie Gauff 2:0 (6-2, 7-6; 6-4, 6-4)._
-
-*Cori Gauff je v tomto zápase jednoznačnou favoritkou a preto ju pridávam na vylepšenie kurzu do tohto tiketu. Verím, že súperku aspoň 3 krát breakne. Na tento tiket odporúčam staviť 0.75u * ✅ """               
-        
- },
-    
-    "Analýza 3": {
-        "title": "🎾  V. Kudermetova - M. Linette",
-        "text": """📊 *ANALÝZA ZÁPASU:  V. Kudermetova - M. Linette*
-
-Druhým zápasom na tikete bude súboj Veroniky Kudermetovej s Magdou Linette z osemfinále WTA Cincinnati 🎾
+Dnes máme opäť tenisový deň. Veronika Kudermetová nás už jeden deň podržala a rozhodol som sa jej veriť aj dnes 🎾
 
 _Veronika Kudermetova (WTA 36) je 28-ročná Ruska s výrazne agresívnym baseline štýlom a dvojručným bekhendom. Má career high 9. miesto a vyhrala 2 WTA tituly vrátane nedávneho Grand Slam víťazstva v doubles na Wimbledone 2025. Je známa svojim silným servisom a mocnými údermi z baseline, dokáže diktovať tempo hry a preferuje rýchly, agresívny štýl. Najelpšia je na tráve, ale aj na tvrdých kurtoch má slušnú bilanciu 🇷🇺
 
-Magda Linette (WTA 40) je 33-ročná Poľka s takticky vyspelým baseline štýlom charakterizovaným silnou základnou hrou. Má career high 19. miesto a 3 WTA tituly vrátane semifinále Australian Open 2023. Je známa svojou vytrvalosťou, taktickou inteligenciou a schopnosťou hrať dlhé rallye. Na indoor hard kurtoch má najlepšiu bilanciu (62%), celkovo na hardoch je tiež silná 🇵🇱
+Varvara Gracheva (WTA 103) je 24-ročná Francúzka s konzistentným baseline štýlom charakterizovaným silnými defenzívnymi schopnosťami a mocnými údermi zo základnej čiary. Je známa svojou vytrvalosťou, taktickou inteligenciou. Jej problémom môže byť zakončovanie zápasov v kritických situáciach. Na tvrdých kurtoch má slušnú bilanciu, ale v poslednej dobe bojuje s formou. Tvrdý povrch vyhovuje však viac štýlu Kudermetovej 🇫🇷
 
-Odohrali spolu zatiaľ 1 zápas, ktorý vyhrala Linette otočkou po prehre 1. setu _
+Tieto tenistky sa stretli vo svojej kariére 2 krát, a oba zápasy vyhrala Kudermetová._
 
-*Po dôkladnom uvážení vyberám Kudermetovú, ktorá je vo výbornej forme a rýchly tvrdý povrch jej silu ešte zvyšuje. Odporúčam ju pridať na tiket s Guaff a stávkou 0.75u *✅"""
+*Kudermetová už ukázala, že sa dá na ňu spoľahnúť a v priebehu Cincinnati porazila aj silnejšie súperky. Je vo forme, vyhovuje jej povrch a -2.5 gemu vidím ešte ako celkom konzervatívne. Odporúčam staviť však 1u ✅*  """
+    }
+    
+    "Analýza 2": {
+        "title": "🎾 J. Paolini - C. Gauff",
+        "text": """📊 *ANALÝZA ZÁPASU: J. Paolini - C. Gauff*
+
+Znova podporíme aj Cori Gauff, ktorá je stále favoritkou a proti Paolini je takisto verím 🎾
+
+_Cori Gauff (WTA 2) je 21-ročná americká superstar s extrémne rýchlym a atletickým štýlom. Konvertuje 55% brejkových príležitostí a má vysoké tempo hry so schopnosťou rýchlo prejsť z obrany do útoku. Je to typický moderný power hráč s výborným returnom a fyzickou dominanciou. Jej menšou slabinou môže byť občasná netrpezlivosť a forsírovanie úderov 🇺🇸
+
+Jasmine Paolini (WTA 9) je 29-ročná Talianka s konzistentným baseline štýlom a výnimočnou bojovnosťou. Má career high 4. miesto, 3 WTA tituly vrátane WTA 1000 Dubai 2024 a finále na Roland Garros aj Wimbledone 2024. Je známa svojou vytrvalosťou, taktickou inteligenciou a schopnosťou hrať dlhé rallye. Má výšku len 163 cm, ale kompenzuje to rýchlosťou a perfektným pohybom po kurte. Jej štýlu však vyhovuje pomalá antuka, čiže tu jej hard dáva nevýhodu 🇮🇹
+ 
+Majú spolu odohraté 4 zápasy a stav je 2-2. Je dobré si však uvedomiť, že Paolini vyhrala oba zápasy na antuke a Guaff na tvrdom povrchu. _
+
+*Cori Gauff je v dobrej forme a jej agresívny štýl bude určite Paolini robiť veľké problémy. To súdim aj z toho, že na harde ešte s Paolini neprehrala a ide si po svoju 3. výhru* ✅ """               
         
-  }
+ }
+    
+#    "Analýza 3": {
+#        "title": "🎾  V. Kudermetova - M. Linette",
+#        "text": """📊 *ANALÝZA ZÁPASU:  V. Kudermetova - M. Linette*
+
+#Druhým zápasom na tikete bude súboj Veroniky Kudermetovej s Magdou Linette z osemfinále WTA Cincinnati 🎾
+
+#_Veronika Kudermetova (WTA 36) je 28-ročná Ruska s výrazne agresívnym baseline štýlom a dvojručným bekhendom. Má career high 9. miesto a vyhrala 2 WTA tituly vrátane nedávneho Grand Slam víťazstva v doubles na Wimbledone 2025. Je známa svojim silným servisom a mocnými údermi z baseline, dokáže diktovať tempo hry a preferuje rýchly, agresívny štýl. Najelpšia je na tráve, ale aj na tvrdých kurtoch má slušnú bilanciu 🇷🇺
+
+#Magda Linette (WTA 40) je 33-ročná Poľka s takticky vyspelým baseline štýlom charakterizovaným silnou základnou hrou. Má career high 19. miesto a 3 WTA tituly vrátane semifinále Australian Open 2023. Je známa svojou vytrvalosťou, taktickou inteligenciou a schopnosťou hrať dlhé rallye. Na indoor hard kurtoch má najlepšiu bilanciu (62%), celkovo na hardoch je tiež silná 🇵🇱
+
+#Odohrali spolu zatiaľ 1 zápas, ktorý vyhrala Linette otočkou po prehre 1. setu _
+
+#*Po dôkladnom uvážení vyberám Kudermetovú, ktorá je vo výbornej forme a rýchly tvrdý povrch jej silu ešte zvyšuje. Odporúčam ju pridať na tiket s Guaff a stávkou 0.75u *✅"""
+        
+#  }
 
 #    "Analýza 4": {
 #        "title": "🥊  M. Talha - S. Baysangur",
@@ -137,23 +139,23 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV - AUGUST*
-• Výherné tikety: 10✅
+• Výherné tikety: 12✅
 • Prehraté tikety: 4❌
-• Dlhodobá úspešnosť: 74% 
+• Dlhodobá úspešnosť: 75% 
 
 📈 *NAŠA ÚSPEŠNOSŤ - AUGUST*
-• Navrátnosť: 15.42% 
-• Zisk: +6.4u
+• Navrátnosť: 22.55% 
+• Zisk: +10.26u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 447€
-⏩pri vklade 200€ ZISK 894€
-⏩pri vklade 500€ ZISK 2234€
+⏩pri vklade 100€ ZISK 525€
+⏩pri vklade 200€ ZISK 1050€
+⏩pri vklade 500€ ZISK 2625€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 11175KC
-⏩pri vklade 5000KC ZISK 22350KC
-⏩pri vklade 12500KC ZISK 55875KC
+⏩pri vklade 2500KC ZISK 12125KC
+⏩pri vklade 5000KC ZISK 26250KC
+⏩pri vklade 12500KC ZISK 65625KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
