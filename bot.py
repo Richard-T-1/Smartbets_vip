@@ -84,7 +84,7 @@ Varvara Gracheva (WTA 103) je 24-ročná Francúzka s konzistentným baseline š
 Tieto tenistky sa stretli vo svojej kariére 2 krát, a oba zápasy vyhrala Kudermetová._
 
 *Kudermetová už ukázala, že sa dá na ňu spoľahnúť a v priebehu Cincinnati porazila aj silnejšie súperky. Je vo forme, vyhovuje jej povrch a -2.5 gemu vidím ešte ako celkom konzervatívne. Odporúčam staviť však 1u ✅*  """
-    }
+    },
     
     "Analýza 2": {
         "title": "🎾 J. Paolini - C. Gauff",
