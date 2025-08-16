@@ -26,25 +26,25 @@ start_time = time.time()
 # Databáza zápasov - pridajte sem všetky zápasy, ktoré chcete poslať
 MATCHES = {
     "match1": {
-        'team1': 'V Gracheva',
-        'team2': 'V. Kudermetova',
+        'team1': 'V. Kudermetova',
+        'team2': 'J. Paolini',
         'tournament': 'WTA Cincinnati',
-        'time': '23:10',
-        'pick': 'Kudermetová -2.5 gemu',
-        'odds': '1.67 (Doxxbet)',
-        'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/tenis/wta/cincinnati?event=64853624&name=gracheva-varvara-vs-kudermetova-veronika',
-        'image': 'Cincinnati 10.png' 
+        'time': '19:00',
+        'pick': 'Paolini vyhrá',
+        'odds': '1.91',
+        'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-kudermetova-veronika-paolini-jasmine/7332664/co-sa-tipuje',
+        'image': 'Cincinnati 12.png' 
     },
     
      "match2": {
-         'team1': 'J. Paolini',
-         'team2': 'C. Gauff', 
-         'tournament': 'WTA Cincinnati',
-         'time': '16.8. 3:00',
-         'pick': 'Gauff -2.5 gemu',
-         'odds': '1.63',
-         'betting_url': 'https://www.tipsport.sk/kurzy/zapas/tenis-paolini-jasmine-gauff-cori/7329992',
-         'image': 'Cincinnati 11.png'
+         'team1': 'Salzburg',
+         'team2': 'Košice', 
+         'tournament': 'Priateľské zápasy klubov',
+         'time': '15:00',
+         'pick': 'Salzburg vyhrá - 1',
+         'odds': '1.50',
+         'betting_url': 'https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/ladovy-hokej/medzinarodne/kluby?event=64865040&name=salzburg-vs-kosice',
+         'image': 'Hokej 1.png'
      }
     
 #     "match3": {
@@ -72,33 +72,33 @@ MATCHES = {
 
 ANALYSES = {
     "Analýza 1": {
-        "title": "🎾 V Gracheva - V. Kudermetova",
-        "text": """📊 *ANALÝZA ZÁPASU: V Gracheva - V. Kudermetova*
+        "title": "🎾 V. Kudermetova - J. Paolini",
+        "text": """📊 *ANALÝZA ZÁPASU: V. Kudermetova - J. Paolini*
 
-Dnes máme opäť tenisový deň. Veronika Kudermetová nás už jeden deň podržala a rozhodol som sa jej veriť aj dnes 🎾
+Ideme sa pozreiť až do semifinále WTA Cincinnati. Kudermetová nás viackrát už potešila a Paolini raz sklamala (svojou výhrou) 🎾
 
 _Veronika Kudermetova (WTA 36) je 28-ročná Ruska s výrazne agresívnym baseline štýlom a dvojručným bekhendom. Má career high 9. miesto a vyhrala 2 WTA tituly vrátane nedávneho Grand Slam víťazstva v doubles na Wimbledone 2025. Je známa svojim silným servisom a mocnými údermi z baseline, dokáže diktovať tempo hry a preferuje rýchly, agresívny štýl. Najelpšia je na tráve, ale aj na tvrdých kurtoch má slušnú bilanciu 🇷🇺
 
-Varvara Gracheva (WTA 103) je 24-ročná Francúzka s konzistentným baseline štýlom charakterizovaným silnými defenzívnymi schopnosťami a mocnými údermi zo základnej čiary. Je známa svojou vytrvalosťou, taktickou inteligenciou. Jej problémom môže byť zakončovanie zápasov v kritických situáciach. Na tvrdých kurtoch má slušnú bilanciu, ale v poslednej dobe bojuje s formou. Tvrdý povrch vyhovuje však viac štýlu Kudermetovej 🇫🇷
+Jasmine Paolini (WTA 9) je 29-ročná Talianka s konzistentným baseline štýlom a výnimočnou bojovnosťou. Má career high 4. miesto, 3 WTA tituly vrátane WTA 1000 Dubai 2024 a finále na Roland Garros aj Wimbledone 2024. Je známa svojou vytrvalosťou, taktickou inteligenciou a schopnosťou hrať dlhé rallye. Má výšku len 163 cm, ale kompenzuje to rýchlosťou a perfektným pohybom po kurte. Jej štýlu však vyhovuje pomalá antuka, no aj na harde nie je márna (ako sme už videli) 🇮🇹
 
-Tieto tenistky sa stretli vo svojej kariére 2 krát, a oba zápasy vyhrala Kudermetová._
+Aj keď Kudermetovú nepodceňujem (už tobôž nie, keď vo vzájomných zápasoch vedie 3-1), kurz na Paolini 1.91 mi príde brutálne vysoký. Videli sme, že zdolala Gauff a v turnaji mala celkovo kvalitné súperky _
 
-*Kudermetová už ukázala, že sa dá na ňu spoľahnúť a v priebehu Cincinnati porazila aj silnejšie súperky. Je vo forme, vyhovuje jej povrch a -2.5 gemu vidím ešte ako celkom konzervatívne. Odporúčam staviť však 1u ✅*  """
+*Túto ponuku odporúčam využiť čím skôr, pretože po ponuke Tipsportu 1.91 je druhá najlepšia s kurzom 1.77. Paolini mi príde skúsenejšia a lepšia hráčka, ktorá už ukončí víťazné ťaženie Kudermetovej. Odporúčam staviť 1-1.5u*  ✅"""
     },
     
     "Analýza 2": {
-        "title": "🎾 J. Paolini - C. Gauff",
-        "text": """📊 *ANALÝZA ZÁPASU: J. Paolini - C. Gauff*
+        "title": "🏒 Salzburg - Košice",
+        "text": """📊 *ANALÝZA ZÁPASU: Salzburg - Košice*
 
-Znova podporíme aj Cori Gauff, ktorá je stále favoritkou a proti Paolini je takisto verím 🎾
+Prvýkrát si podáme aj na hokejový zápas. Toto bude prípravný zápas Salzburgu a Košíc 🏒
 
-_Cori Gauff (WTA 2) je 21-ročná americká superstar s extrémne rýchlym a atletickým štýlom. Konvertuje 55% brejkových príležitostí a má vysoké tempo hry so schopnosťou rýchlo prejsť z obrany do útoku. Je to typický moderný power hráč s výborným returnom a fyzickou dominanciou. Jej menšou slabinou môže byť občasná netrpezlivosť a forsírovanie úderov 🇺🇸
+_EC Red Bull Salzburg je rakúsky hokejový velikán s obrovskými finančnými možnosťami a profesionálnym zázemím. Klub má za sebou úspešnú históriu - je 10-násobným majstrom ICE Hockey League a má skúsenosti z medzinárodných súťaží vrátane Continental Cup. V poslednom zápase zdolali KAC Klagenfurt 4:0, čo naznačuje dobrú formu. Hrajú s dôrazom na rýchlu ofenzívnu hru, samozrejme s vysokou kvalitou 🇦🇹
 
-Jasmine Paolini (WTA 9) je 29-ročná Talianka s konzistentným baseline štýlom a výnimočnou bojovnosťou. Má career high 4. miesto, 3 WTA tituly vrátane WTA 1000 Dubai 2024 a finále na Roland Garros aj Wimbledone 2024. Je známa svojou vytrvalosťou, taktickou inteligenciou a schopnosťou hrať dlhé rallye. Má výšku len 163 cm, ale kompenzuje to rýchlosťou a perfektným pohybom po kurte. Jej štýlu však vyhovuje pomalá antuka, čiže tu jej hard dáva nevýhodu 🇮🇹
+HC Košice je 1 z najúspšenejších slovenských hokejových klubov s bohatou tradíciou. Klub má za sebou fantastickú históriu - 10 titulov v slovenskej extralige, 2 tituly z čias Československa a prezývajú sa "Oceliari". Posledný titul získali v sezóne 2014/15 a od tej doby sa snažia vrátiť na vrchol. Košice majú kvalitných slovenských hráčov a niekoľko legionárov, ale finančné možnosti sú limitované v porovnaní s Red Bull projektmi 🇸🇰
  
-Majú spolu odohraté 4 zápasy a stav je 2-2. Je dobré si však uvedomiť, že Paolini vyhrala oba zápasy na antuke a Guaff na tvrdom povrchu. _
+Hrali spolu raz, a to Salzburg vyhral suverénne 6:1 _
 
-*Cori Gauff je v dobrej forme a jej agresívny štýl bude určite Paolini robiť veľké problémy. To súdim aj z toho, že na harde ešte s Paolini neprehrala a ide si po svoju 3. výhru* ✅ """               
+*Samozrejme by som rád podporil našich, ale nie za cenu finančnej straty. Myslím si, že Salzburg je suverénnym favoritom a aj v kurze 1.50 vidím hodnotu. Znova odporúčam staviť 1-1.5u ako náznak vysokej dôvery* ✅ """               
         
  }
     
@@ -139,23 +139,23 @@ statistics_text = """📈 *SMART BETS ŠTATISTIKY*
 📊 *Naše výsledky za posledné obdobie:*
 
 🏆 *BILANCIA TIKETOV - AUGUST*
-• Výherné tikety: 12✅
-• Prehraté tikety: 4❌
+• Výherné tikety: 13✅
+• Prehraté tikety: 5❌
 • Dlhodobá úspešnosť: 75% 
 
 📈 *NAŠA ÚSPEŠNOSŤ - AUGUST*
-• Navrátnosť: 22.55% 
-• Zisk: +10.26u
+• Navrátnosť: 17.80% 
+• Zisk: +9.52u
 
 💰 *CELKOVÝ ZISK V €*
-⏩pri vklade 100€ ZISK 525€
-⏩pri vklade 200€ ZISK 1050€
-⏩pri vklade 500€ ZISK 2625€
+⏩pri vklade 100€ ZISK 510€
+⏩pri vklade 200€ ZISK 1020€
+⏩pri vklade 500€ ZISK 2550€
 
 💰 *CELKOVÝ ZISK V KC*
-⏩pri vklade 2500KC ZISK 12125KC
-⏩pri vklade 5000KC ZISK 26250KC
-⏩pri vklade 12500KC ZISK 65625KC
+⏩pri vklade 2500KC ZISK 12750KC
+⏩pri vklade 5000KC ZISK 25500KC
+⏩pri vklade 12500KC ZISK 63750KC
 
 💬[AK CHCETE AJ VY ZARÁBAŤ TIETO SUMY S NAŠOU VIP](https://t.me/SmartTipy)"""
 
